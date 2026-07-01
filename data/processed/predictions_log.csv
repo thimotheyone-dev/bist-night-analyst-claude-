@@ -74,12 +74,12 @@ as_of_date,ticker,agent,signal,signal_value,confidence,weight,result_available_d
 2026-06-30,KATMR.IS,macd_agent,BEKLE,0.15,0.35,0.2,2026-07-05,,,False
 2026-06-30,KATMR.IS,volume_agent,BEKLE,-0.1,0.3,0.15,2026-07-05,,,False
 2026-06-30,KATMR.IS,pattern_agent,BEKLE,0.15,0.4,0.2,2026-07-05,,,False
-2026-06-30,ENKAI.IS,trend_agent,AL,0.8,0.8305896939589578,0.25,2026-07-05,,,False
+2026-06-30,ENKAI.IS,trend_agent,AL,0.8,0.8305896942985127,0.25,2026-07-05,,,False
 2026-06-30,ENKAI.IS,rsi_agent,BEKLE,0.0,0.3,0.2,2026-07-05,,,False
 2026-06-30,ENKAI.IS,macd_agent,BEKLE,-0.1,0.3,0.2,2026-07-05,,,False
 2026-06-30,ENKAI.IS,volume_agent,BEKLE,-0.1,0.3,0.15,2026-07-05,,,False
 2026-06-30,ENKAI.IS,pattern_agent,BEKLE,0.15,0.4,0.2,2026-07-05,,,False
-2026-06-30,EREGL.IS,trend_agent,AL,0.8,0.4961162334420768,0.25,2026-07-05,,,False
+2026-06-30,EREGL.IS,trend_agent,AL,0.8,0.4961162334421126,0.25,2026-07-05,,,False
 2026-06-30,EREGL.IS,rsi_agent,BEKLE,0.2,0.4,0.2,2026-07-05,,,False
 2026-06-30,EREGL.IS,macd_agent,SAT,-0.75,0.7,0.2,2026-07-05,,,False
 2026-06-30,EREGL.IS,volume_agent,BEKLE,-0.1,0.3,0.15,2026-07-05,,,False
@@ -104,7 +104,7 @@ as_of_date,ticker,agent,signal,signal_value,confidence,weight,result_available_d
 2026-06-30,ULKER.IS,macd_agent,BEKLE,-0.45,0.5,0.2,2026-07-05,,,False
 2026-06-30,ULKER.IS,volume_agent,BEKLE,-0.1,0.3,0.15,2026-07-05,,,False
 2026-06-30,ULKER.IS,pattern_agent,BEKLE,-0.4,0.45,0.2,2026-07-05,,,False
-2026-06-30,TABGD.IS,trend_agent,AL,0.8,0.4630436128476835,0.25,2026-07-05,,,False
+2026-06-30,TABGD.IS,trend_agent,AL,0.8,0.4630436128477272,0.25,2026-07-05,,,False
 2026-06-30,TABGD.IS,rsi_agent,BEKLE,0.4,0.5,0.2,2026-07-05,,,False
 2026-06-30,TABGD.IS,macd_agent,BEKLE,-0.1,0.3,0.2,2026-07-05,,,False
 2026-06-30,TABGD.IS,volume_agent,SAT,-0.6,0.5427966212256862,0.15,2026-07-05,,,False
@@ -149,7 +149,7 @@ as_of_date,ticker,agent,signal,signal_value,confidence,weight,result_available_d
 2026-06-30,PAPIL.IS,macd_agent,BEKLE,0.15,0.35,0.2,2026-07-05,,,False
 2026-06-30,PAPIL.IS,volume_agent,BEKLE,-0.1,0.3,0.15,2026-07-05,,,False
 2026-06-30,PAPIL.IS,pattern_agent,BEKLE,0.0,0.25,0.2,2026-07-05,,,False
-2026-06-30,TUPRS.IS,trend_agent,AL,0.8,0.4418655731627302,0.25,2026-07-05,,,False
+2026-06-30,TUPRS.IS,trend_agent,AL,0.8,0.4418655814658649,0.25,2026-07-05,,,False
 2026-06-30,TUPRS.IS,rsi_agent,BEKLE,0.2,0.4,0.2,2026-07-05,,,False
 2026-06-30,TUPRS.IS,macd_agent,AL,0.75,0.7,0.2,2026-07-05,,,False
 2026-06-30,TUPRS.IS,volume_agent,BEKLE,0.1,0.3,0.15,2026-07-05,,,False
