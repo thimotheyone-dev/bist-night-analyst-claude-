@@ -24,6 +24,7 @@ import streamlit as st
 from config import settings
 from config.symbols import WATCHLIST
 from src.learning.feedback_loop import load_predictions_log, load_weights
+from src.reporter.report_generator import agent_breakdown_dataframe, load_full_results
 
 st.set_page_config(page_title="BIST Night Analyst", page_icon="📊", layout="wide")
 
@@ -60,10 +61,16 @@ def load_predictions() -> pd.DataFrame:
     return load_predictions_log()
 
 
+@st.cache_data(ttl=900)
+def load_signal_details() -> dict:
+    return load_full_results(settings.LATEST_SIGNALS_DETAIL_FILE)
+
+
 signals_df = load_latest_signals()
 weight_history_df = load_weight_history()
 predictions_df = load_predictions()
 current_weights = load_weights()
+detail_by_ticker = load_signal_details()
 
 
 # ── Üst özet ────────────────────────────────────────────────────────────
@@ -96,12 +103,25 @@ else:
         "aşağıda listelenir. Bu şeffaflık, neden o sinyalin üretildiğini "
         "anlamanızı sağlar."
     )
-    st.info(
-        "Detaylı agent kırılımını görmek için günlük çalıştırmanın ham "
-        "sonuç JSON'unu (data/processed altında, run_daily_analysis.py "
-        "çıktısı) okuyacak şekilde genişletilebilir.",
-        icon="ℹ️",
-    )
+
+    detail = detail_by_ticker.get(selected_ticker)
+    if detail is None:
+        st.warning(
+            f"{selected_ticker} için detaylı agent verisi bulunamadı. Bu genellikle "
+            "gece taramasının bu güncellemeden ÖNCE çalıştırılmış olmasından "
+            "kaynaklanır — bir sonraki tarama sonrası burası otomatik dolacaktır.",
+            icon="⚠️",
+        )
+    else:
+        summary_cols = st.columns(4)
+        summary_cols[0].metric("Nihai Sinyal", detail.get("final_signal", "-"))
+        summary_cols[1].metric("Skor", f"{detail.get('final_score', 0):.3f}")
+        summary_cols[2].metric("Rejim Çarpanı", f"{detail.get('regime_multiplier', 1):.2f}")
+        summary_cols[3].metric("Görüş Ayrılığı", "Evet ⚠️" if detail.get("has_conflict") else "Hayır")
+        if detail.get("regime_note"):
+            st.caption(detail["regime_note"])
+
+        st.dataframe(agent_breakdown_dataframe(detail), use_container_width=True, hide_index=True)
 
 
 # ── Agent ağırlık geçmişi ───────────────────────────────────────────────
