@@ -90,6 +90,7 @@ WEIGHTS_FILE = MODELS_DIR / "agent_weights.json"
 PARAMS_FILE = MODELS_DIR / "agent_params.json"
 PREDICTIONS_LOG_FILE = PROCESSED_DATA_DIR / "predictions_log.csv"
 LATEST_SIGNALS_FILE = PROCESSED_DATA_DIR / "latest_signals.csv"
+LATEST_SIGNALS_DETAIL_FILE = PROCESSED_DATA_DIR / "latest_signals_detail.json"
 WEIGHT_HISTORY_FILE = PROCESSED_DATA_DIR / "weight_history.csv"
 
 # ── Bildirimler ───────────────────────────────────────────────────────────
