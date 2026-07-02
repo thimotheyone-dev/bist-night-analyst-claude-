@@ -39,7 +39,7 @@ from src.learning.feedback_loop import (
     update_weights_from_feedback,
 )
 from src.reporter.notifier import notify_summary
-from src.reporter.report_generator import results_to_dataframe, summary_text
+from src.reporter.report_generator import results_to_dataframe, save_full_results, summary_text
 
 logging.basicConfig(
     level=logging.INFO,
@@ -84,9 +84,10 @@ def main() -> None:
     weights = load_weights()
     results = analyze_watchlist(features_by_ticker, as_of_date, weights, params, benchmark_features)
 
-    # 5. Sonuçları kaydet
+    # 5. Sonuçları kaydet (özet CSV + agent bazlı tam detay JSON)
     report_df = results_to_dataframe(results)
     report_df.to_csv(settings.LATEST_SIGNALS_FILE, index=False)
+    save_full_results(results, settings.LATEST_SIGNALS_DETAIL_FILE)
     logger.info(summary_text(results))
 
     # 6. Tahminleri log'a ekle (sonucu henüz bilinmiyor)
