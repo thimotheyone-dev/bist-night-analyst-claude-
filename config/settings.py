@@ -47,8 +47,19 @@ DEFAULT_PARAMS = {
 }
 
 # ── Sinyal eşikleri ───────────────────────────────────────────────────────
-SIGNAL_BUY_THRESHOLD = 0.35    # final_score bu değerin üstündeyse AL
-SIGNAL_SELL_THRESHOLD = -0.35  # final_score bu değerin altındaysa SAT
+# NOT (kalibrasyon): final_score = ağırlıklı ortalama(signal_value × confidence)
+# formülünden geldiği için doğal olarak dar bir aralıkta toplanır — 5 agent'ın
+# görüşleri birbirini kısmen iptal eder ve confidence çarpanı (ortalama ~0.35)
+# skoru ek olarak küçültür. Sentetik veri üzerinde ölçülen gerçekçi dağılım:
+# std≈0.044, p90≈0.07, gözlenen maksimum≈0.15. Eski eşik (0.35) bu aralığın
+# ~8 katıydı ve pratikte hiçbir zaman aşılamıyordu — bu yüzden tüm sinyaller
+# BEKLE'ye düşüyor, Stop/Hedef/R:R hep None çıkıyordu. Yeni eşikler, skor
+# dağılımının üst ~%1-3'ünü (gerçek "güçlü konsensüs" günlerini) AL/SAT
+# olarak işaretleyecek şekilde kalibre edildi. Gerçek BIST verisiyle
+# dağılım farklılaşabilir; genetik optimizer periyodik olarak bu eşikleri
+# de arama uzayına dahil edip zamanla iyileştirebilir.
+SIGNAL_BUY_THRESHOLD = 0.12    # final_score bu değerin üstündeyse AL
+SIGNAL_SELL_THRESHOLD = -0.12  # final_score bu değerin altındaysa SAT
 # Aradaki bölge BEKLE olarak değerlendirilir.
 
 # ── Agent başlangıç ağırlıkları (feedback loop bunları zamanla günceller) ──
