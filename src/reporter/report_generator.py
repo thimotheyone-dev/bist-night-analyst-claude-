@@ -5,7 +5,52 @@ Gece taraması sonuçlarından okunabilir rapor (DataFrame + özet metinler)
 
 from __future__ import annotations
 
+import json
+from pathlib import Path
+
+import numpy as np
 import pandas as pd
+
+
+def _json_safe(obj):
+    """numpy/pandas tiplerini (float64, int64, bool_, Timestamp) standart
+    json modülünün serileştirebileceği yerel Python tiplerine çevirir.
+    Bu dönüşüm olmadan supervisor/agent çıktılarındaki numpy skalerleri
+    (örn. pandas Series'ten .get() ile gelen değerler) json.dump'ı
+    'Object of type float64 is not JSON serializable' hatasıyla düşürür."""
+    if isinstance(obj, dict):
+        return {k: _json_safe(v) for k, v in obj.items()}
+    if isinstance(obj, (list, tuple)):
+        return [_json_safe(v) for v in obj]
+    if isinstance(obj, np.generic):
+        obj = obj.item()
+    if isinstance(obj, pd.Timestamp):
+        return str(obj.date())
+    if isinstance(obj, float) and np.isnan(obj):
+        return None
+    return obj
+
+
+def save_full_results(results: list[dict], path: str | Path) -> None:
+    """Supervisor'ın tam çıktısını (her hissenin agent_signals detayı
+    dahil) JSON olarak kaydeder. Streamlit'teki 'Hisse Bazında Agent
+    Detayı' bölümü bu dosyayı okuyarak dolar — bu fonksiyon çağrılmazsa
+    o bölüm hep boş kalır."""
+    safe_results = _json_safe(results)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(safe_results, f, ensure_ascii=False, indent=2)
+
+
+def load_full_results(path: str | Path) -> dict[str, dict]:
+    """Kaydedilmiş tam sonuçları, hisse kodu (.IS soneki olmadan) -> sonuç
+    sözlüğü şeklinde döndürür. Dosya yoksa (örn. bu güncellemeden önceki
+    bir gece taraması) boş sözlük döner."""
+    p = Path(path)
+    if not p.exists():
+        return {}
+    with open(p, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    return {r["ticker"].replace(".IS", ""): r for r in data}
 
 
 def results_to_dataframe(results: list[dict]) -> pd.DataFrame:
