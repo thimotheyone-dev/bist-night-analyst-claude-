@@ -469,7 +469,7 @@
         "confidence": 0.4,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=15.6).",
         "weight": 0.25,
-        "adx": 15.609302636989376
+        "adx": 15.609302636989144
       },
       {
         "agent": "rsi_agent",
@@ -480,7 +480,7 @@
         "confidence": 0.3,
         "reasoning": "RSI nötr (35.4).",
         "weight": 0.2,
-        "rsi": 35.35423084065239
+        "rsi": 35.354230840652406
       },
       {
         "agent": "macd_agent",
@@ -543,7 +543,7 @@
         "confidence": 0.4,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=11.7).",
         "weight": 0.25,
-        "adx": 11.681242182108079
+        "adx": 11.681242182107239
       },
       {
         "agent": "rsi_agent",
@@ -617,7 +617,7 @@
         "confidence": 0.4,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=15.9).",
         "weight": 0.25,
-        "adx": 15.933299293727188
+        "adx": 15.933299293727137
       },
       {
         "agent": "rsi_agent",
@@ -843,7 +843,7 @@
         "confidence": 0.4,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=16.2).",
         "weight": 0.25,
-        "adx": 16.219371443094253
+        "adx": 16.21937144288621
       },
       {
         "agent": "rsi_agent",
@@ -854,7 +854,7 @@
         "confidence": 0.3,
         "reasoning": "RSI nötr (35.7).",
         "weight": 0.2,
-        "rsi": 35.71965691715094
+        "rsi": 35.7196569171558
       },
       {
         "agent": "macd_agent",
@@ -865,7 +865,7 @@
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
         "weight": 0.2,
-        "histogram": -2.803036024268615
+        "histogram": -2.803036024268323
       },
       {
         "agent": "volume_agent",
@@ -1136,10 +1136,10 @@
         "as_of_date": "2026-07-03",
         "signal": "AL",
         "signal_value": 0.8,
-        "confidence": 0.7329606328665755,
+        "confidence": 0.7329606328475907,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=36.6).",
         "weight": 0.25,
-        "adx": 36.64803164332878
+        "adx": 36.648031642379536
       },
       {
         "agent": "rsi_agent",
@@ -1150,7 +1150,7 @@
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (49.1), net momentum yok.",
         "weight": 0.2,
-        "rsi": 49.065610250241726
+        "rsi": 49.06561025024271
       },
       {
         "agent": "macd_agent",
@@ -1161,7 +1161,7 @@
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
         "weight": 0.2,
-        "histogram": 0.40585959258515913
+        "histogram": 0.4058595925850046
       },
       {
         "agent": "volume_agent",
@@ -1214,10 +1214,10 @@
         "as_of_date": "2026-07-03",
         "signal": "AL",
         "signal_value": 0.8,
-        "confidence": 0.4824999259077719,
+        "confidence": 0.4824999259077426,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=24.1).",
         "weight": 0.25,
-        "adx": 24.124996295388595
+        "adx": 24.12499629538713
       },
       {
         "agent": "rsi_agent",
@@ -1228,7 +1228,7 @@
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (53.0), net momentum yok.",
         "weight": 0.2,
-        "rsi": 53.0190065797599
+        "rsi": 53.01900657975988
       },
       {
         "agent": "macd_agent",
@@ -1513,7 +1513,7 @@
         "confidence": 1.0,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=57.9).",
         "weight": 0.25,
-        "adx": 57.943084534399105
+        "adx": 57.94308453732756
       },
       {
         "agent": "rsi_agent",
@@ -1524,7 +1524,7 @@
         "confidence": 0.7,
         "reasoning": "RSI aşırı satımdan (27.6) toparlanıyor (33.5).",
         "weight": 0.2,
-        "rsi": 33.490373592056415
+        "rsi": 33.49037359198475
       },
       {
         "agent": "macd_agent",
@@ -1535,7 +1535,7 @@
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
         "weight": 0.2,
-        "histogram": -0.6627440462320906
+        "histogram": -0.6627440462243186
       },
       {
         "agent": "volume_agent",
@@ -1892,10 +1892,10 @@
         "as_of_date": "2026-07-03",
         "signal": "SAT",
         "signal_value": -0.7,
-        "confidence": 0.6361671512912079,
+        "confidence": 0.6361671513037311,
         "reasoning": "MA50<MA200 ve güçlü düşüş trendi (ADX=31.8).",
         "weight": 0.25,
-        "adx": 31.8083575645604
+        "adx": 31.808357565186558
       },
       {
         "agent": "rsi_agent",
@@ -1906,7 +1906,7 @@
         "confidence": 0.3,
         "reasoning": "RSI nötr (36.7).",
         "weight": 0.2,
-        "rsi": 36.689979091945006
+        "rsi": 36.689979091967736
       },
       {
         "agent": "macd_agent",
@@ -1917,7 +1917,7 @@
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
         "weight": 0.2,
-        "histogram": -0.27936720437856666
+        "histogram": -0.2793672043722768
       },
       {
         "agent": "volume_agent",
@@ -2043,7 +2043,7 @@
         "confidence": 0.4,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=16.5).",
         "weight": 0.25,
-        "adx": 16.53629195128553
+        "adx": 16.536291951285502
       },
       {
         "agent": "rsi_agent",
@@ -2266,10 +2266,10 @@
         "as_of_date": "2026-07-03",
         "signal": "AL",
         "signal_value": 0.8,
-        "confidence": 0.4594613325346906,
+        "confidence": 0.45946133938436,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=23.0).",
         "weight": 0.25,
-        "adx": 22.973066626734532
+        "adx": 22.973066969218
       },
       {
         "agent": "rsi_agent",
@@ -2280,7 +2280,7 @@
         "confidence": 0.3,
         "reasoning": "RSI nötr (63.4).",
         "weight": 0.2,
-        "rsi": 63.379177636138934
+        "rsi": 63.37917763613583
       },
       {
         "agent": "macd_agent",
@@ -2291,7 +2291,7 @@
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
         "weight": 0.2,
-        "histogram": 3.3390841346558515
+        "histogram": 3.33908413465618
       },
       {
         "agent": "volume_agent",
@@ -2499,7 +2499,7 @@
         "confidence": 0.4,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=17.1).",
         "weight": 0.25,
-        "adx": 17.07483838736101
+        "adx": 17.07483838736108
       },
       {
         "agent": "rsi_agent",
@@ -2870,10 +2870,10 @@
         "as_of_date": "2026-07-03",
         "signal": "SAT",
         "signal_value": -0.7,
-        "confidence": 0.4239074821026426,
+        "confidence": 0.42390748210264234,
         "reasoning": "MA50<MA200 ve güçlü düşüş trendi (ADX=21.2).",
         "weight": 0.25,
-        "adx": 21.19537410513213
+        "adx": 21.195374105132117
       },
       {
         "agent": "rsi_agent",
@@ -3392,10 +3392,10 @@
         "as_of_date": "2026-07-03",
         "signal": "AL",
         "signal_value": 0.8,
-        "confidence": 0.5424393767167368,
+        "confidence": 0.5424393767167419,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=27.1).",
         "weight": 0.25,
-        "adx": 27.121968835836842
+        "adx": 27.121968835837095
       },
       {
         "agent": "rsi_agent",
@@ -3406,7 +3406,7 @@
         "confidence": 0.3,
         "reasoning": "RSI nötr (66.7).",
         "weight": 0.2,
-        "rsi": 66.708212528464
+        "rsi": 66.70821252846399
       },
       {
         "agent": "macd_agent",
@@ -3469,7 +3469,7 @@
         "confidence": 0.4,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=12.8).",
         "weight": 0.25,
-        "adx": 12.758135934272564
+        "adx": 12.758135934272577
       },
       {
         "agent": "rsi_agent",
@@ -3547,7 +3547,7 @@
         "confidence": 0.3,
         "reasoning": "Trend belirsiz / yatay piyasa.",
         "weight": 0.25,
-        "adx": 10.489950451534627
+        "adx": 10.489950359805585
       },
       {
         "agent": "rsi_agent",
@@ -3558,7 +3558,7 @@
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (48.3), net momentum yok.",
         "weight": 0.2,
-        "rsi": 48.28608283436421
+        "rsi": 48.28608325390414
       },
       {
         "agent": "macd_agent",
@@ -3569,7 +3569,7 @@
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
         "weight": 0.2,
-        "histogram": -0.18770041470914411
+        "histogram": -0.18770050444213005
       },
       {
         "agent": "volume_agent",
