@@ -123,6 +123,30 @@ else:
 
         st.dataframe(agent_breakdown_dataframe(detail), use_container_width=True, hide_index=True)
 
+        if detail.get("final_signal") == "AL":
+            st.divider()
+            st.subheader("🔎 İkinci Göz Doğrulaması")
+            st.caption(
+                "Birincil sistem AL kararı verdikten sonra, bağımsız üç kriterle "
+                "(likidite, risk/ödül, aşırı RSI vetosu) bir kez daha süzülür."
+            )
+            confirmed = detail.get("confirmed")
+            notes = detail.get("confirmation_notes", "")
+            checks = detail.get("confirmation_checks", {})
+
+            if confirmed is True:
+                st.success(f"✅ Doğrulandı — {notes}")
+            elif confirmed is False:
+                st.error(f"❌ Doğrulanmadı — {notes}")
+            else:
+                st.info("Doğrulama verisi mevcut değil.")
+
+            if checks:
+                check_labels = {"likidite": "Likidite", "risk_odul": "Risk/Ödül", "asiri_rsi": "RSI Vetosu"}
+                check_cols = st.columns(len(checks))
+                for col, (key, passed) in zip(check_cols, checks.items()):
+                    col.metric(check_labels.get(key, key), "✅" if passed else "❌")
+
 
 # ── Agent ağırlık geçmişi ───────────────────────────────────────────────
 st.subheader("🧠 Agent Ağırlıklarının Zaman İçindeki Gelişimi")
