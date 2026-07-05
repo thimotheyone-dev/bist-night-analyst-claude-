@@ -16,6 +16,7 @@ import pandas as pd
 
 from config import settings
 from src.agents.base_agent import AgentSignal, BaseAgent
+from src.agents.confirmation_agent import ConfirmationAgent
 from src.agents.macd_agent import MACDAgent
 from src.agents.pattern_agent import PatternAgent
 from src.agents.rsi_agent import RSIAgent
@@ -153,4 +154,37 @@ def analyze_watchlist(
                 "ticker": ticker, "as_of_date": str(pd.Timestamp(as_of_date).date()),
                 "final_signal": "BEKLE", "final_score": 0.0, "error": str(exc),
             })
+    return results
+
+
+def apply_confirmation_gate(
+    results: list[dict],
+    features_by_ticker: dict[str, pd.DataFrame],
+    as_of_date,
+    params: dict | None = None,
+) -> list[dict]:
+    """Sadece final_signal == 'AL' olan sonuçlara ikinci göz doğrulamasını
+    uygular; her sonuca 'confirmed' (bool|None), 'confirmation_notes' ve
+    'confirmation_checks' alanlarını ekler. AL dışındaki sinyaller
+    dokunulmadan geçer (confirmed=None -> "doğrulama bu sinyale uygulanmaz").
+    """
+    agent = ConfirmationAgent(params)
+    for r in results:
+        if r.get("final_signal") != "AL":
+            r["confirmed"] = None
+            r["confirmation_notes"] = ""
+            r["confirmation_checks"] = {}
+            continue
+
+        features = features_by_ticker.get(r["ticker"])
+        if features is None:
+            r["confirmed"] = None
+            r["confirmation_notes"] = "Doğrulama için veri bulunamadı."
+            r["confirmation_checks"] = {}
+            continue
+
+        result = agent.review(r["ticker"], features, as_of_date, r)
+        r["confirmed"] = result.confirmed
+        r["confirmation_notes"] = result.reasoning
+        r["confirmation_checks"] = result.checks
     return results
