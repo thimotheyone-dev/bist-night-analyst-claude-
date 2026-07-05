@@ -21,6 +21,7 @@ from config.settings import (
     DEFAULT_PARAMS, EVALUATION_HORIZON_DAYS, GENETIC_GENERATIONS,
     GENETIC_POPULATION_SIZE, GENETIC_WALKFORWARD_WINDOWS, PARAMS_FILE,
 )
+from src.agents.confirmation_agent import ConfirmationAgent
 from src.agents.supervisor import analyze_watchlist, build_agents
 from src.backtest.engine import simulate_signals, walk_forward_splits
 from src.backtest.metrics import summarize
@@ -38,6 +39,10 @@ PARAM_SEARCH_SPACE = {
     "adx_trend_threshold": (15, 30, int),
     "rel_volume_threshold": (1.2, 2.5, float),
     "bb_std": (1.5, 2.5, float),
+    # ── İkinci göz doğrulama katmanı (ConfirmationAgent) ──────────────────
+    "min_liquidity_try": (1_000_000, 15_000_000, float),
+    "min_risk_reward": (1.0, 3.0, float),
+    "extreme_rsi_veto": (75, 92, int),
 }
 
 
@@ -95,11 +100,21 @@ def _fitness_on_window(
 
         signals_in_window = {}
         agents = build_agents(params)
+        confirmation_agent = ConfirmationAgent(params)
         for date in window_dates:
             try:
                 from src.agents.supervisor import analyze_ticker
                 result = analyze_ticker(ticker, features, date, weights, agents, benchmark_features)
-                signals_in_window[date] = result["final_signal"]
+                final_signal = result["final_signal"]
+                # AL sinyali, ikinci göz doğrulamasından geçmezse fitness
+                # hesabında BEKLE (işlem yapılmamış) olarak sayılır — bu
+                # sayede GA, confirmation eşiklerinin (likidite/R:R/RSI
+                # vetosu) gerçek getiriyi nasıl etkilediğini "görebilir".
+                if final_signal == "AL":
+                    conf_result = confirmation_agent.review(ticker, features, date, result)
+                    if not conf_result.confirmed:
+                        final_signal = "BEKLE"
+                signals_in_window[date] = final_signal
             except Exception:  # noqa: BLE001
                 continue
 
