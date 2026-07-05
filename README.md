@@ -114,6 +114,26 @@ Her agent `-1.0` (güçlü sat) ile `+1.0` (güçlü al) arası bir `signal_valu
 bir `confidence` (0-1) ve insan-okunabilir bir `reasoning` üretir. Supervisor
 bunları ağırlıklı ortalama + BIST100 rejim çarpanı ile birleştirir.
 
+## İkinci Göz Doğrulama Katmanı (ConfirmationAgent)
+
+5 agent + supervisor bir hisseye **AL** kararı verdikten SONRA devreye
+giren, bağımsız bir doğrulama kapısı. Yeni bir oy eklemez — var olan kararı
+üç ek kriterle bir kez daha süzer, hiçbir yeni indikatör hesaplamaz:
+
+| Kriter | Ne kontrol eder | Varsayılan eşik |
+|---|---|---|
+| Likidite | 20 günlük ort. TL cinsinden işlem hacmi | ≥ 5.000.000 TL |
+| Risk/Ödül | Supervisor'ın zaten hesapladığı ATR bazlı R:R | ≥ 1.5 |
+| Aşırı RSI vetosu | Çok güçlü trend + çok yüksek RSI ("tükenme rallisi" riski) | RSI < 85 |
+
+Bu üç eşik de haftalık genetik optimizasyonun arama uzayına dahildir
+(`src/learning/genetic_optimizer.py::PARAM_SEARCH_SPACE`) — GA, backtest
+sırasında AL sinyali doğrulanmazsa o günü BEKLE (işlem yapılmamış) olarak
+sayar, böylece bu eşikler de zamanla gerçek performansa göre ayarlanır.
+
+Streamlit'te bir hissenin detayına girildiğinde, AL sinyali varsa bu
+katmanın "✅ Onaylandı" / "❌ Reddedildi" sonucu ve gerekçesi gösterilir.
+
 ## Neden RL/LangGraph/TA-Lib/VectorBT Kullanılmadı?
 
 Orijinal mimaride önerilen bu araçlar bilinçli olarak sadeleştirildi:
