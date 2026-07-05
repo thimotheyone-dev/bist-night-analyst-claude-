@@ -56,6 +56,14 @@ def load_full_results(path: str | Path) -> dict[str, dict]:
 def results_to_dataframe(results: list[dict]) -> pd.DataFrame:
     rows = []
     for r in results:
+        confirmed = r.get("confirmed")
+        if confirmed is True:
+            confirm_label = "✅ Onaylandı"
+        elif confirmed is False:
+            confirm_label = "❌ Reddedildi"
+        else:
+            confirm_label = ""
+
         rows.append({
             "Hisse": r["ticker"].replace(".IS", ""),
             "Sinyal": r.get("final_signal"),
@@ -64,6 +72,8 @@ def results_to_dataframe(results: list[dict]) -> pd.DataFrame:
             "Stop": r.get("stop"),
             "Hedef": r.get("target"),
             "R:R": r.get("risk_reward"),
+            "İkinci Onay": confirm_label,
+            "Onay Notu": r.get("confirmation_notes", ""),
             "Çelişki": "⚠️" if r.get("has_conflict") else "",
             "Rejim Notu": r.get("regime_note"),
             "Tarih": r.get("as_of_date"),
