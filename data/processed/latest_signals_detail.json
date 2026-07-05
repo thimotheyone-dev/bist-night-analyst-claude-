@@ -68,7 +68,10 @@
         "bb_squeeze_pct": 0.36666666666666664,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "OTKAR.IS",
@@ -139,7 +142,10 @@
         "bb_squeeze_pct": 0.65,
         "breakout": true
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "IEYHO.IS",
@@ -210,7 +216,14 @@
         "bb_squeeze_pct": 0.95,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": true,
+    "confirmation_notes": "Tüm kriterler sağlandı, sinyal doğrulandı.",
+    "confirmation_checks": {
+      "likidite": true,
+      "risk_odul": true,
+      "asiri_rsi": true
+    }
   },
   {
     "ticker": "ALTNY.IS",
@@ -281,7 +294,10 @@
         "bb_squeeze_pct": 0.4,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "TCELL.IS",
@@ -305,7 +321,7 @@
         "confidence": 0.4,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=12.9).",
         "weight": 0.25,
-        "adx": 12.881105225277299
+        "adx": 12.881105225275684
       },
       {
         "agent": "rsi_agent",
@@ -316,7 +332,7 @@
         "confidence": 0.3,
         "reasoning": "RSI nötr (44.4).",
         "weight": 0.2,
-        "rsi": 44.36207778386533
+        "rsi": 44.36207778386534
       },
       {
         "agent": "macd_agent",
@@ -352,7 +368,10 @@
         "bb_squeeze_pct": 0.2,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "KCHOL.IS",
@@ -423,7 +442,10 @@
         "bb_squeeze_pct": 0.25,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "MGROS.IS",
@@ -447,7 +469,7 @@
         "confidence": 0.4,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=15.6).",
         "weight": 0.25,
-        "adx": 15.609302636989376
+        "adx": 15.609302640036947
       },
       {
         "agent": "rsi_agent",
@@ -458,7 +480,7 @@
         "confidence": 0.3,
         "reasoning": "RSI nötr (35.4).",
         "weight": 0.2,
-        "rsi": 35.35423084065239
+        "rsi": 35.35423084055587
       },
       {
         "agent": "macd_agent",
@@ -469,7 +491,7 @@
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
         "weight": 0.2,
-        "histogram": -7.279604998465684
+        "histogram": -7.279604998460941
       },
       {
         "agent": "volume_agent",
@@ -494,7 +516,10 @@
         "bb_squeeze_pct": 0.48333333333333334,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "SISE.IS",
@@ -565,7 +590,10 @@
         "bb_squeeze_pct": 0.06666666666666667,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "TOASO.IS",
@@ -589,7 +617,7 @@
         "confidence": 0.4,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=15.9).",
         "weight": 0.25,
-        "adx": 15.933299293727188
+        "adx": 15.933299293727137
       },
       {
         "agent": "rsi_agent",
@@ -636,7 +664,10 @@
         "bb_squeeze_pct": 0.8666666666666667,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "SKBNK.IS",
@@ -707,7 +738,14 @@
         "bb_squeeze_pct": 0.85,
         "breakout": true
       }
-    ]
+    ],
+    "confirmed": true,
+    "confirmation_notes": "Tüm kriterler sağlandı, sinyal doğrulandı.",
+    "confirmation_checks": {
+      "likidite": true,
+      "risk_odul": true,
+      "asiri_rsi": true
+    }
   },
   {
     "ticker": "KRDMD.IS",
@@ -778,7 +816,10 @@
         "bb_squeeze_pct": 0.13333333333333333,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "BIMAS.IS",
@@ -802,7 +843,7 @@
         "confidence": 0.4,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=16.2).",
         "weight": 0.25,
-        "adx": 16.21937144842065
+        "adx": 16.219371448292513
       },
       {
         "agent": "rsi_agent",
@@ -813,7 +854,7 @@
         "confidence": 0.3,
         "reasoning": "RSI nötr (35.7).",
         "weight": 0.2,
-        "rsi": 35.71965691687737
+        "rsi": 35.719656916885825
       },
       {
         "agent": "macd_agent",
@@ -824,7 +865,7 @@
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
         "weight": 0.2,
-        "histogram": -2.803036024267519
+        "histogram": -2.8030360242672807
       },
       {
         "agent": "volume_agent",
@@ -849,7 +890,10 @@
         "bb_squeeze_pct": 0.38333333333333336,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "BINHO.IS",
@@ -920,7 +964,10 @@
         "bb_squeeze_pct": 1.0,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "SAHOL.IS",
@@ -991,7 +1038,10 @@
         "bb_squeeze_pct": 0.35,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "KATMR.IS",
@@ -1062,7 +1112,10 @@
         "bb_squeeze_pct": 0.016666666666666666,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "ENKAI.IS",
@@ -1083,10 +1136,10 @@
         "as_of_date": "2026-07-03",
         "signal": "AL",
         "signal_value": 0.8,
-        "confidence": 0.7329606331322834,
+        "confidence": 0.7329606328693246,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=36.6).",
         "weight": 0.25,
-        "adx": 36.64803165661417
+        "adx": 36.648031643466226
       },
       {
         "agent": "rsi_agent",
@@ -1097,7 +1150,7 @@
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (49.1), net momentum yok.",
         "weight": 0.2,
-        "rsi": 49.065610251175215
+        "rsi": 49.06561025024381
       },
       {
         "agent": "macd_agent",
@@ -1108,7 +1161,7 @@
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
         "weight": 0.2,
-        "histogram": 0.40585959247264425
+        "histogram": 0.40585959258485627
       },
       {
         "agent": "volume_agent",
@@ -1133,7 +1186,14 @@
         "bb_squeeze_pct": 0.06666666666666667,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": true,
+    "confirmation_notes": "Tüm kriterler sağlandı, sinyal doğrulandı.",
+    "confirmation_checks": {
+      "likidite": true,
+      "risk_odul": true,
+      "asiri_rsi": true
+    }
   },
   {
     "ticker": "EREGL.IS",
@@ -1154,10 +1214,10 @@
         "as_of_date": "2026-07-03",
         "signal": "AL",
         "signal_value": 0.8,
-        "confidence": 0.4824999259077719,
+        "confidence": 0.4824999259077426,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=24.1).",
         "weight": 0.25,
-        "adx": 24.124996295388595
+        "adx": 24.12499629538713
       },
       {
         "agent": "rsi_agent",
@@ -1168,7 +1228,7 @@
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (53.0), net momentum yok.",
         "weight": 0.2,
-        "rsi": 53.0190065797599
+        "rsi": 53.01900657975988
       },
       {
         "agent": "macd_agent",
@@ -1204,7 +1264,10 @@
         "bb_squeeze_pct": 0.18333333333333332,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "PGSUS.IS",
@@ -1275,7 +1338,10 @@
         "bb_squeeze_pct": 0.48333333333333334,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "ARCLK.IS",
@@ -1346,7 +1412,10 @@
         "bb_squeeze_pct": 0.23333333333333334,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "TTKOM.IS",
@@ -1417,7 +1486,10 @@
         "bb_squeeze_pct": 0.2,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "ULKER.IS",
@@ -1488,7 +1560,14 @@
         "bb_squeeze_pct": 0.8333333333333334,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": true,
+    "confirmation_notes": "Tüm kriterler sağlandı, sinyal doğrulandı.",
+    "confirmation_checks": {
+      "likidite": true,
+      "risk_odul": true,
+      "asiri_rsi": true
+    }
   },
   {
     "ticker": "TABGD.IS",
@@ -1509,10 +1588,10 @@
         "as_of_date": "2026-07-03",
         "signal": "AL",
         "signal_value": 0.8,
-        "confidence": 0.5177497875507414,
+        "confidence": 0.5177497875507063,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=25.9).",
         "weight": 0.25,
-        "adx": 25.88748937753707
+        "adx": 25.887489377535317
       },
       {
         "agent": "rsi_agent",
@@ -1534,7 +1613,7 @@
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
         "weight": 0.2,
-        "histogram": -1.4119209772084407
+        "histogram": -1.411920977208439
       },
       {
         "agent": "volume_agent",
@@ -1559,7 +1638,14 @@
         "bb_squeeze_pct": 0.95,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": true,
+    "confirmation_notes": "Tüm kriterler sağlandı, sinyal doğrulandı.",
+    "confirmation_checks": {
+      "likidite": true,
+      "risk_odul": true,
+      "asiri_rsi": true
+    }
   },
   {
     "ticker": "ASELS.IS",
@@ -1630,7 +1716,14 @@
         "bb_squeeze_pct": 0.55,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": true,
+    "confirmation_notes": "Tüm kriterler sağlandı, sinyal doğrulandı.",
+    "confirmation_checks": {
+      "likidite": true,
+      "risk_odul": true,
+      "asiri_rsi": true
+    }
   },
   {
     "ticker": "KBORU.IS",
@@ -1701,7 +1794,10 @@
         "bb_squeeze_pct": 0.6333333333333333,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "YKBNK.IS",
@@ -1772,7 +1868,10 @@
         "bb_squeeze_pct": 0.8,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "FROTO.IS",
@@ -1843,7 +1942,10 @@
         "bb_squeeze_pct": 0.23333333333333334,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "ENERY.IS",
@@ -1914,7 +2016,10 @@
         "bb_squeeze_pct": 0.9666666666666667,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "ISCTR.IS",
@@ -1985,7 +2090,10 @@
         "bb_squeeze_pct": 0.36666666666666664,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "IZFAS.IS",
@@ -2056,7 +2164,14 @@
         "bb_squeeze_pct": 0.5,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": true,
+    "confirmation_notes": "Tüm kriterler sağlandı, sinyal doğrulandı.",
+    "confirmation_checks": {
+      "likidite": true,
+      "risk_odul": true,
+      "asiri_rsi": true
+    }
   },
   {
     "ticker": "PAPIL.IS",
@@ -2127,7 +2242,10 @@
         "bb_squeeze_pct": 0.38333333333333336,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "TUPRS.IS",
@@ -2148,10 +2266,10 @@
         "as_of_date": "2026-07-03",
         "signal": "AL",
         "signal_value": 0.8,
-        "confidence": 0.4594613325346908,
+        "confidence": 0.45946133938436,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=23.0).",
         "weight": 0.25,
-        "adx": 22.97306662673454
+        "adx": 22.973066969218
       },
       {
         "agent": "rsi_agent",
@@ -2162,7 +2280,7 @@
         "confidence": 0.3,
         "reasoning": "RSI nötr (63.4).",
         "weight": 0.2,
-        "rsi": 63.379177636138934
+        "rsi": 63.37917763613583
       },
       {
         "agent": "macd_agent",
@@ -2173,7 +2291,7 @@
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
         "weight": 0.2,
-        "histogram": 3.3390841346558515
+        "histogram": 3.33908413465618
       },
       {
         "agent": "volume_agent",
@@ -2198,7 +2316,14 @@
         "bb_squeeze_pct": 0.7666666666666667,
         "breakout": true
       }
-    ]
+    ],
+    "confirmed": true,
+    "confirmation_notes": "Tüm kriterler sağlandı, sinyal doğrulandı.",
+    "confirmation_checks": {
+      "likidite": true,
+      "risk_odul": true,
+      "asiri_rsi": true
+    }
   },
   {
     "ticker": "MANAS.IS",
@@ -2269,7 +2394,14 @@
         "bb_squeeze_pct": 0.016666666666666666,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": true,
+    "confirmation_notes": "Tüm kriterler sağlandı, sinyal doğrulandı.",
+    "confirmation_checks": {
+      "likidite": true,
+      "risk_odul": true,
+      "asiri_rsi": true
+    }
   },
   {
     "ticker": "VESTL.IS",
@@ -2340,7 +2472,10 @@
         "bb_squeeze_pct": 0.7166666666666667,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "CIMSA.IS",
@@ -2411,7 +2546,10 @@
         "bb_squeeze_pct": 0.21666666666666667,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "TEHOL.IS",
@@ -2482,7 +2620,14 @@
         "bb_squeeze_pct": 0.48333333333333334,
         "breakout": true
       }
-    ]
+    ],
+    "confirmed": false,
+    "confirmation_notes": "RSI aşırı yüksek (88.1 ≥ 85) — tükenme rallisi riski.",
+    "confirmation_checks": {
+      "likidite": true,
+      "risk_odul": true,
+      "asiri_rsi": false
+    }
   },
   {
     "ticker": "KRDMA.IS",
@@ -2553,7 +2698,10 @@
         "bb_squeeze_pct": 0.016666666666666666,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "PEKGY.IS",
@@ -2624,7 +2772,10 @@
         "bb_squeeze_pct": 0.4666666666666667,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "TCKRC.IS",
@@ -2695,7 +2846,10 @@
         "bb_squeeze_pct": 0.35,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "GARAN.IS",
@@ -2716,10 +2870,10 @@
         "as_of_date": "2026-07-03",
         "signal": "SAT",
         "signal_value": -0.7,
-        "confidence": 0.42390748210264234,
+        "confidence": 0.4239074821026426,
         "reasoning": "MA50<MA200 ve güçlü düşüş trendi (ADX=21.2).",
         "weight": 0.25,
-        "adx": 21.195374105132117
+        "adx": 21.19537410513213
       },
       {
         "agent": "rsi_agent",
@@ -2766,7 +2920,10 @@
         "bb_squeeze_pct": 0.26666666666666666,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "VAKBN.IS",
@@ -2837,7 +2994,10 @@
         "bb_squeeze_pct": 0.16666666666666666,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "BIOEN.IS",
@@ -2908,7 +3068,10 @@
         "bb_squeeze_pct": 0.06666666666666667,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "SOKM.IS",
@@ -2979,7 +3142,10 @@
         "bb_squeeze_pct": 0.2833333333333333,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "KUYAS.IS",
@@ -3050,7 +3216,14 @@
         "bb_squeeze_pct": 0.06666666666666667,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": true,
+    "confirmation_notes": "Tüm kriterler sağlandı, sinyal doğrulandı.",
+    "confirmation_checks": {
+      "likidite": true,
+      "risk_odul": true,
+      "asiri_rsi": true
+    }
   },
   {
     "ticker": "TAVHL.IS",
@@ -3121,7 +3294,10 @@
         "bb_squeeze_pct": 0.35,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "AEFES.IS",
@@ -3145,7 +3321,7 @@
         "confidence": 0.4,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=11.1).",
         "weight": 0.25,
-        "adx": 11.147342085754152
+        "adx": 11.147342085754207
       },
       {
         "agent": "rsi_agent",
@@ -3156,7 +3332,7 @@
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (49.4), net momentum yok.",
         "weight": 0.2,
-        "rsi": 49.40187547477718
+        "rsi": 49.40187547477717
       },
       {
         "agent": "macd_agent",
@@ -3192,7 +3368,10 @@
         "bb_squeeze_pct": 0.016666666666666666,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "THYAO.IS",
@@ -3263,7 +3442,10 @@
         "bb_squeeze_pct": 0.7333333333333333,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   },
   {
     "ticker": "CCOLA.IS",
@@ -3334,7 +3516,14 @@
         "bb_squeeze_pct": 0.43333333333333335,
         "breakout": true
       }
-    ]
+    ],
+    "confirmed": true,
+    "confirmation_notes": "Tüm kriterler sağlandı, sinyal doğrulandı.",
+    "confirmation_checks": {
+      "likidite": true,
+      "risk_odul": true,
+      "asiri_rsi": true
+    }
   },
   {
     "ticker": "GRSEL.IS",
@@ -3358,7 +3547,7 @@
         "confidence": 0.3,
         "reasoning": "Trend belirsiz / yatay piyasa.",
         "weight": 0.25,
-        "adx": 10.489950360279488
+        "adx": 10.489950451526042
       },
       {
         "agent": "rsi_agent",
@@ -3369,7 +3558,7 @@
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (48.3), net momentum yok.",
         "weight": 0.2,
-        "rsi": 48.286083253904344
+        "rsi": 48.28608283436436
       },
       {
         "agent": "macd_agent",
@@ -3380,7 +3569,7 @@
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
         "weight": 0.2,
-        "histogram": -0.18770050444215736
+        "histogram": -0.187700414709147
       },
       {
         "agent": "volume_agent",
@@ -3405,6 +3594,9 @@
         "bb_squeeze_pct": 0.03333333333333333,
         "breakout": false
       }
-    ]
+    ],
+    "confirmed": null,
+    "confirmation_notes": "",
+    "confirmation_checks": {}
   }
 ]
