@@ -3,7 +3,7 @@
     "ticker": "SASA.IS",
     "as_of_date": "2026-07-03",
     "final_signal": "SAT",
-    "final_score": -0.1672,
+    "final_score": -0.2062,
     "has_conflict": false,
     "regime_multiplier": 1.0,
     "regime_note": "XU100 yükseliş trendinde.",
@@ -30,20 +30,20 @@
         "signal": "BEKLE",
         "signal_value": 0.0,
         "confidence": 0.3,
-        "reasoning": "RSI nötr (35.6).",
+        "reasoning": "RSI nötr (38.1).",
         "weight": 0.2,
-        "rsi": 35.58225161765269
+        "rsi": 38.092660514153856
       },
       {
         "agent": "macd_agent",
         "ticker": "SASA.IS",
         "as_of_date": "2026-07-03",
         "signal": "BEKLE",
-        "signal_value": -0.1,
-        "confidence": 0.3,
-        "reasoning": "MACD negatif ama toparlanma sinyali var.",
+        "signal_value": -0.45,
+        "confidence": 0.5,
+        "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
         "weight": 0.2,
-        "histogram": -0.01879045871681738
+        "histogram": -0.01651737526486477
       },
       {
         "agent": "volume_agent",
@@ -104,9 +104,9 @@
         "signal": "BEKLE",
         "signal_value": 0.0,
         "confidence": 0.3,
-        "reasoning": "RSI nötr (64.1).",
+        "reasoning": "RSI nötr (61.4).",
         "weight": 0.2,
-        "rsi": 64.14149223213082
+        "rsi": 61.40450849319445
       },
       {
         "agent": "macd_agent",
@@ -117,7 +117,7 @@
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
         "weight": 0.2,
-        "histogram": 3.6407887534399936
+        "histogram": 3.000727658871954
       },
       {
         "agent": "volume_agent",
@@ -151,7 +151,7 @@
     "ticker": "IEYHO.IS",
     "as_of_date": "2026-07-03",
     "final_signal": "AL",
-    "final_score": 0.1365,
+    "final_score": 0.182,
     "has_conflict": true,
     "regime_multiplier": 1.0,
     "regime_note": "XU100 yükseliş trendinde.",
@@ -178,9 +178,9 @@
         "signal": "BEKLE",
         "signal_value": -0.3,
         "confidence": 0.4,
-        "reasoning": "RSI aşırı alım bölgesinde (82.1), yeni pozisyon riskli.",
+        "reasoning": "RSI aşırı alım bölgesinde (82.7), yeni pozisyon riskli.",
         "weight": 0.2,
-        "rsi": 82.050410790086
+        "rsi": 82.71409709526321
       },
       {
         "agent": "macd_agent",
@@ -191,16 +191,16 @@
         "confidence": 0.35,
         "reasoning": "MACD pozitif ama momentum zayıflıyor.",
         "weight": 0.2,
-        "histogram": 1.2573443065027021
+        "histogram": 1.2352949120826047
       },
       {
         "agent": "volume_agent",
         "ticker": "IEYHO.IS",
         "as_of_date": "2026-07-03",
-        "signal": "SAT",
-        "signal_value": -0.6,
-        "confidence": 0.5556062434730985,
-        "reasoning": "Yüksek hacimle (1.7x) kırmızı mum — satış baskısı.",
+        "signal": "BEKLE",
+        "signal_value": -0.1,
+        "confidence": 0.3,
+        "reasoning": "Normal hacim seviyesi (1.7x).",
         "weight": 0.15,
         "rel_volume": 1.6668187304192956
       },
@@ -217,19 +217,19 @@
         "breakout": false
       }
     ],
-    "confirmed": true,
-    "confirmation_notes": "Tüm kriterler sağlandı, sinyal doğrulandı.",
+    "confirmed": false,
+    "confirmation_notes": "RSI aşırı yüksek (82.7 ≥ 77) — tükenme rallisi riski.",
     "confirmation_checks": {
       "likidite": true,
       "risk_odul": true,
-      "asiri_rsi": true
+      "asiri_rsi": false
     }
   },
   {
     "ticker": "ALTNY.IS",
     "as_of_date": "2026-07-03",
     "final_signal": "BEKLE",
-    "final_score": 0.0795,
+    "final_score": 0.0955,
     "has_conflict": false,
     "regime_multiplier": 1.0,
     "regime_note": "XU100 yükseliş trendinde.",
@@ -254,11 +254,11 @@
         "ticker": "ALTNY.IS",
         "as_of_date": "2026-07-03",
         "signal": "BEKLE",
-        "signal_value": 0.0,
-        "confidence": 0.3,
-        "reasoning": "RSI nötr (61.6).",
+        "signal_value": 0.2,
+        "confidence": 0.4,
+        "reasoning": "RSI nötr bölgede (59.7), net momentum yok.",
         "weight": 0.2,
-        "rsi": 61.58851774635842
+        "rsi": 59.67027543508361
       },
       {
         "agent": "macd_agent",
@@ -269,7 +269,7 @@
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
         "weight": 0.2,
-        "histogram": 0.18845354526672653
+        "histogram": 0.13762579124302382
       },
       {
         "agent": "volume_agent",
@@ -303,7 +303,7 @@
     "ticker": "TCELL.IS",
     "as_of_date": "2026-07-03",
     "final_signal": "BEKLE",
-    "final_score": -0.0555,
+    "final_score": -0.0395,
     "has_conflict": true,
     "regime_multiplier": 1.0,
     "regime_note": "XU100 yükseliş trendinde.",
@@ -328,11 +328,11 @@
         "ticker": "TCELL.IS",
         "as_of_date": "2026-07-03",
         "signal": "BEKLE",
-        "signal_value": 0.0,
-        "confidence": 0.3,
-        "reasoning": "RSI nötr (44.4).",
+        "signal_value": 0.2,
+        "confidence": 0.4,
+        "reasoning": "RSI nötr bölgede (45.4), net momentum yok.",
         "weight": 0.2,
-        "rsi": 44.36207778386533
+        "rsi": 45.434802268785226
       },
       {
         "agent": "macd_agent",
@@ -343,7 +343,7 @@
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
         "weight": 0.2,
-        "histogram": -0.452840688971774
+        "histogram": -0.2799049149650298
       },
       {
         "agent": "volume_agent",
@@ -377,7 +377,7 @@
     "ticker": "KCHOL.IS",
     "as_of_date": "2026-07-03",
     "final_signal": "BEKLE",
-    "final_score": -0.1155,
+    "final_score": 0.016,
     "has_conflict": true,
     "regime_multiplier": 1.0,
     "regime_note": "XU100 yükseliş trendinde.",
@@ -402,22 +402,22 @@
         "ticker": "KCHOL.IS",
         "as_of_date": "2026-07-03",
         "signal": "BEKLE",
-        "signal_value": 0.0,
-        "confidence": 0.3,
-        "reasoning": "RSI nötr (44.5).",
+        "signal_value": 0.2,
+        "confidence": 0.4,
+        "reasoning": "RSI nötr bölgede (45.4), net momentum yok.",
         "weight": 0.2,
-        "rsi": 44.49589808759976
+        "rsi": 45.368733468836915
       },
       {
         "agent": "macd_agent",
         "ticker": "KCHOL.IS",
         "as_of_date": "2026-07-03",
-        "signal": "SAT",
-        "signal_value": -0.75,
-        "confidence": 0.7,
-        "reasoning": "MACD sinyal çizgisini aşağı kesti (bearish cross).",
+        "signal": "BEKLE",
+        "signal_value": 0.15,
+        "confidence": 0.35,
+        "reasoning": "MACD pozitif ama momentum zayıflıyor.",
         "weight": 0.2,
-        "histogram": -0.13092544047999205
+        "histogram": 0.018651121184726338
       },
       {
         "agent": "volume_agent",
@@ -469,7 +469,7 @@
         "confidence": 0.4,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=15.6).",
         "weight": 0.25,
-        "adx": 15.609302640036947
+        "adx": 15.609302636989144
       },
       {
         "agent": "rsi_agent",
@@ -478,9 +478,9 @@
         "signal": "BEKLE",
         "signal_value": 0.0,
         "confidence": 0.3,
-        "reasoning": "RSI nötr (35.4).",
+        "reasoning": "RSI nötr (38.5).",
         "weight": 0.2,
-        "rsi": 35.35423084055587
+        "rsi": 38.484733466579556
       },
       {
         "agent": "macd_agent",
@@ -491,7 +491,7 @@
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
         "weight": 0.2,
-        "histogram": -7.279604998460941
+        "histogram": -5.808957133702689
       },
       {
         "agent": "volume_agent",
@@ -543,7 +543,7 @@
         "confidence": 0.4,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=11.7).",
         "weight": 0.25,
-        "adx": 11.681242182107239
+        "adx": 11.681242182108079
       },
       {
         "agent": "rsi_agent",
@@ -552,9 +552,9 @@
         "signal": "BEKLE",
         "signal_value": 0.2,
         "confidence": 0.4,
-        "reasoning": "RSI nötr bölgede (45.2), net momentum yok.",
+        "reasoning": "RSI nötr bölgede (45.9), net momentum yok.",
         "weight": 0.2,
-        "rsi": 45.17904050739783
+        "rsi": 45.90037948865436
       },
       {
         "agent": "macd_agent",
@@ -565,7 +565,7 @@
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
         "weight": 0.2,
-        "histogram": -0.0769193783507211
+        "histogram": -0.0673204631505156
       },
       {
         "agent": "volume_agent",
@@ -599,7 +599,7 @@
     "ticker": "TOASO.IS",
     "as_of_date": "2026-07-03",
     "final_signal": "BEKLE",
-    "final_score": -0.0555,
+    "final_score": -0.0395,
     "has_conflict": true,
     "regime_multiplier": 1.0,
     "regime_note": "XU100 yükseliş trendinde.",
@@ -624,11 +624,11 @@
         "ticker": "TOASO.IS",
         "as_of_date": "2026-07-03",
         "signal": "BEKLE",
-        "signal_value": 0.0,
-        "confidence": 0.3,
-        "reasoning": "RSI nötr (43.7).",
+        "signal_value": 0.2,
+        "confidence": 0.4,
+        "reasoning": "RSI nötr bölgede (45.7), net momentum yok.",
         "weight": 0.2,
-        "rsi": 43.714406842448156
+        "rsi": 45.72765664774832
       },
       {
         "agent": "macd_agent",
@@ -639,7 +639,7 @@
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
         "weight": 0.2,
-        "histogram": -3.478309517863173
+        "histogram": -2.426218142191437
       },
       {
         "agent": "volume_agent",
@@ -673,8 +673,8 @@
     "ticker": "SKBNK.IS",
     "as_of_date": "2026-07-03",
     "final_signal": "AL",
-    "final_score": 0.1738,
-    "has_conflict": true,
+    "final_score": 0.1978,
+    "has_conflict": false,
     "regime_multiplier": 1.0,
     "regime_note": "XU100 yükseliş trendinde.",
     "close": 17.7,
@@ -688,21 +688,21 @@
         "as_of_date": "2026-07-03",
         "signal": "AL",
         "signal_value": 0.8,
-        "confidence": 0.671425095612694,
+        "confidence": 0.6714250956126828,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=33.6).",
         "weight": 0.25,
-        "adx": 33.5712547806347
+        "adx": 33.57125478063414
       },
       {
         "agent": "rsi_agent",
         "ticker": "SKBNK.IS",
         "as_of_date": "2026-07-03",
         "signal": "BEKLE",
-        "signal_value": -0.3,
-        "confidence": 0.4,
-        "reasoning": "RSI aşırı alım bölgesinde (72.1), yeni pozisyon riskli.",
+        "signal_value": 0.0,
+        "confidence": 0.3,
+        "reasoning": "RSI nötr (70.9).",
         "weight": 0.2,
-        "rsi": 72.0690960006807
+        "rsi": 70.92812836994572
       },
       {
         "agent": "macd_agent",
@@ -713,7 +713,7 @@
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
         "weight": 0.2,
-        "histogram": 0.16671917249191082
+        "histogram": 0.1608906552556011
       },
       {
         "agent": "volume_agent",
@@ -751,7 +751,7 @@
     "ticker": "KRDMD.IS",
     "as_of_date": "2026-07-03",
     "final_signal": "BEKLE",
-    "final_score": -0.0075,
+    "final_score": 0.0085,
     "has_conflict": true,
     "regime_multiplier": 1.0,
     "regime_note": "XU100 yükseliş trendinde.",
@@ -776,11 +776,11 @@
         "ticker": "KRDMD.IS",
         "as_of_date": "2026-07-03",
         "signal": "BEKLE",
-        "signal_value": 0.0,
-        "confidence": 0.3,
-        "reasoning": "RSI nötr (44.7).",
+        "signal_value": 0.2,
+        "confidence": 0.4,
+        "reasoning": "RSI nötr bölgede (46.5), net momentum yok.",
         "weight": 0.2,
-        "rsi": 44.68525336331729
+        "rsi": 46.46999336970468
       },
       {
         "agent": "macd_agent",
@@ -791,7 +791,7 @@
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
         "weight": 0.2,
-        "histogram": -0.19951962277222168
+        "histogram": -0.18484977872099578
       },
       {
         "agent": "volume_agent",
@@ -843,7 +843,7 @@
         "confidence": 0.4,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=16.2).",
         "weight": 0.25,
-        "adx": 16.21937144286823
+        "adx": 16.219371448292513
       },
       {
         "agent": "rsi_agent",
@@ -852,9 +852,9 @@
         "signal": "BEKLE",
         "signal_value": 0.0,
         "confidence": 0.3,
-        "reasoning": "RSI nötr (35.7).",
+        "reasoning": "RSI nötr (38.6).",
         "weight": 0.2,
-        "rsi": 35.71965691715579
+        "rsi": 38.62303780208122
       },
       {
         "agent": "macd_agent",
@@ -865,7 +865,7 @@
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
         "weight": 0.2,
-        "histogram": -2.803036024268323
+        "histogram": -2.426344461119443
       },
       {
         "agent": "volume_agent",
@@ -926,9 +926,9 @@
         "signal": "BEKLE",
         "signal_value": 0.0,
         "confidence": 0.3,
-        "reasoning": "RSI nötr (67.2).",
+        "reasoning": "RSI nötr (65.6).",
         "weight": 0.2,
-        "rsi": 67.21523164938651
+        "rsi": 65.61081693973759
       },
       {
         "agent": "macd_agent",
@@ -939,7 +939,7 @@
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
         "weight": 0.2,
-        "histogram": 0.15682529127471062
+        "histogram": 0.14035624442222094
       },
       {
         "agent": "volume_agent",
@@ -973,7 +973,7 @@
     "ticker": "SAHOL.IS",
     "as_of_date": "2026-07-03",
     "final_signal": "BEKLE",
-    "final_score": -0.0555,
+    "final_score": -0.0395,
     "has_conflict": true,
     "regime_multiplier": 1.0,
     "regime_note": "XU100 yükseliş trendinde.",
@@ -991,18 +991,18 @@
         "confidence": 0.4,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=15.0).",
         "weight": 0.25,
-        "adx": 15.038118100850184
+        "adx": 15.038118101032557
       },
       {
         "agent": "rsi_agent",
         "ticker": "SAHOL.IS",
         "as_of_date": "2026-07-03",
         "signal": "BEKLE",
-        "signal_value": 0.0,
-        "confidence": 0.3,
-        "reasoning": "RSI nötr (44.4).",
+        "signal_value": 0.2,
+        "confidence": 0.4,
+        "reasoning": "RSI nötr bölgede (46.1), net momentum yok.",
         "weight": 0.2,
-        "rsi": 44.42091254715809
+        "rsi": 46.06404191073656
       },
       {
         "agent": "macd_agent",
@@ -1013,7 +1013,7 @@
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
         "weight": 0.2,
-        "histogram": -0.4306413268507292
+        "histogram": -0.23632506287149335
       },
       {
         "agent": "volume_agent",
@@ -1074,9 +1074,9 @@
         "signal": "BEKLE",
         "signal_value": 0.2,
         "confidence": 0.4,
-        "reasoning": "RSI nötr bölgede (46.6), net momentum yok.",
+        "reasoning": "RSI nötr bölgede (46.7), net momentum yok.",
         "weight": 0.2,
-        "rsi": 46.63608179168526
+        "rsi": 46.68855707604957
       },
       {
         "agent": "macd_agent",
@@ -1087,7 +1087,7 @@
         "confidence": 0.35,
         "reasoning": "MACD pozitif ama momentum zayıflıyor.",
         "weight": 0.2,
-        "histogram": 0.004624608473599624
+        "histogram": 0.0029798223053704824
       },
       {
         "agent": "volume_agent",
@@ -1121,7 +1121,7 @@
     "ticker": "ENKAI.IS",
     "as_of_date": "2026-07-03",
     "final_signal": "AL",
-    "final_score": 0.277,
+    "final_score": 0.2241,
     "has_conflict": false,
     "regime_multiplier": 1.0,
     "regime_note": "XU100 yükseliş trendinde.",
@@ -1136,10 +1136,10 @@
         "as_of_date": "2026-07-03",
         "signal": "AL",
         "signal_value": 0.8,
-        "confidence": 0.7329606331340236,
+        "confidence": 0.7329606331340179,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=36.6).",
         "weight": 0.25,
-        "adx": 36.64803165670118
+        "adx": 36.648031656700894
       },
       {
         "agent": "rsi_agent",
@@ -1148,9 +1148,9 @@
         "signal": "BEKLE",
         "signal_value": 0.2,
         "confidence": 0.4,
-        "reasoning": "RSI nötr bölgede (49.1), net momentum yok.",
+        "reasoning": "RSI nötr bölgede (48.1), net momentum yok.",
         "weight": 0.2,
-        "rsi": 49.06561025117501
+        "rsi": 48.08108245175917
       },
       {
         "agent": "macd_agent",
@@ -1161,16 +1161,16 @@
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
         "weight": 0.2,
-        "histogram": 0.4058595924727293
+        "histogram": 0.23956068383126405
       },
       {
         "agent": "volume_agent",
         "ticker": "ENKAI.IS",
         "as_of_date": "2026-07-03",
-        "signal": "AL",
-        "signal_value": 0.7,
-        "confidence": 0.5464943943073688,
-        "reasoning": "Yüksek hacimle (1.6x) yeşil mum — kurumsal ilgi teyidi.",
+        "signal": "BEKLE",
+        "signal_value": 0.1,
+        "confidence": 0.3,
+        "reasoning": "Normal hacim seviyesi (1.6x).",
         "weight": 0.15,
         "rel_volume": 1.6394831829221064
       },
@@ -1226,9 +1226,9 @@
         "signal": "BEKLE",
         "signal_value": 0.2,
         "confidence": 0.4,
-        "reasoning": "RSI nötr bölgede (53.0), net momentum yok.",
+        "reasoning": "RSI nötr bölgede (54.5), net momentum yok.",
         "weight": 0.2,
-        "rsi": 53.0190065797599
+        "rsi": 54.45673048838841
       },
       {
         "agent": "macd_agent",
@@ -1239,7 +1239,7 @@
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
         "weight": 0.2,
-        "histogram": -0.12183715545256013
+        "histogram": -0.12031699519009176
       },
       {
         "agent": "volume_agent",
@@ -1272,15 +1272,15 @@
   {
     "ticker": "PGSUS.IS",
     "as_of_date": "2026-07-03",
-    "final_signal": "BEKLE",
-    "final_score": -0.0845,
+    "final_signal": "SAT",
+    "final_score": -0.1445,
     "has_conflict": true,
     "regime_multiplier": 1.0,
     "regime_note": "XU100 yükseliş trendinde.",
     "close": 174.1,
-    "stop": null,
-    "target": null,
-    "risk_reward": null,
+    "stop": 180.68,
+    "target": 160.94,
+    "risk_reward": 2.0,
     "agent_signals": [
       {
         "agent": "trend_agent",
@@ -1300,20 +1300,20 @@
         "signal": "BEKLE",
         "signal_value": 0.2,
         "confidence": 0.4,
-        "reasoning": "RSI nötr bölgede (46.1), net momentum yok.",
+        "reasoning": "RSI nötr bölgede (46.7), net momentum yok.",
         "weight": 0.2,
-        "rsi": 46.087880342160986
+        "rsi": 46.747709175688634
       },
       {
         "agent": "macd_agent",
         "ticker": "PGSUS.IS",
         "as_of_date": "2026-07-03",
-        "signal": "BEKLE",
-        "signal_value": -0.45,
-        "confidence": 0.5,
-        "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
+        "signal": "SAT",
+        "signal_value": -0.75,
+        "confidence": 0.7,
+        "reasoning": "MACD sinyal çizgisini aşağı kesti (bearish cross).",
         "weight": 0.2,
-        "histogram": -0.3851761472650992
+        "histogram": -0.11679153512776974
       },
       {
         "agent": "volume_agent",
@@ -1374,9 +1374,9 @@
         "signal": "BEKLE",
         "signal_value": 0.0,
         "confidence": 0.3,
-        "reasoning": "RSI nötr (40.9).",
+        "reasoning": "RSI nötr (41.1).",
         "weight": 0.2,
-        "rsi": 40.93261541299424
+        "rsi": 41.09712716349274
       },
       {
         "agent": "macd_agent",
@@ -1387,7 +1387,7 @@
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
         "weight": 0.2,
-        "histogram": -0.03647691484687687
+        "histogram": -0.020379153047054732
       },
       {
         "agent": "volume_agent",
@@ -1448,9 +1448,9 @@
         "signal": "BEKLE",
         "signal_value": 0.2,
         "confidence": 0.4,
-        "reasoning": "RSI nötr bölgede (46.5), net momentum yok.",
+        "reasoning": "RSI nötr bölgede (47.0), net momentum yok.",
         "weight": 0.2,
-        "rsi": 46.49628268374624
+        "rsi": 46.98989988741227
       },
       {
         "agent": "macd_agent",
@@ -1461,7 +1461,7 @@
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
         "weight": 0.2,
-        "histogram": -0.22570282732150385
+        "histogram": -0.1922707352415383
       },
       {
         "agent": "volume_agent",
@@ -1495,7 +1495,7 @@
     "ticker": "ULKER.IS",
     "as_of_date": "2026-07-03",
     "final_signal": "AL",
-    "final_score": 0.2965,
+    "final_score": 0.1985,
     "has_conflict": false,
     "regime_multiplier": 1.0,
     "regime_note": "XU100 yükseliş trendinde.",
@@ -1513,18 +1513,18 @@
         "confidence": 1.0,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=57.9).",
         "weight": 0.25,
-        "adx": 57.94308453732756
+        "adx": 57.943084534399105
       },
       {
         "agent": "rsi_agent",
         "ticker": "ULKER.IS",
         "as_of_date": "2026-07-03",
-        "signal": "AL",
-        "signal_value": 0.7,
-        "confidence": 0.7,
-        "reasoning": "RSI aşırı satımdan (27.6) toparlanıyor (33.5).",
+        "signal": "BEKLE",
+        "signal_value": 0.0,
+        "confidence": 0.3,
+        "reasoning": "RSI nötr (34.8).",
         "weight": 0.2,
-        "rsi": 33.49037359198475
+        "rsi": 34.78964209023475
       },
       {
         "agent": "macd_agent",
@@ -1535,7 +1535,7 @@
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
         "weight": 0.2,
-        "histogram": -0.6627440462243186
+        "histogram": -0.6200342494321012
       },
       {
         "agent": "volume_agent",
@@ -1573,7 +1573,7 @@
     "ticker": "TABGD.IS",
     "as_of_date": "2026-07-03",
     "final_signal": "AL",
-    "final_score": 0.2897,
+    "final_score": 0.1678,
     "has_conflict": false,
     "regime_multiplier": 1.0,
     "regime_note": "XU100 yükseliş trendinde.",
@@ -1597,12 +1597,12 @@
         "agent": "rsi_agent",
         "ticker": "TABGD.IS",
         "as_of_date": "2026-07-03",
-        "signal": "AL",
-        "signal_value": 0.7,
-        "confidence": 0.7,
-        "reasoning": "RSI aşırı satımdan (28.1) toparlanıyor (45.2).",
+        "signal": "BEKLE",
+        "signal_value": 0.0,
+        "confidence": 0.3,
+        "reasoning": "RSI nötr (44.6).",
         "weight": 0.2,
-        "rsi": 45.15345725370809
+        "rsi": 44.57620404649594
       },
       {
         "agent": "macd_agent",
@@ -1613,7 +1613,7 @@
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
         "weight": 0.2,
-        "histogram": -1.4119209772084407
+        "histogram": -1.8634519812974872
       },
       {
         "agent": "volume_agent",
@@ -1621,7 +1621,7 @@
         "as_of_date": "2026-07-03",
         "signal": "AL",
         "signal_value": 0.7,
-        "confidence": 0.8970996581984599,
+        "confidence": 0.6694773568645224,
         "reasoning": "Yüksek hacimle (2.7x) yeşil mum — kurumsal ilgi teyidi.",
         "weight": 0.15,
         "rel_volume": 2.6912989745953797
@@ -1678,9 +1678,9 @@
         "signal": "BEKLE",
         "signal_value": 0.2,
         "confidence": 0.4,
-        "reasoning": "RSI nötr bölgede (56.2), net momentum yok.",
+        "reasoning": "RSI nötr bölgede (55.0), net momentum yok.",
         "weight": 0.2,
-        "rsi": 56.16376428650504
+        "rsi": 54.967821766206875
       },
       {
         "agent": "macd_agent",
@@ -1691,7 +1691,7 @@
         "confidence": 0.7,
         "reasoning": "MACD sinyal çizgisini yukarı kesti (bullish cross).",
         "weight": 0.2,
-        "histogram": 1.2551521043873848
+        "histogram": 0.6066584003283464
       },
       {
         "agent": "volume_agent",
@@ -1756,9 +1756,9 @@
         "signal": "BEKLE",
         "signal_value": 0.0,
         "confidence": 0.3,
-        "reasoning": "RSI nötr (61.4).",
+        "reasoning": "RSI nötr (60.6).",
         "weight": 0.2,
-        "rsi": 61.426776000796316
+        "rsi": 60.571374192878196
       },
       {
         "agent": "macd_agent",
@@ -1769,7 +1769,7 @@
         "confidence": 0.35,
         "reasoning": "MACD pozitif ama momentum zayıflıyor.",
         "weight": 0.2,
-        "histogram": 0.19841798967356294
+        "histogram": 0.17411246490551796
       },
       {
         "agent": "volume_agent",
@@ -1803,7 +1803,7 @@
     "ticker": "YKBNK.IS",
     "as_of_date": "2026-07-03",
     "final_signal": "BEKLE",
-    "final_score": -0.0345,
+    "final_score": 0.0131,
     "has_conflict": true,
     "regime_multiplier": 1.0,
     "regime_note": "XU100 yükseliş trendinde.",
@@ -1830,9 +1830,9 @@
         "signal": "BEKLE",
         "signal_value": 0.2,
         "confidence": 0.4,
-        "reasoning": "RSI nötr bölgede (45.3), net momentum yok.",
+        "reasoning": "RSI nötr bölgede (47.3), net momentum yok.",
         "weight": 0.2,
-        "rsi": 45.28871264196268
+        "rsi": 47.316209340531636
       },
       {
         "agent": "macd_agent",
@@ -1843,16 +1843,16 @@
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
         "weight": 0.2,
-        "histogram": -0.3618680657400777
+        "histogram": -0.18736432834246441
       },
       {
         "agent": "volume_agent",
         "ticker": "YKBNK.IS",
         "as_of_date": "2026-07-03",
-        "signal": "SAT",
-        "signal_value": -0.6,
-        "confidence": 0.5786533277190141,
-        "reasoning": "Yüksek hacimle (1.7x) kırmızı mum — satış baskısı.",
+        "signal": "BEKLE",
+        "signal_value": -0.1,
+        "confidence": 0.3,
+        "reasoning": "Normal hacim seviyesi (1.7x).",
         "weight": 0.15,
         "rel_volume": 1.7359599831570425
       },
@@ -1892,10 +1892,10 @@
         "as_of_date": "2026-07-03",
         "signal": "SAT",
         "signal_value": -0.7,
-        "confidence": 0.6361671513037325,
+        "confidence": 0.6361671513037321,
         "reasoning": "MA50<MA200 ve güçlü düşüş trendi (ADX=31.8).",
         "weight": 0.25,
-        "adx": 31.808357565186622
+        "adx": 31.808357565186604
       },
       {
         "agent": "rsi_agent",
@@ -1904,9 +1904,9 @@
         "signal": "BEKLE",
         "signal_value": 0.0,
         "confidence": 0.3,
-        "reasoning": "RSI nötr (36.7).",
+        "reasoning": "RSI nötr (37.8).",
         "weight": 0.2,
-        "rsi": 36.689979091967736
+        "rsi": 37.82192617210101
       },
       {
         "agent": "macd_agent",
@@ -1917,7 +1917,7 @@
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
         "weight": 0.2,
-        "histogram": -0.2793672043722768
+        "histogram": -0.14128329971995357
       },
       {
         "agent": "volume_agent",
@@ -1950,15 +1950,15 @@
   {
     "ticker": "ENERY.IS",
     "as_of_date": "2026-07-03",
-    "final_signal": "SAT",
-    "final_score": -0.1673,
+    "final_signal": "BEKLE",
+    "final_score": -0.1197,
     "has_conflict": true,
     "regime_multiplier": 1.0,
     "regime_note": "XU100 yükseliş trendinde.",
     "close": 9.58,
-    "stop": 10.43,
-    "target": 7.88,
-    "risk_reward": 2.0,
+    "stop": null,
+    "target": null,
+    "risk_reward": null,
     "agent_signals": [
       {
         "agent": "trend_agent",
@@ -1978,9 +1978,9 @@
         "signal": "BEKLE",
         "signal_value": 0.2,
         "confidence": 0.4,
-        "reasoning": "RSI nötr bölgede (49.9), net momentum yok.",
+        "reasoning": "RSI nötr bölgede (50.9), net momentum yok.",
         "weight": 0.2,
-        "rsi": 49.93987008645513
+        "rsi": 50.86182973193998
       },
       {
         "agent": "macd_agent",
@@ -1991,16 +1991,16 @@
         "confidence": 0.35,
         "reasoning": "MACD pozitif ama momentum zayıflıyor.",
         "weight": 0.2,
-        "histogram": 0.03873644810263116
+        "histogram": 0.05234385927990359
       },
       {
         "agent": "volume_agent",
         "ticker": "ENERY.IS",
         "as_of_date": "2026-07-03",
-        "signal": "SAT",
-        "signal_value": -0.6,
-        "confidence": 0.57971855255484,
-        "reasoning": "Yüksek hacimle (1.7x) kırmızı mum — satış baskısı.",
+        "signal": "BEKLE",
+        "signal_value": -0.1,
+        "confidence": 0.3,
+        "reasoning": "Normal hacim seviyesi (1.7x).",
         "weight": 0.15,
         "rel_volume": 1.7391556576645197
       },
@@ -2025,7 +2025,7 @@
     "ticker": "ISCTR.IS",
     "as_of_date": "2026-07-03",
     "final_signal": "BEKLE",
-    "final_score": -0.0395,
+    "final_score": -0.0995,
     "has_conflict": true,
     "regime_multiplier": 1.0,
     "regime_note": "XU100 yükseliş trendinde.",
@@ -2043,7 +2043,7 @@
         "confidence": 0.4,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=16.5).",
         "weight": 0.25,
-        "adx": 16.53629195128553
+        "adx": 16.536291951285502
       },
       {
         "agent": "rsi_agent",
@@ -2052,20 +2052,20 @@
         "signal": "BEKLE",
         "signal_value": 0.2,
         "confidence": 0.4,
-        "reasoning": "RSI nötr bölgede (45.4), net momentum yok.",
+        "reasoning": "RSI nötr bölgede (47.1), net momentum yok.",
         "weight": 0.2,
-        "rsi": 45.38000799110693
+        "rsi": 47.08700307869496
       },
       {
         "agent": "macd_agent",
         "ticker": "ISCTR.IS",
         "as_of_date": "2026-07-03",
-        "signal": "BEKLE",
-        "signal_value": -0.45,
-        "confidence": 0.5,
-        "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
+        "signal": "SAT",
+        "signal_value": -0.75,
+        "confidence": 0.7,
+        "reasoning": "MACD sinyal çizgisini aşağı kesti (bearish cross).",
         "weight": 0.2,
-        "histogram": -0.07372979543156943
+        "histogram": -0.03738719305595667
       },
       {
         "agent": "volume_agent",
@@ -2126,9 +2126,9 @@
         "signal": "BEKLE",
         "signal_value": 0.2,
         "confidence": 0.4,
-        "reasoning": "RSI nötr bölgede (58.7), net momentum yok.",
+        "reasoning": "RSI nötr bölgede (57.9), net momentum yok.",
         "weight": 0.2,
-        "rsi": 58.69132515724183
+        "rsi": 57.851388207550734
       },
       {
         "agent": "macd_agent",
@@ -2139,7 +2139,7 @@
         "confidence": 0.35,
         "reasoning": "MACD pozitif ama momentum zayıflıyor.",
         "weight": 0.2,
-        "histogram": 0.4320407243624653
+        "histogram": 0.32156903864723385
       },
       {
         "agent": "volume_agent",
@@ -2177,7 +2177,7 @@
     "ticker": "PAPIL.IS",
     "as_of_date": "2026-07-03",
     "final_signal": "BEKLE",
-    "final_score": -0.0698,
+    "final_score": -0.0538,
     "has_conflict": true,
     "regime_multiplier": 1.0,
     "regime_note": "XU100 yükseliş trendinde.",
@@ -2202,11 +2202,11 @@
         "ticker": "PAPIL.IS",
         "as_of_date": "2026-07-03",
         "signal": "BEKLE",
-        "signal_value": 0.0,
-        "confidence": 0.3,
-        "reasoning": "RSI nötr (45.0).",
+        "signal_value": 0.2,
+        "confidence": 0.4,
+        "reasoning": "RSI nötr bölgede (45.4), net momentum yok.",
         "weight": 0.2,
-        "rsi": 44.975791344783204
+        "rsi": 45.3654216551722
       },
       {
         "agent": "macd_agent",
@@ -2217,7 +2217,7 @@
         "confidence": 0.35,
         "reasoning": "MACD pozitif ama momentum zayıflıyor.",
         "weight": 0.2,
-        "histogram": 0.034862902670422115
+        "histogram": 0.044762753902628
       },
       {
         "agent": "volume_agent",
@@ -2251,7 +2251,7 @@
     "ticker": "TUPRS.IS",
     "as_of_date": "2026-07-03",
     "final_signal": "AL",
-    "final_score": 0.2134,
+    "final_score": 0.2294,
     "has_conflict": false,
     "regime_multiplier": 1.0,
     "regime_note": "XU100 yükseliş trendinde.",
@@ -2276,11 +2276,11 @@
         "ticker": "TUPRS.IS",
         "as_of_date": "2026-07-03",
         "signal": "BEKLE",
-        "signal_value": 0.0,
-        "confidence": 0.3,
-        "reasoning": "RSI nötr (63.4).",
+        "signal_value": 0.2,
+        "confidence": 0.4,
+        "reasoning": "RSI nötr bölgede (59.9), net momentum yok.",
         "weight": 0.2,
-        "rsi": 63.379177636138934
+        "rsi": 59.89477100166437
       },
       {
         "agent": "macd_agent",
@@ -2291,7 +2291,7 @@
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
         "weight": 0.2,
-        "histogram": 3.3390841346558515
+        "histogram": 2.453084262414449
       },
       {
         "agent": "volume_agent",
@@ -2356,9 +2356,9 @@
         "signal": "BEKLE",
         "signal_value": 0.0,
         "confidence": 0.3,
-        "reasoning": "RSI nötr (62.0).",
+        "reasoning": "RSI nötr (61.0).",
         "weight": 0.2,
-        "rsi": 62.046396189275114
+        "rsi": 60.98055992200178
       },
       {
         "agent": "macd_agent",
@@ -2369,7 +2369,7 @@
         "confidence": 0.35,
         "reasoning": "MACD pozitif ama momentum zayıflıyor.",
         "weight": 0.2,
-        "histogram": 0.0940716679205289
+        "histogram": 0.10417249437707177
       },
       {
         "agent": "volume_agent",
@@ -2434,9 +2434,9 @@
         "signal": "BEKLE",
         "signal_value": 0.2,
         "confidence": 0.4,
-        "reasoning": "RSI nötr bölgede (46.4), net momentum yok.",
+        "reasoning": "RSI nötr bölgede (46.2), net momentum yok.",
         "weight": 0.2,
-        "rsi": 46.410888749672864
+        "rsi": 46.15527142640363
       },
       {
         "agent": "macd_agent",
@@ -2447,7 +2447,7 @@
         "confidence": 0.35,
         "reasoning": "MACD pozitif ama momentum zayıflıyor.",
         "weight": 0.2,
-        "histogram": 0.12965023544404597
+        "histogram": 0.12073650230661132
       },
       {
         "agent": "volume_agent",
@@ -2481,7 +2481,7 @@
     "ticker": "CIMSA.IS",
     "as_of_date": "2026-07-03",
     "final_signal": "BEKLE",
-    "final_score": 0.0922,
+    "final_score": 0.0285,
     "has_conflict": false,
     "regime_multiplier": 1.0,
     "regime_note": "XU100 yükseliş trendinde.",
@@ -2499,7 +2499,7 @@
         "confidence": 0.4,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=17.1).",
         "weight": 0.25,
-        "adx": 17.07483838736101
+        "adx": 17.07483838736108
       },
       {
         "agent": "rsi_agent",
@@ -2508,9 +2508,9 @@
         "signal": "BEKLE",
         "signal_value": 0.0,
         "confidence": 0.3,
-        "reasoning": "RSI nötr (44.4).",
+        "reasoning": "RSI nötr (44.3).",
         "weight": 0.2,
-        "rsi": 44.382379805700566
+        "rsi": 44.2768146671546
       },
       {
         "agent": "macd_agent",
@@ -2521,16 +2521,16 @@
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
         "weight": 0.2,
-        "histogram": -0.0846134407676934
+        "histogram": -0.0970328890088028
       },
       {
         "agent": "volume_agent",
         "ticker": "CIMSA.IS",
         "as_of_date": "2026-07-03",
-        "signal": "AL",
-        "signal_value": 0.7,
-        "confidence": 0.6498731587622325,
-        "reasoning": "Yüksek hacimle (1.9x) yeşil mum — kurumsal ilgi teyidi.",
+        "signal": "BEKLE",
+        "signal_value": 0.1,
+        "confidence": 0.3,
+        "reasoning": "Normal hacim seviyesi (1.9x).",
         "weight": 0.15,
         "rel_volume": 1.9496194762866976
       },
@@ -2582,9 +2582,9 @@
         "signal": "BEKLE",
         "signal_value": -0.3,
         "confidence": 0.4,
-        "reasoning": "RSI aşırı alım bölgesinde (88.1), yeni pozisyon riskli.",
+        "reasoning": "RSI aşırı alım bölgesinde (85.8), yeni pozisyon riskli.",
         "weight": 0.2,
-        "rsi": 88.14227541835932
+        "rsi": 85.80961519060338
       },
       {
         "agent": "macd_agent",
@@ -2595,7 +2595,7 @@
         "confidence": 0.35,
         "reasoning": "MACD pozitif ama momentum zayıflıyor.",
         "weight": 0.2,
-        "histogram": 0.15908732100963086
+        "histogram": 0.16839406389518352
       },
       {
         "agent": "volume_agent",
@@ -2622,7 +2622,7 @@
       }
     ],
     "confirmed": false,
-    "confirmation_notes": "RSI aşırı yüksek (88.1 ≥ 85) — tükenme rallisi riski.",
+    "confirmation_notes": "RSI aşırı yüksek (85.8 ≥ 77) — tükenme rallisi riski.",
     "confirmation_checks": {
       "likidite": true,
       "risk_odul": true,
@@ -2633,8 +2633,8 @@
     "ticker": "KRDMA.IS",
     "as_of_date": "2026-07-03",
     "final_signal": "BEKLE",
-    "final_score": 0.052,
-    "has_conflict": false,
+    "final_score": 0.013,
+    "has_conflict": true,
     "regime_multiplier": 1.0,
     "regime_note": "XU100 yükseliş trendinde.",
     "close": 39.5,
@@ -2660,20 +2660,20 @@
         "signal": "BEKLE",
         "signal_value": 0.2,
         "confidence": 0.4,
-        "reasoning": "RSI nötr bölgede (50.0), net momentum yok.",
+        "reasoning": "RSI nötr bölgede (51.6), net momentum yok.",
         "weight": 0.2,
-        "rsi": 50.02439124651788
+        "rsi": 51.60799441063673
       },
       {
         "agent": "macd_agent",
         "ticker": "KRDMA.IS",
         "as_of_date": "2026-07-03",
         "signal": "BEKLE",
-        "signal_value": -0.1,
-        "confidence": 0.3,
-        "reasoning": "MACD negatif ama toparlanma sinyali var.",
+        "signal_value": -0.45,
+        "confidence": 0.5,
+        "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
         "weight": 0.2,
-        "histogram": -0.260143920161962
+        "histogram": -0.23953870781347741
       },
       {
         "agent": "volume_agent",
@@ -2707,7 +2707,7 @@
     "ticker": "PEKGY.IS",
     "as_of_date": "2026-07-03",
     "final_signal": "BEKLE",
-    "final_score": 0.036,
+    "final_score": 0.052,
     "has_conflict": false,
     "regime_multiplier": 1.0,
     "regime_note": "XU100 yükseliş trendinde.",
@@ -2732,11 +2732,11 @@
         "ticker": "PEKGY.IS",
         "as_of_date": "2026-07-03",
         "signal": "BEKLE",
-        "signal_value": 0.0,
-        "confidence": 0.3,
-        "reasoning": "RSI nötr (61.8).",
+        "signal_value": 0.2,
+        "confidence": 0.4,
+        "reasoning": "RSI nötr bölgede (58.3), net momentum yok.",
         "weight": 0.2,
-        "rsi": 61.75068470794276
+        "rsi": 58.34416080292077
       },
       {
         "agent": "macd_agent",
@@ -2747,7 +2747,7 @@
         "confidence": 0.35,
         "reasoning": "MACD pozitif ama momentum zayıflıyor.",
         "weight": 0.2,
-        "histogram": 0.16458622809027518
+        "histogram": 0.15164290358997717
       },
       {
         "agent": "volume_agent",
@@ -2808,9 +2808,9 @@
         "signal": "BEKLE",
         "signal_value": 0.0,
         "confidence": 0.3,
-        "reasoning": "RSI nötr (40.8).",
+        "reasoning": "RSI nötr (43.7).",
         "weight": 0.2,
-        "rsi": 40.80443505936653
+        "rsi": 43.7387312153501
       },
       {
         "agent": "macd_agent",
@@ -2821,7 +2821,7 @@
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
         "weight": 0.2,
-        "histogram": -1.7881633056888626
+        "histogram": -1.5254100116550404
       },
       {
         "agent": "volume_agent",
@@ -2882,9 +2882,9 @@
         "signal": "BEKLE",
         "signal_value": 0.2,
         "confidence": 0.4,
-        "reasoning": "RSI nötr bölgede (45.5), net momentum yok.",
+        "reasoning": "RSI nötr bölgede (47.2), net momentum yok.",
         "weight": 0.2,
-        "rsi": 45.45738507715401
+        "rsi": 47.15450751886055
       },
       {
         "agent": "macd_agent",
@@ -2895,7 +2895,7 @@
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
         "weight": 0.2,
-        "histogram": -0.6526856967671182
+        "histogram": -0.32303920968522726
       },
       {
         "agent": "volume_agent",
@@ -2929,7 +2929,7 @@
     "ticker": "VAKBN.IS",
     "as_of_date": "2026-07-03",
     "final_signal": "BEKLE",
-    "final_score": -0.0555,
+    "final_score": -0.0395,
     "has_conflict": true,
     "regime_multiplier": 1.0,
     "regime_note": "XU100 yükseliş trendinde.",
@@ -2954,11 +2954,11 @@
         "ticker": "VAKBN.IS",
         "as_of_date": "2026-07-03",
         "signal": "BEKLE",
-        "signal_value": 0.0,
-        "confidence": 0.3,
-        "reasoning": "RSI nötr (43.9).",
+        "signal_value": 0.2,
+        "confidence": 0.4,
+        "reasoning": "RSI nötr bölgede (45.3), net momentum yok.",
         "weight": 0.2,
-        "rsi": 43.89657647581827
+        "rsi": 45.282603220753444
       },
       {
         "agent": "macd_agent",
@@ -2969,7 +2969,7 @@
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
         "weight": 0.2,
-        "histogram": -0.18092733186162457
+        "histogram": -0.1187045679084055
       },
       {
         "agent": "volume_agent",
@@ -3030,9 +3030,9 @@
         "signal": "BEKLE",
         "signal_value": 0.2,
         "confidence": 0.4,
-        "reasoning": "RSI nötr bölgede (55.7), net momentum yok.",
+        "reasoning": "RSI nötr bölgede (54.7), net momentum yok.",
         "weight": 0.2,
-        "rsi": 55.68611887812018
+        "rsi": 54.68229220289467
       },
       {
         "agent": "macd_agent",
@@ -3043,7 +3043,7 @@
         "confidence": 0.35,
         "reasoning": "MACD pozitif ama momentum zayıflıyor.",
         "weight": 0.2,
-        "histogram": 0.116902878542075
+        "histogram": 0.10981018945631074
       },
       {
         "agent": "volume_agent",
@@ -3104,9 +3104,9 @@
         "signal": "BEKLE",
         "signal_value": 0.0,
         "confidence": 0.3,
-        "reasoning": "RSI nötr (41.3).",
+        "reasoning": "RSI nötr (41.8).",
         "weight": 0.2,
-        "rsi": 41.30543881258391
+        "rsi": 41.771414181499956
       },
       {
         "agent": "macd_agent",
@@ -3117,7 +3117,7 @@
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
         "weight": 0.2,
-        "histogram": -0.16006062232622764
+        "histogram": -0.12444212706121538
       },
       {
         "agent": "volume_agent",
@@ -3178,9 +3178,9 @@
         "signal": "BEKLE",
         "signal_value": 0.2,
         "confidence": 0.4,
-        "reasoning": "RSI nötr bölgede (58.8), net momentum yok.",
+        "reasoning": "RSI nötr bölgede (56.0), net momentum yok.",
         "weight": 0.2,
-        "rsi": 58.79226230718335
+        "rsi": 56.01572669317713
       },
       {
         "agent": "macd_agent",
@@ -3191,7 +3191,7 @@
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
         "weight": 0.2,
-        "histogram": 1.185278310515193
+        "histogram": 0.8852140882258119
       },
       {
         "agent": "volume_agent",
@@ -3229,7 +3229,7 @@
     "ticker": "TAVHL.IS",
     "as_of_date": "2026-07-03",
     "final_signal": "SAT",
-    "final_score": -0.1489,
+    "final_score": -0.2089,
     "has_conflict": true,
     "regime_multiplier": 1.0,
     "regime_note": "XU100 yükseliş trendinde.",
@@ -3256,20 +3256,20 @@
         "signal": "BEKLE",
         "signal_value": 0.2,
         "confidence": 0.4,
-        "reasoning": "RSI nötr bölgede (47.3), net momentum yok.",
+        "reasoning": "RSI nötr bölgede (47.9), net momentum yok.",
         "weight": 0.2,
-        "rsi": 47.27716139233878
+        "rsi": 47.896137463867504
       },
       {
         "agent": "macd_agent",
         "ticker": "TAVHL.IS",
         "as_of_date": "2026-07-03",
-        "signal": "BEKLE",
-        "signal_value": -0.45,
-        "confidence": 0.5,
-        "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
+        "signal": "SAT",
+        "signal_value": -0.75,
+        "confidence": 0.7,
+        "reasoning": "MACD sinyal çizgisini aşağı kesti (bearish cross).",
         "weight": 0.2,
-        "histogram": -0.9737120665826038
+        "histogram": -0.18727353706236372
       },
       {
         "agent": "volume_agent",
@@ -3321,7 +3321,7 @@
         "confidence": 0.4,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=11.1).",
         "weight": 0.25,
-        "adx": 11.147342085754207
+        "adx": 11.147342085754152
       },
       {
         "agent": "rsi_agent",
@@ -3330,9 +3330,9 @@
         "signal": "BEKLE",
         "signal_value": 0.2,
         "confidence": 0.4,
-        "reasoning": "RSI nötr bölgede (49.4), net momentum yok.",
+        "reasoning": "RSI nötr bölgede (50.9), net momentum yok.",
         "weight": 0.2,
-        "rsi": 49.40187547477717
+        "rsi": 50.91703177536916
       },
       {
         "agent": "macd_agent",
@@ -3343,7 +3343,7 @@
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
         "weight": 0.2,
-        "histogram": -0.09897581438497444
+        "histogram": -0.07502356537113825
       },
       {
         "agent": "volume_agent",
@@ -3392,10 +3392,10 @@
         "as_of_date": "2026-07-03",
         "signal": "AL",
         "signal_value": 0.8,
-        "confidence": 0.5424393767167419,
+        "confidence": 0.5424393767167368,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=27.1).",
         "weight": 0.25,
-        "adx": 27.121968835837095
+        "adx": 27.121968835836842
       },
       {
         "agent": "rsi_agent",
@@ -3404,9 +3404,9 @@
         "signal": "BEKLE",
         "signal_value": 0.0,
         "confidence": 0.3,
-        "reasoning": "RSI nötr (66.7).",
+        "reasoning": "RSI nötr (64.7).",
         "weight": 0.2,
-        "rsi": 66.70821252846399
+        "rsi": 64.67600235142521
       },
       {
         "agent": "macd_agent",
@@ -3417,7 +3417,7 @@
         "confidence": 0.35,
         "reasoning": "MACD pozitif ama momentum zayıflıyor.",
         "weight": 0.2,
-        "histogram": 0.7743123983194362
+        "histogram": 1.0591484707004621
       },
       {
         "agent": "volume_agent",
@@ -3478,9 +3478,9 @@
         "signal": "BEKLE",
         "signal_value": 0.0,
         "confidence": 0.3,
-        "reasoning": "RSI nötr (64.5).",
+        "reasoning": "RSI nötr (62.7).",
         "weight": 0.2,
-        "rsi": 64.52036839674119
+        "rsi": 62.671067159451205
       },
       {
         "agent": "macd_agent",
@@ -3491,7 +3491,7 @@
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
         "weight": 0.2,
-        "histogram": 0.5368810560988067
+        "histogram": 0.37141744422242745
       },
       {
         "agent": "volume_agent",
@@ -3547,7 +3547,7 @@
         "confidence": 0.3,
         "reasoning": "Trend belirsiz / yatay piyasa.",
         "weight": 0.25,
-        "adx": 10.489950359796238
+        "adx": 10.489950359806253
       },
       {
         "agent": "rsi_agent",
@@ -3556,9 +3556,9 @@
         "signal": "BEKLE",
         "signal_value": 0.2,
         "confidence": 0.4,
-        "reasoning": "RSI nötr bölgede (48.3), net momentum yok.",
+        "reasoning": "RSI nötr bölgede (48.2), net momentum yok.",
         "weight": 0.2,
-        "rsi": 48.28608325390429
+        "rsi": 48.1911292862094
       },
       {
         "agent": "macd_agent",
@@ -3569,7 +3569,7 @@
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
         "weight": 0.2,
-        "histogram": -0.18770050444215736
+        "histogram": -0.19225672849471276
       },
       {
         "agent": "volume_agent",
