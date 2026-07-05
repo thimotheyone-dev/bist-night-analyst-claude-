@@ -15,7 +15,7 @@ from __future__ import annotations
 import pandas as pd
 
 from config import settings
-from src.agents.base_agent import AgentSignal, BaseAgent
+from src.agents.base_agent import AgentSignal, BaseAgent, get_data_as_of
 from src.agents.confirmation_agent import ConfirmationAgent
 from src.agents.macd_agent import MACDAgent
 from src.agents.pattern_agent import PatternAgent
@@ -97,10 +97,23 @@ def analyze_ticker(
     agents: dict[str, BaseAgent],
     benchmark_features: pd.DataFrame | None = None,
 ) -> dict:
-    """Tek bir hisse için tüm agent'ları çalıştırır, ağırlıklı skor üretir."""
+    """Tek bir hisse için tüm agent'ları çalıştırır, ağırlıklı skor üretir.
+
+    Performans notu: `features`, burada BİR KEZ as_of_date'e göre dilimlenir
+    (`safe_features`) ve her agent'a bu HAZIR dilim geçirilir. Her agent
+    kendi içinde yine get_data_as_of() çağırır (bkz. base_agent.py — bu
+    yapısal güvenlik kapısı kaldırılmadı), ama veri zaten sınırlı olduğu
+    için bu çağrılar artık gerçek bir dilimleme/kopyalama yapmadan anında
+    döner. Önceden her agent, tam (dilimlenmemiş) `features`'ı alıp kendi
+    başına dilimliyordu — aynı (hisse, tarih) için 5 kez tekrarlanan bu
+    işlem, genetik optimizasyonda ölçülen ana performans darboğazıydı.
+    """
+    as_of_ts = pd.Timestamp(as_of_date)
+    safe_features = get_data_as_of(features, as_of_ts)
+
     agent_outputs: list[AgentSignal] = []
     for name, agent in agents.items():
-        result = agent.analyze(ticker, features, as_of_date)
+        result = agent.analyze(ticker, safe_features, as_of_ts)
         result.weight = weights.get(name, 1.0 / len(agents))
         agent_outputs.append(result)
 
@@ -113,8 +126,6 @@ def analyze_ticker(
 
     final_signal = _signal_from_score(final_score)
 
-    as_of_ts = pd.Timestamp(as_of_date)
-    safe_features = features.loc[:as_of_ts]
     last_row = safe_features.iloc[-1] if not safe_features.empty else pd.Series(dtype=float)
     stop_target = _compute_stop_target(last_row, final_signal)
 
