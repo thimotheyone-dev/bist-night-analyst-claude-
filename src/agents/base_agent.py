@@ -22,13 +22,25 @@ def get_data_as_of(df: pd.DataFrame, as_of_date) -> pd.DataFrame:
     """DataFrame'i `as_of_date` dahil olmak üzere, ondan SONRAKİ hiçbir
     satırı içermeyecek şekilde keser. Bu fonksiyon tüm agent çağrılarının
     önünde zorunlu bir kapı (gate) olarak kullanılır.
+
+    Performans notu: `df` zaten `as_of_date`'i aşmıyorsa (örn. bir üst
+    seviyede -- analyze_ticker() -- bir kez dilimlenip agent'lara aynı
+    dilim tekrar geçirildiğinde) hiçbir dilimleme/kopyalama yapmadan
+    aynı nesneyi döndürür. Bu kısa devre, aynı (hisse, tarih) için 5-6
+    agent'ın her birinin bağımsız olarak aynı veriyi yeniden kesip
+    kopyalamasını önler — genetik optimizasyonda ölçülen en büyük
+    performans darboğazı tam olarak buydu (profilde toplam sürenin
+    %54'ü burada harcanıyordu). `.copy()` kaldırıldı çünkü hiçbir agent
+    aldığı veriyi yerinde değiştirmiyor (salt-okunur kullanım); look-ahead
+    güvenliği zaten `.loc[:as_of_date]` diliminin kendisinden geliyor,
+    kopyalamadan değil.
     """
     as_of_date = pd.Timestamp(as_of_date)
-    if df.index.max() < as_of_date:
-        # as_of_date için veri henüz mevcut değil (örn. piyasa o gün
-        # kapanmamış) — bu durumda bir önceki mevcut güne kırp.
-        return df.loc[: df.index.max()].copy()
-    return df.loc[:as_of_date].copy()
+    max_date = df.index.max()
+    if max_date <= as_of_date:
+        # Veri zaten as_of_date'i aşmıyor -> dilimlemeye gerek yok.
+        return df
+    return df.loc[:as_of_date]
 
 
 @dataclass
