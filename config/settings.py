@@ -44,6 +44,10 @@ DEFAULT_PARAMS = {
     "bb_std": 2.0,
     "rel_volume_period": 20,
     "rel_volume_threshold": 1.5,
+    # ── İkinci göz doğrulama katmanı (ConfirmationAgent) parametreleri ────
+    "min_liquidity_try": 5_000_000.0,  # 20 günlük ort. min. TL cinsinden hacim
+    "min_risk_reward": 1.5,            # min. kabul edilebilir R:R oranı
+    "extreme_rsi_veto": 85,            # bu RSI seviyesi üstü AL'ı veto eder
 }
 
 # ── Sinyal eşikleri ───────────────────────────────────────────────────────
