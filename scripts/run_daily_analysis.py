@@ -29,7 +29,7 @@ import pandas as pd
 
 from config import settings
 from config.symbols import get_benchmark_ticker, get_yfinance_watchlist
-from src.agents.supervisor import analyze_watchlist
+from src.agents.supervisor import analyze_watchlist, apply_confirmation_gate
 from src.backtest.engine import EVALUATION_HORIZON_DAYS
 from src.data_collector.collector import fetch_watchlist_data
 from src.data_collector.preprocessor import clean_watchlist_data
@@ -83,6 +83,9 @@ def main() -> None:
     # 4. Sinyal üret
     weights = load_weights()
     results = analyze_watchlist(features_by_ticker, as_of_date, weights, params, benchmark_features)
+
+    # 4b. İkinci göz doğrulaması: sadece AL sinyallerine uygulanır
+    results = apply_confirmation_gate(results, features_by_ticker, as_of_date, params)
 
     # 5. Sonuçları kaydet (özet CSV + agent bazlı tam detay JSON)
     report_df = results_to_dataframe(results)
