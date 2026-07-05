@@ -85,9 +85,23 @@ WEIGHT_LEARNING_RATE = 0.05
 
 # Genetik algoritma periyodu (kaç günde bir parametre optimizasyonu çalışır)
 GENETIC_OPTIMIZATION_INTERVAL_DAYS = 7
-GENETIC_POPULATION_SIZE = 24
-GENETIC_GENERATIONS = 15
-GENETIC_WALKFORWARD_WINDOWS = 4  # walk-forward train/test pencere sayısı
+# NOT (performans kalibrasyonu): Bu değerler, GA'nın her (birey × jenerasyon
+# × pencere) kombinasyonu için TÜM hisseleri tarih tarih yeniden analiz
+# etmesi nedeniyle doğrudan toplam süreyi belirliyor. Eski varsayılanlar
+# (pop=24, jenerasyon=15, pencere=4, tüm 50 hisse) GitHub Actions'ın 60
+# dakikalık limitini fazlasıyla aşıyordu (~13+ saat). Ölçülen gerçek
+# performansa göre (bkz. src/agents/base_agent.py::get_data_as_of
+# optimizasyonu) kalibre edildi: bu ayarlarla tahmini süre ~15-20 dakika
+# (60 dakikalık limitte ~3x güvenlik payı bırakır).
+GENETIC_POPULATION_SIZE = 15
+GENETIC_GENERATIONS = 10
+GENETIC_WALKFORWARD_WINDOWS = 3
+# GA, parametreleri TÜM watchlist yerine rastgele seçilmiş bu kadar
+# hisse üzerinde değerlendirir (performans amaçlı) — bulunan parametreler
+# yine de gece taramasında TÜM hisselere uygulanır, sadece GA'nın kendi
+# iç değerlendirme maliyeti azalır. Her haftalık çalıştırmada farklı bir
+# alt küme seçilir, böylece uzun vadede tüm watchlist örneklenmiş olur.
+GENETIC_TICKER_SAMPLE_SIZE = 20  # walk-forward train/test pencere sayısı
 
 # ── Dosya yolları ─────────────────────────────────────────────────────────
 WEIGHTS_FILE = MODELS_DIR / "agent_weights.json"
