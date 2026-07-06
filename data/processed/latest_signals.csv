@@ -1,49 +1,49 @@
 Hisse,Sinyal,Skor,Kapanış,Stop,Hedef,R:R,İkinci Onay,Onay Notu,Çelişki,Rejim Notu,Tarih
-ENKAI,AL,0.2241,93.7,88.6,105.72,2.36,❌ Reddedildi,Risk/Ödül yetersiz (R:R=2.36 < 2.56).,,XU100 yükseliş trendinde.,2026-07-03
-ULKER,AL,0.1985,100.1,95.55,112.24,2.67,✅ Onaylandı,"Tüm kriterler sağlandı, sinyal doğrulandı.",,XU100 yükseliş trendinde.,2026-07-03
-SKBNK,AL,0.1978,17.7,16.4,20.68,2.29,❌ Reddedildi,Risk/Ödül yetersiz (R:R=2.29 < 2.56).,,XU100 yükseliş trendinde.,2026-07-03
-ASELS,AL,0.1555,399.5,364.88,465.78,1.91,❌ Reddedildi,Risk/Ödül yetersiz (R:R=1.91 < 2.56).,,XU100 yükseliş trendinde.,2026-07-03
-TUPRS,AL,0.1515,248.2,234.53,276.09,2.04,❌ Reddedildi,Risk/Ödül yetersiz (R:R=2.04 < 2.56).,,XU100 yükseliş trendinde.,2026-07-03
-CCOLA,AL,0.1515,85.8,81.04,94.37,1.8,❌ Reddedildi,Risk/Ödül yetersiz (R:R=1.8 < 2.56).,,XU100 yükseliş trendinde.,2026-07-03
-KUYAS,BEKLE,0.1075,77.5,,,,,,,XU100 yükseliş trendinde.,2026-07-03
-TABGD,BEKLE,0.0888,240.6,,,,,,,XU100 yükseliş trendinde.,2026-07-03
-TEHOL,BEKLE,0.0879,39.02,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-IEYHO,BEKLE,0.0854,152.0,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-ALTNY,BEKLE,0.0795,17.47,,,,,,,XU100 yükseliş trendinde.,2026-07-03
-THYAO,BEKLE,0.0705,334.0,,,,,,,XU100 yükseliş trendinde.,2026-07-03
-OTKAR,BEKLE,0.0586,388.25,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-MANAS,BEKLE,0.0525,30.16,,,,,,,XU100 yükseliş trendinde.,2026-07-03
-IZFAS,BEKLE,0.052,66.95,,,,,,,XU100 yükseliş trendinde.,2026-07-03
-KRDMA,BEKLE,0.052,39.5,,,,,,,XU100 yükseliş trendinde.,2026-07-03
-TTKOM,BEKLE,0.0445,61.2,,,,,,,XU100 yükseliş trendinde.,2026-07-03
-KBORU,BEKLE,0.036,26.92,,,,,,,XU100 yükseliş trendinde.,2026-07-03
-PEKGY,BEKLE,0.036,14.29,,,,,,,XU100 yükseliş trendinde.,2026-07-03
-CIMSA,BEKLE,0.0285,48.62,,,,,,,XU100 yükseliş trendinde.,2026-07-03
-KATMR,BEKLE,0.0129,2.71,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-BIOEN,BEKLE,0.0105,18.76,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-SISE,BEKLE,0.0047,44.34,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-KRDMD,BEKLE,0.0047,38.74,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-AEFES,BEKLE,0.0047,20.5,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-VESTL,BEKLE,0.0039,24.92,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-GRSEL,BEKLE,0.0039,308.0,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-MGROS,BEKLE,-0.0107,632.5,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-BIMAS,BEKLE,-0.0107,357.0,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-TCKRC,BEKLE,-0.0107,134.2,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-SOKM,BEKLE,-0.0165,46.42,,,,,,,XU100 yükseliş trendinde.,2026-07-03
-ARCLK,BEKLE,-0.021,100.2,,,,,,,XU100 yükseliş trendinde.,2026-07-03
-SAHOL,BEKLE,-0.0217,94.5,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-EREGL,BEKLE,-0.0217,40.1,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-YKBNK,BEKLE,-0.0217,38.02,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-ISCTR,BEKLE,-0.0217,14.21,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-TCELL,BEKLE,-0.0305,107.2,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-KCHOL,BEKLE,-0.0305,189.6,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-TOASO,BEKLE,-0.0305,302.0,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-VAKBN,BEKLE,-0.0305,31.88,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-TAVHL,BEKLE,-0.044,276.5,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-PGSUS,BEKLE,-0.0465,174.1,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-GARAN,BEKLE,-0.0465,133.5,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-BINHO,BEKLE,-0.0527,10.81,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-PAPIL,BEKLE,-0.0572,14.94,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-ENERY,BEKLE,-0.0658,9.58,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-03
-SASA,BEKLE,-0.1054,2.4,,,,,,,XU100 yükseliş trendinde.,2026-07-03
-FROTO,BEKLE,-0.1173,83.75,,,,,,,XU100 yükseliş trendinde.,2026-07-03
+SKBNK,AL,0.1764,19.08,17.66,22.38,2.33,❌ Reddedildi,Risk/Ödül yetersiz (R:R=2.33 < 2.56). RSI aşırı yüksek (77.0 ≥ 75) — tükenme rallisi riski.,⚠️,XU100 yükseliş trendinde.,2026-07-06
+ENKAI,AL,0.1659,91.05,85.86,103.08,2.32,❌ Reddedildi,Risk/Ödül yetersiz (R:R=2.32 < 2.56).,,XU100 yükseliş trendinde.,2026-07-06
+ALTNY,AL,0.1627,18.07,16.59,20.94,1.94,❌ Reddedildi,Risk/Ödül yetersiz (R:R=1.94 < 2.56).,,XU100 yükseliş trendinde.,2026-07-06
+TABGD,AL,0.1441,233.1,211.26,278.84,2.09,❌ Reddedildi,Risk/Ödül yetersiz (R:R=2.09 < 2.56).,,XU100 yükseliş trendinde.,2026-07-06
+CIMSA,AL,0.1313,48.24,45.5,53.39,1.88,❌ Reddedildi,Risk/Ödül yetersiz (R:R=1.88 < 2.56).,,XU100 yükseliş trendinde.,2026-07-06
+ULKER,BEKLE,0.1177,99.3,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+IEYHO,BEKLE,0.1171,153.5,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+THYAO,BEKLE,0.1168,347.0,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+KUYAS,BEKLE,0.1099,77.6,,,,,,,XU100 yükseliş trendinde.,2026-07-06
+TEHOL,BEKLE,0.1028,39.02,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+ASELS,BEKLE,0.0867,401.75,,,,,,,XU100 yükseliş trendinde.,2026-07-06
+TUPRS,BEKLE,0.0794,247.4,,,,,,,XU100 yükseliş trendinde.,2026-07-06
+KRDMD,BEKLE,0.0502,39.14,,,,,,,XU100 yükseliş trendinde.,2026-07-06
+KRDMA,BEKLE,0.0485,39.54,,,,,,,XU100 yükseliş trendinde.,2026-07-06
+BIMAS,BEKLE,0.0414,371.0,,,,,,,XU100 yükseliş trendinde.,2026-07-06
+KBORU,BEKLE,0.0375,26.9,,,,,,,XU100 yükseliş trendinde.,2026-07-06
+PEKGY,BEKLE,0.0373,14.29,,,,,,,XU100 yükseliş trendinde.,2026-07-06
+TCELL,BEKLE,0.0372,108.6,,,,,,,XU100 yükseliş trendinde.,2026-07-06
+EREGL,BEKLE,0.0354,41.52,,,,,,,XU100 yükseliş trendinde.,2026-07-06
+MGROS,BEKLE,0.0251,639.0,,,,,,,XU100 yükseliş trendinde.,2026-07-06
+BIOEN,BEKLE,0.0229,18.81,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+IZFAS,BEKLE,0.0186,63.5,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+TOASO,BEKLE,0.0142,301.5,,,,,,,XU100 yükseliş trendinde.,2026-07-06
+TCKRC,BEKLE,0.0075,139.5,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+KATMR,BEKLE,0.007,2.66,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+CCOLA,BEKLE,0.006,82.4,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+ISCTR,BEKLE,0.0002,14.34,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+AEFES,BEKLE,-0.0018,20.22,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+VESTL,BEKLE,-0.0147,24.5,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+VAKBN,BEKLE,-0.0201,31.94,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+KCHOL,BEKLE,-0.0202,188.0,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+SAHOL,BEKLE,-0.0229,93.6,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+OTKAR,BEKLE,-0.0235,374.0,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+TTKOM,BEKLE,-0.0282,60.45,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+MANAS,BEKLE,-0.0299,29.9,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+GARAN,BEKLE,-0.041,133.7,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+PGSUS,BEKLE,-0.0419,174.8,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+GRSEL,BEKLE,-0.0433,302.0,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+PAPIL,BEKLE,-0.0468,15.03,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+YKBNK,BEKLE,-0.0485,37.46,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+SISE,BEKLE,-0.0573,43.48,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+ARCLK,BEKLE,-0.0656,99.6,,,,,,,XU100 yükseliş trendinde.,2026-07-06
+TAVHL,BEKLE,-0.0713,272.5,,,,,,,XU100 yükseliş trendinde.,2026-07-06
+BINHO,BEKLE,-0.1079,10.42,,,,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+SOKM,BEKLE,-0.109,45.52,,,,,,,XU100 yükseliş trendinde.,2026-07-06
+ENERY,SAT,-0.19,9.64,10.69,7.11,2.41,,,⚠️,XU100 yükseliş trendinde.,2026-07-06
+SASA,SAT,-0.1984,2.34,2.52,1.98,2.01,,,,XU100 yükseliş trendinde.,2026-07-06
+FROTO,SAT,-0.2115,82.0,86.1,72.66,2.28,,,,XU100 yükseliş trendinde.,2026-07-06
