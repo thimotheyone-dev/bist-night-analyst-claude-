@@ -26,7 +26,12 @@ class TrendAgent(BaseAgent):
             reasoning = f"MA50>MA200 ve güçlü trend (ADX={adx_val:.1f})."
             signal = "AL"
         elif trend_up and not strong_trend:
-            value, conf = 0.3, 0.4
+            # Kademeli: ADX eşiğe (adx_threshold) ne kadar yakınsa, "zayıf
+            # ama var olan" yükseliş eğilimi o kadar güvenilir sayılır.
+            # Eskiden ADX=0.1 ile ADX=19.9 aynı sabit puanı alıyordu.
+            proximity = min(1.0, adx_val / adx_threshold) if pd.notna(adx_val) and adx_threshold > 0 else 0.0
+            value = 0.15 + 0.2 * proximity
+            conf = 0.25 + 0.25 * proximity
             reasoning = f"MA50>MA200 ama trend zayıf (ADX={adx_val:.1f})."
             signal = "BEKLE"
         elif not trend_up and strong_trend:
@@ -34,8 +39,16 @@ class TrendAgent(BaseAgent):
             reasoning = f"MA50<MA200 ve güçlü düşüş trendi (ADX={adx_val:.1f})."
             signal = "SAT"
         else:
-            value, conf = -0.2, 0.3
-            reasoning = "Trend belirsiz / yatay piyasa."
+            # Aynı kademeli mantık düşüş tarafı için: ADX~0 gerçekten yatay
+            # piyasa, eşiğe yakın ADX ise zayıf ama belirgin bir düşüş
+            # eğilimi anlamına gelir.
+            proximity = min(1.0, adx_val / adx_threshold) if pd.notna(adx_val) and adx_threshold > 0 else 0.0
+            value = -0.1 - 0.15 * proximity
+            conf = 0.2 + 0.2 * proximity
+            reasoning = (
+                f"MA50<MA200, zayıf düşüş eğilimi (ADX={adx_val:.1f})."
+                if proximity > 0.5 else "Trend belirsiz / yatay piyasa."
+            )
             signal = "BEKLE"
 
         return AgentSignal(
