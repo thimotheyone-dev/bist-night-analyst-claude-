@@ -730,7 +730,7 @@ as_of_date,ticker,agent,signal,signal_value,confidence,weight,result_available_d
 2026-07-03,OTKAR.IS,volume_agent,BEKLE,0.1,0.3,0.15,2026-07-08,,,False
 2026-07-03,OTKAR.IS,pattern_agent,AL,0.6,0.6,0.2,2026-07-08,,,False
 2026-07-03,IEYHO.IS,trend_agent,AL,0.8,1.0,0.25,2026-07-08,,,False
-2026-07-03,IEYHO.IS,rsi_agent,BEKLE,-0.3,0.4,0.2,2026-07-08,,,False
+2026-07-03,IEYHO.IS,rsi_agent,BEKLE,-0.4675787902935233,0.5340630322348187,0.2,2026-07-08,,,False
 2026-07-03,IEYHO.IS,macd_agent,BEKLE,0.15,0.35,0.2,2026-07-08,,,False
 2026-07-03,IEYHO.IS,volume_agent,BEKLE,-0.1,0.3,0.15,2026-07-08,,,False
 2026-07-03,IEYHO.IS,pattern_agent,BEKLE,0.0,0.25,0.2,2026-07-08,,,False
@@ -764,7 +764,7 @@ as_of_date,ticker,agent,signal,signal_value,confidence,weight,result_available_d
 2026-07-03,TOASO.IS,macd_agent,BEKLE,-0.45,0.5,0.2,2026-07-08,,,False
 2026-07-03,TOASO.IS,volume_agent,BEKLE,-0.1,0.3,0.15,2026-07-08,,,False
 2026-07-03,TOASO.IS,pattern_agent,BEKLE,-0.4,0.45,0.2,2026-07-08,,,False
-2026-07-03,SKBNK.IS,trend_agent,AL,0.8,0.6714250956126828,0.25,2026-07-08,,,False
+2026-07-03,SKBNK.IS,trend_agent,AL,0.8,0.671425095612694,0.25,2026-07-08,,,False
 2026-07-03,SKBNK.IS,rsi_agent,BEKLE,0.0,0.3,0.2,2026-07-08,,,False
 2026-07-03,SKBNK.IS,macd_agent,BEKLE,0.45,0.5,0.2,2026-07-08,,,False
 2026-07-03,SKBNK.IS,volume_agent,BEKLE,0.1,0.3,0.15,2026-07-08,,,False
@@ -794,12 +794,12 @@ as_of_date,ticker,agent,signal,signal_value,confidence,weight,result_available_d
 2026-07-03,KATMR.IS,macd_agent,BEKLE,0.15,0.35,0.2,2026-07-08,,,False
 2026-07-03,KATMR.IS,volume_agent,BEKLE,0.0,0.3,0.15,2026-07-08,,,False
 2026-07-03,KATMR.IS,pattern_agent,BEKLE,0.15,0.4,0.2,2026-07-08,,,False
-2026-07-03,ENKAI.IS,trend_agent,AL,0.8,0.7329606331340179,0.25,2026-07-08,,,False
+2026-07-03,ENKAI.IS,trend_agent,AL,0.8,0.7329606328693236,0.25,2026-07-08,,,False
 2026-07-03,ENKAI.IS,rsi_agent,BEKLE,0.2,0.4,0.2,2026-07-08,,,False
 2026-07-03,ENKAI.IS,macd_agent,BEKLE,0.45,0.5,0.2,2026-07-08,,,False
 2026-07-03,ENKAI.IS,volume_agent,BEKLE,0.1,0.3,0.15,2026-07-08,,,False
 2026-07-03,ENKAI.IS,pattern_agent,BEKLE,0.15,0.4,0.2,2026-07-08,,,False
-2026-07-03,EREGL.IS,trend_agent,AL,0.8,0.4824999259077719,0.25,2026-07-08,,,False
+2026-07-03,EREGL.IS,trend_agent,AL,0.8,0.4824999259077426,0.25,2026-07-08,,,False
 2026-07-03,EREGL.IS,rsi_agent,BEKLE,0.2,0.4,0.2,2026-07-08,,,False
 2026-07-03,EREGL.IS,macd_agent,BEKLE,-0.45,0.5,0.2,2026-07-08,,,False
 2026-07-03,EREGL.IS,volume_agent,BEKLE,-0.1,0.3,0.15,2026-07-08,,,False
@@ -844,7 +844,7 @@ as_of_date,ticker,agent,signal,signal_value,confidence,weight,result_available_d
 2026-07-03,YKBNK.IS,macd_agent,BEKLE,-0.45,0.5,0.2,2026-07-08,,,False
 2026-07-03,YKBNK.IS,volume_agent,BEKLE,-0.1,0.3,0.15,2026-07-08,,,False
 2026-07-03,YKBNK.IS,pattern_agent,BEKLE,-0.4,0.45,0.2,2026-07-08,,,False
-2026-07-03,FROTO.IS,trend_agent,SAT,-0.7,0.6361671513037321,0.25,2026-07-08,,,False
+2026-07-03,FROTO.IS,trend_agent,SAT,-0.7,0.6361671512912079,0.25,2026-07-08,,,False
 2026-07-03,FROTO.IS,rsi_agent,BEKLE,0.0,0.3,0.2,2026-07-08,,,False
 2026-07-03,FROTO.IS,macd_agent,BEKLE,-0.45,0.5,0.2,2026-07-08,,,False
 2026-07-03,FROTO.IS,volume_agent,BEKLE,0.0,0.3,0.15,2026-07-08,,,False
@@ -869,7 +869,7 @@ as_of_date,ticker,agent,signal,signal_value,confidence,weight,result_available_d
 2026-07-03,PAPIL.IS,macd_agent,BEKLE,0.15,0.35,0.2,2026-07-08,,,False
 2026-07-03,PAPIL.IS,volume_agent,BEKLE,0.0,0.3,0.15,2026-07-08,,,False
 2026-07-03,PAPIL.IS,pattern_agent,BEKLE,0.0,0.25,0.2,2026-07-08,,,False
-2026-07-03,TUPRS.IS,trend_agent,AL,0.8,0.4594613325346906,0.25,2026-07-08,,,False
+2026-07-03,TUPRS.IS,trend_agent,AL,0.8,0.4594613325346282,0.25,2026-07-08,,,False
 2026-07-03,TUPRS.IS,rsi_agent,BEKLE,0.2,0.4,0.2,2026-07-08,,,False
 2026-07-03,TUPRS.IS,macd_agent,BEKLE,0.45,0.5,0.2,2026-07-08,,,False
 2026-07-03,TUPRS.IS,volume_agent,BEKLE,0.1,0.3,0.15,2026-07-08,,,False
@@ -890,7 +890,7 @@ as_of_date,ticker,agent,signal,signal_value,confidence,weight,result_available_d
 2026-07-03,CIMSA.IS,volume_agent,BEKLE,0.1,0.3,0.15,2026-07-08,,,False
 2026-07-03,CIMSA.IS,pattern_agent,BEKLE,0.0,0.25,0.2,2026-07-08,,,False
 2026-07-03,TEHOL.IS,trend_agent,AL,0.8,1.0,0.25,2026-07-08,,,False
-2026-07-03,TEHOL.IS,rsi_agent,BEKLE,-0.3,0.4,0.2,2026-07-08,,,False
+2026-07-03,TEHOL.IS,rsi_agent,BEKLE,-0.5271079844346804,0.5816863875477444,0.2,2026-07-08,,,False
 2026-07-03,TEHOL.IS,macd_agent,BEKLE,0.15,0.35,0.2,2026-07-08,,,False
 2026-07-03,TEHOL.IS,volume_agent,BEKLE,0.1,0.3,0.15,2026-07-08,,,False
 2026-07-03,TEHOL.IS,pattern_agent,BEKLE,0.2,0.35,0.2,2026-07-08,,,False
@@ -909,7 +909,7 @@ as_of_date,ticker,agent,signal,signal_value,confidence,weight,result_available_d
 2026-07-03,TCKRC.IS,macd_agent,BEKLE,-0.45,0.5,0.2,2026-07-08,,,False
 2026-07-03,TCKRC.IS,volume_agent,BEKLE,-0.1,0.3,0.15,2026-07-08,,,False
 2026-07-03,TCKRC.IS,pattern_agent,BEKLE,0.0,0.25,0.2,2026-07-08,,,False
-2026-07-03,GARAN.IS,trend_agent,SAT,-0.7,0.4239074821026426,0.25,2026-07-08,,,False
+2026-07-03,GARAN.IS,trend_agent,SAT,-0.7,0.4239074821026423,0.25,2026-07-08,,,False
 2026-07-03,GARAN.IS,rsi_agent,BEKLE,0.2,0.4,0.2,2026-07-08,,,False
 2026-07-03,GARAN.IS,macd_agent,BEKLE,-0.45,0.5,0.2,2026-07-08,,,False
 2026-07-03,GARAN.IS,volume_agent,BEKLE,-0.1,0.3,0.15,2026-07-08,,,False
@@ -944,7 +944,7 @@ as_of_date,ticker,agent,signal,signal_value,confidence,weight,result_available_d
 2026-07-03,AEFES.IS,macd_agent,BEKLE,-0.45,0.5,0.2,2026-07-08,,,False
 2026-07-03,AEFES.IS,volume_agent,BEKLE,-0.1,0.3,0.15,2026-07-08,,,False
 2026-07-03,AEFES.IS,pattern_agent,BEKLE,0.15,0.4,0.2,2026-07-08,,,False
-2026-07-03,THYAO.IS,trend_agent,AL,0.8,0.5424393767167368,0.25,2026-07-08,,,False
+2026-07-03,THYAO.IS,trend_agent,AL,0.8,0.5424393767167419,0.25,2026-07-08,,,False
 2026-07-03,THYAO.IS,rsi_agent,BEKLE,0.0,0.3,0.2,2026-07-08,,,False
 2026-07-03,THYAO.IS,macd_agent,BEKLE,0.15,0.35,0.2,2026-07-08,,,False
 2026-07-03,THYAO.IS,volume_agent,BEKLE,-0.1,0.3,0.15,2026-07-08,,,False
