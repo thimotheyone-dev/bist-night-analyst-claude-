@@ -38,7 +38,12 @@ def build_agents(params: dict | None = None) -> dict[str, BaseAgent]:
 
 def compute_regime_multiplier(benchmark_features: pd.DataFrame | None, as_of_date) -> tuple[float, str]:
     """BIST100 rejim filtresi: piyasa genel trendi düşüşteyse, AL sinyallerini
-    bastırır (çarpan < 1.0); yükselişteyse normal/güçlendirilmiş bırakır."""
+    bastırır (çarpan < 1.0); yükselişteyse normal/güçlendirilmiş bırakır.
+
+    NOT (kalibrasyon): Eskiden ADX=20'de sert bir eşik vardı — ADX=19.9 ile
+    ADX=20.1 tamamen farklı sabit çarpanlara (1.0 vs 1.15, ya da 0.85 vs
+    0.6) sıçrıyordu. Artık trend gücü (ADX) ile SÜREKLİ (kademeli) olarak
+    ölçekleniyor; ani sıçrama yok."""
     if benchmark_features is None or benchmark_features.empty:
         return 1.0, "Benchmark verisi yok, rejim filtresi uygulanmadı."
 
@@ -50,15 +55,23 @@ def compute_regime_multiplier(benchmark_features: pd.DataFrame | None, as_of_dat
     last = safe.iloc[-1]
     trend_up = bool(last.get("trend_up", True))
     adx_val = last.get("adx", float("nan"))
-    strong = pd.notna(adx_val) and adx_val >= 20
+    trend_strength = min(1.0, adx_val / 50) if pd.notna(adx_val) else 0.0
 
-    if trend_up and strong:
-        return 1.15, "XU100 güçlü yükseliş trendinde — sinyaller güçlendirildi."
     if trend_up:
-        return 1.0, "XU100 yükseliş trendinde."
-    if not trend_up and strong:
-        return 0.6, "XU100 güçlü düşüş trendinde — AL sinyalleri bastırıldı."
-    return 0.85, "XU100 yatay/zayıf trendde."
+        # 1.0 (zayıf/yatay yükseliş) -> 1.15 (çok güçlü yükseliş), kademeli
+        multiplier = 1.0 + 0.15 * trend_strength
+        note = (
+            f"XU100 güçlü yükseliş trendinde (ADX={adx_val:.1f}) — sinyaller güçlendirildi."
+            if trend_strength > 0.5 else "XU100 yükseliş trendinde."
+        )
+    else:
+        # 0.85 (zayıf/yatay düşüş) -> 0.6 (çok güçlü düşüş), kademeli
+        multiplier = 0.85 - 0.25 * trend_strength
+        note = (
+            f"XU100 güçlü düşüş trendinde (ADX={adx_val:.1f}) — AL sinyalleri bastırıldı."
+            if trend_strength > 0.5 else "XU100 yatay/zayıf trendde."
+        )
+    return round(multiplier, 4), note
 
 
 def _signal_from_score(score: float) -> str:
@@ -140,12 +153,21 @@ def analyze_ticker(
 
     # Çelişki tespiti: agent'lar arasında yön uyuşmazlığı var mı? Eskiden
     # bu bilgi sadece ekranda "⚠️" göstermek için hesaplanıyordu, final
-    # skoru hiç etkilemiyordu. Artık gerçek bir ceza çarpanı olarak
-    # uygulanıyor -- agent'lar anlaşamıyorsa, ne kadar yüksek olursa olsun
-    # ham skorun güvenilirliği azalır.
-    directions = [1 if a.signal_value > 0.1 else (-1 if a.signal_value < -0.1 else 0) for a in agent_outputs]
-    has_conflict = len(set(d for d in directions if d != 0)) > 1
-    conflict_mult = params.get("conflict_penalty", 0.8) if has_conflict else 1.0
+    # skoru hiç etkilemiyordu; sonra sabit bir ceza çarpanı eklendi ama o
+    # da çelişkinin ŞİDDETİNE bakmıyordu (+0.15/-0.15 hafif çelişki ile
+    # +0.9/-0.9 şiddetli çelişki AYNI cezayı alıyordu). Artık ceza,
+    # zıt görüşlerin ne kadar birbirinden uzak olduğuyla orantılı:
+    # çelişki ne kadar şiddetliyse skor o kadar küçülür.
+    positive_vals = [a.signal_value for a in agent_outputs if a.signal_value > 0.1]
+    negative_vals = [a.signal_value for a in agent_outputs if a.signal_value < -0.1]
+    has_conflict = bool(positive_vals) and bool(negative_vals)
+
+    if has_conflict:
+        severity = min(1.0, (max(positive_vals) - min(negative_vals)) / 2.0)
+        max_penalty = 1.0 - params.get("conflict_penalty", 0.8)  # ör. 0.8 -> en fazla %20 ceza
+        conflict_mult = 1.0 - max_penalty * severity
+    else:
+        conflict_mult = 1.0
 
     regime_mult, regime_note = compute_regime_multiplier(benchmark_features, as_of_date)
     final_score = max(-1.0, min(1.0, raw_score * regime_mult * conflict_mult))
