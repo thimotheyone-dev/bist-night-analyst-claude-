@@ -168,6 +168,22 @@ düzeltilen dört gerçek sorun:
    varken %50 (nötr) civarında tutuluyor, veri arttıkça gerçek orana
    yakınsıyor.
 
+### İkinci Tur: Kalan Sert Eşiklerin Kademelileştirilmesi
+
+Aynı "ikili değil kademeli" prensibi, ilk turda henüz dokunulmamış üç yere
+daha uygulandı:
+
+6. **TrendAgent'ın "zayıf trend" dalları artık ADX'e göre kademeli.**
+   Eskiden ADX=0.1 ile ADX=19.9 (eşiğe çok yakın) aynı sabit puanı
+   alıyordu. Artık eşiğe yakınlık oranında puan/güven artıyor.
+7. **BIST100 rejim çarpanı artık ADX=20'de sıçramıyor.** Eskiden
+   ADX=19.9 → 1.0x, ADX=20.1 → 1.15x gibi ani, yapay bir sıçrama vardı.
+   Artık trend gücüyle sürekli (kademeli) ölçekleniyor.
+8. **Çelişki cezası artık görüş ayrılığının şiddetiyle orantılı.**
+   Eskiden hafif bir çelişki (+0.15/-0.15) ile şiddetli bir çelişki
+   (+0.9/-0.9) aynı sabit cezayı alıyordu. Artık zıt görüşler ne kadar
+   birbirinden uzaksa ceza o kadar büyük.
+
 ## Neden RL/LangGraph/TA-Lib/VectorBT Kullanılmadı?
 
 Orijinal mimaride önerilen bu araçlar bilinçli olarak sadeleştirildi:
