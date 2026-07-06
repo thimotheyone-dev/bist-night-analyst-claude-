@@ -106,6 +106,14 @@ def update_weights_from_feedback(learning_rate: float = None) -> dict[str, float
     her agent'ın ağırlığını exponential moving update ile günceller.
 
     weight_new = weight_old * (1 - lr) + accuracy * lr
+
+    NOT (kalibrasyon): accuracy, ham ortalama (mean) yerine Bayesian
+    yumuşatma (Beta-benzeri önsel) ile hesaplanıyor. Sistem yeni
+    çalıştırıldığında bir agent'ın sadece 2-3 değerlendirilmiş tahmini
+    olabilir -- ham ortalama kullanılırsa tek bir şanslı/şanssız tahmin
+    accuracy'yi %0'dan %100'e sıçratabilir, bu da ağırlığı gürültüye göre
+    savurur. Yumuşatma, az örnekle %50 (nötr) civarında tutar, örnek
+    sayısı arttıkça gerçek gözlemlenen orana yaklaşır.
     """
     learning_rate = learning_rate or settings.WEIGHT_LEARNING_RATE
     log = load_predictions_log()
@@ -116,16 +124,21 @@ def update_weights_from_feedback(learning_rate: float = None) -> dict[str, float
         logger.info("Henüz değerlendirilmiş tahmin yok, ağırlıklar değişmedi.")
         return weights
 
+    prior_strength = 10  # sanal "önsel" örnek sayısı -- az veri varken bunun etkisi baskın
+    prior_accuracy = 0.5
+
     for agent_name in weights:
         agent_rows = evaluated[evaluated["agent"] == agent_name]
         if agent_rows.empty:
             continue
-        accuracy = agent_rows["was_correct"].astype(bool).mean()
+        n = len(agent_rows)
+        correct = agent_rows["was_correct"].astype(bool).sum()
+        accuracy = (correct + prior_strength * prior_accuracy) / (n + prior_strength)
         old_weight = weights[agent_name]
         weights[agent_name] = round(old_weight * (1 - learning_rate) + accuracy * learning_rate, 4)
         logger.info(
-            "%s: accuracy=%.3f, weight %.4f -> %.4f (n=%d)",
-            agent_name, accuracy, old_weight, weights[agent_name], len(agent_rows),
+            "%s: accuracy=%.3f (yumuşatılmış, n=%d ham=%.3f), weight %.4f -> %.4f",
+            agent_name, accuracy, n, correct / n, old_weight, weights[agent_name],
         )
 
     # Negatif/sıfır ağırlığa düşmesini engelle, normalize et
