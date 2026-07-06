@@ -48,6 +48,22 @@ DEFAULT_PARAMS = {
     "min_liquidity_try": 5_000_000.0,  # 20 günlük ort. min. TL cinsinden hacim
     "min_risk_reward": 1.5,            # min. kabul edilebilir R:R oranı
     "extreme_rsi_veto": 85,            # bu RSI seviyesi üstü AL'ı veto eder
+    # ── Stop/Hedef hesaplama (trend gücüne göre değişken R:R) ─────────────
+    # NOT: Eskiden stop=1.5xATR, hedef=3.0xATR sabitti -> R:R HER ZAMAN tam
+    # olarak 2.0 çıkıyordu, hisseden hisseye hiç değişmiyordu. Bu da
+    # ConfirmationAgent'ın "min_risk_reward" kontrolünü ayırt edici gücü
+    # olmayan bir açma/kapama düğmesine indirgiyordu. Artık hedef, zaten
+    # hesaplanan ADX (trend gücü) ile ölçekleniyor -- güçlü trendde hedef
+    # daha uzağa konuyor, zayıf/yatay trendde daha yakın tutuluyor. Böylece
+    # R:R gerçekten hisseden hisseye, günden güne değişiyor.
+    "atr_stop_multiplier": 1.5,
+    "atr_target_multiplier_base": 2.0,
+    "atr_target_trend_bonus": 2.0,
+    # ── Agent'lar arası görüş ayrılığı cezası ─────────────────────────────
+    # NOT: has_conflict (agent'lar arası yön uyuşmazlığı) eskiden sadece
+    # ekranda "⚠️" göstermek için hesaplanıyordu, final_score'u hiç
+    # etkilemiyordu. Artık çelişki varsa skor bu çarpanla küçültülüyor.
+    "conflict_penalty": 0.8,
 }
 
 # ── Sinyal eşikleri ───────────────────────────────────────────────────────
