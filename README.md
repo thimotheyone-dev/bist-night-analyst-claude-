@@ -134,6 +134,40 @@ sayar, böylece bu eşikler de zamanla gerçek performansa göre ayarlanır.
 Streamlit'te bir hissenin detayına girildiğinde, AL sinyali varsa bu
 katmanın "✅ Onaylandı" / "❌ Reddedildi" sonucu ve gerekçesi gösterilir.
 
+## Sinyal Kalitesi İyileştirmeleri (Kod İncelemesi Sonucu)
+
+Sistematik bir kod incelemesi sonucu, hiçbir yeni indikatör eklemeden
+(mevcut "minimum indikatör" felsefesine sadık kalarak) tespit edilip
+düzeltilen dört gerçek sorun:
+
+1. **Risk/Ödül artık gerçekten değişken.** Eskiden stop=1.5×ATR,
+   hedef=3.0×ATR sabitti — bu da R:R'nin HER hissede, HER gün tam olarak
+   2.0 çıkması demekti. ConfirmationAgent'ın "min_risk_reward" kontrolü bu
+   yüzden hiçbir ayırt edici güce sahip değildi. Artık hedef, zaten
+   hesaplanan ADX (trend gücü) ile ölçekleniyor — güçlü trendde hedef
+   uzağa, zayıf trendde yakına konuyor. Çarpanlar da GA ile ayarlanabilir.
+2. **RSI artık aşırılık derecesini dikkate alıyor.** Eskiden RSI=71 ile
+   RSI=95 aynı puanı alıyordu. Artık eşiğin ne kadar üstünde/altında
+   olunduğuna göre kademeli puanlanıyor — tam da IEYHO örneğinde
+   karşılaştığımız (RSI=87.5, güçlü trend) senaryoyu artık RSI agent'ının
+   kendisi de "SAT" olarak işaretliyor, sadece ikinci göz doğrulamasına
+   kalmıyor.
+3. **Genetik optimizasyon artık işlem sayısını ve maksimum düşüşü de
+   gözetiyor.** Eskiden fitness sadece ortalama getiriye bakıyordu; 1-2
+   şanslı işlemden çıkan yüksek ama kırılgan sonuçlar "en iyi" seçilebiliyordu.
+   `backtest/metrics.py`'nin zaten hesapladığı ama kullanılmayan
+   `trade_count` ve `max_drawdown` artık fitness'a dahil.
+4. **Agent'lar arası görüş ayrılığı artık kararı gerçekten etkiliyor.**
+   `has_conflict` bayrağı eskiden sadece arayüzde "⚠️" göstermek içindi;
+   final skoru hiç etkilemiyordu. Artık çelişki varsa skor bir ceza
+   çarpanıyla (varsayılan 0.8, GA ile ayarlanabilir) küçültülüyor.
+5. **(Bonus) Ağırlık güncellemesi az örnekle aşırı tepki vermiyor.**
+   Sistem yeni çalıştırıldığında bir agent'ın 2-3 değerlendirilmiş tahmini
+   olabilir; ham ortalama kullanılsaydı tek bir tahmin accuracy'yi
+   %0'dan %100'e sıçratabilirdi. Artık Bayesian yumuşatma ile az veri
+   varken %50 (nötr) civarında tutuluyor, veri arttıkça gerçek orana
+   yakınsıyor.
+
 ## Neden RL/LangGraph/TA-Lib/VectorBT Kullanılmadı?
 
 Orijinal mimaride önerilen bu araçlar bilinçli olarak sadeleştirildi:
