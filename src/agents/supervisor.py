@@ -69,18 +69,33 @@ def _signal_from_score(score: float) -> str:
     return "BEKLE"
 
 
-def _compute_stop_target(last_row: pd.Series, signal: str) -> dict:
+def _compute_stop_target(last_row: pd.Series, signal: str, params: dict | None = None) -> dict:
+    """ATR bazlı stop/hedef hesaplar. Hedef, trend gücüne (ADX, zaten
+    hesaplı) göre ölçeklenir: güçlü trendde hedef daha uzağa konur, zayıf
+    trendde daha yakın tutulur. Bu sayede R:R hisseden hisseye, günden
+    güne GERÇEKTEN değişir -- eskiden sabit çarpanlar yüzünden R:R her
+    zaman tam olarak 2.0 çıkıyordu ve ConfirmationAgent'ın R:R kontrolü
+    hiçbir ayırt edici güce sahip değildi."""
+    params = params or {}
     close = last_row.get("Close", float("nan"))
     atr_val = last_row.get("atr", float("nan"))
     if pd.isna(close) or pd.isna(atr_val) or signal == "BEKLE":
         return {"stop": None, "target": None, "risk_reward": None}
 
+    stop_mult = params.get("atr_stop_multiplier", 1.5)
+    base_target_mult = params.get("atr_target_multiplier_base", 2.0)
+    trend_bonus_mult = params.get("atr_target_trend_bonus", 2.0)
+
+    adx_val = last_row.get("adx", float("nan"))
+    trend_strength = min(1.0, adx_val / 50) if pd.notna(adx_val) else 0.5  # veri yoksa nötr varsay
+    target_mult = base_target_mult + trend_bonus_mult * trend_strength
+
     if signal == "AL":
-        stop = close - 1.5 * atr_val
-        target = close + 3.0 * atr_val
+        stop = close - stop_mult * atr_val
+        target = close + target_mult * atr_val
     else:  # SAT -> kısa pozisyon perspektifiyle referans seviye (otomatik işlem yapılmaz)
-        stop = close + 1.5 * atr_val
-        target = close - 3.0 * atr_val
+        stop = close + stop_mult * atr_val
+        target = close - target_mult * atr_val
 
     risk = abs(close - stop)
     reward = abs(target - close)
@@ -96,6 +111,7 @@ def analyze_ticker(
     weights: dict[str, float],
     agents: dict[str, BaseAgent],
     benchmark_features: pd.DataFrame | None = None,
+    params: dict | None = None,
 ) -> dict:
     """Tek bir hisse için tüm agent'ları çalıştırır, ağırlıklı skor üretir.
 
@@ -108,6 +124,7 @@ def analyze_ticker(
     başına dilimliyordu — aynı (hisse, tarih) için 5 kez tekrarlanan bu
     işlem, genetik optimizasyonda ölçülen ana performans darboğazıydı.
     """
+    params = params or {}
     as_of_ts = pd.Timestamp(as_of_date)
     safe_features = get_data_as_of(features, as_of_ts)
 
@@ -121,17 +138,22 @@ def analyze_ticker(
     total_weight = sum(a.weight for a in agent_outputs) or 1.0
     raw_score = weighted_sum / total_weight
 
+    # Çelişki tespiti: agent'lar arasında yön uyuşmazlığı var mı? Eskiden
+    # bu bilgi sadece ekranda "⚠️" göstermek için hesaplanıyordu, final
+    # skoru hiç etkilemiyordu. Artık gerçek bir ceza çarpanı olarak
+    # uygulanıyor -- agent'lar anlaşamıyorsa, ne kadar yüksek olursa olsun
+    # ham skorun güvenilirliği azalır.
+    directions = [1 if a.signal_value > 0.1 else (-1 if a.signal_value < -0.1 else 0) for a in agent_outputs]
+    has_conflict = len(set(d for d in directions if d != 0)) > 1
+    conflict_mult = params.get("conflict_penalty", 0.8) if has_conflict else 1.0
+
     regime_mult, regime_note = compute_regime_multiplier(benchmark_features, as_of_date)
-    final_score = max(-1.0, min(1.0, raw_score * regime_mult))
+    final_score = max(-1.0, min(1.0, raw_score * regime_mult * conflict_mult))
 
     final_signal = _signal_from_score(final_score)
 
     last_row = safe_features.iloc[-1] if not safe_features.empty else pd.Series(dtype=float)
-    stop_target = _compute_stop_target(last_row, final_signal)
-
-    # Çelişki tespiti: agent'lar arasında yön uyuşmazlığı var mı?
-    directions = [1 if a.signal_value > 0.1 else (-1 if a.signal_value < -0.1 else 0) for a in agent_outputs]
-    has_conflict = len(set(d for d in directions if d != 0)) > 1
+    stop_target = _compute_stop_target(last_row, final_signal, params)
 
     return {
         "ticker": ticker,
@@ -139,6 +161,7 @@ def analyze_ticker(
         "final_signal": final_signal,
         "final_score": round(final_score, 4),
         "has_conflict": has_conflict,
+        "conflict_multiplier": conflict_mult,
         "regime_multiplier": regime_mult,
         "regime_note": regime_note,
         "close": round(float(last_row.get("Close", float("nan"))), 2) if not last_row.empty else None,
@@ -158,7 +181,7 @@ def analyze_watchlist(
     results = []
     for ticker, features in features_by_ticker.items():
         try:
-            result = analyze_ticker(ticker, features, as_of_date, weights, agents, benchmark_features)
+            result = analyze_ticker(ticker, features, as_of_date, weights, agents, benchmark_features, params)
             results.append(result)
         except Exception as exc:  # noqa: BLE001
             results.append({
