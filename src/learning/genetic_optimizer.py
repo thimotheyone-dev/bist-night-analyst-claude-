@@ -44,6 +44,11 @@ PARAM_SEARCH_SPACE = {
     "min_liquidity_try": (1_000_000, 15_000_000, float),
     "min_risk_reward": (1.0, 3.0, float),
     "extreme_rsi_veto": (75, 92, int),
+    # ── Stop/hedef ve çelişki cezası (bkz. supervisor.py) ─────────────────
+    "atr_stop_multiplier": (1.0, 2.5, float),
+    "atr_target_multiplier_base": (1.5, 3.0, float),
+    "atr_target_trend_bonus": (1.0, 4.0, float),
+    "conflict_penalty": (0.5, 1.0, float),
 }
 
 
@@ -117,6 +122,36 @@ def _build_features_for_individual(
     return features_by_ticker, benchmark_features
 
 
+# Bu kadar az işlemden çıkan sonuç istatistiksel olarak güvenilmez sayılır
+MIN_RELIABLE_TRADES = 3
+
+
+def _robust_fitness_score(metrics: dict) -> float | None:
+    """Tek bir (hisse, pencere) sonucundan, sadece ortalama getiriye değil
+    işlem sayısına (güvenilirlik) ve maksimum düşüşe (risk) de bakan bir
+    fitness skoru üretir.
+
+    NOT (kalibrasyon): Eskiden fitness SADECE avg_return'dü. backtest/
+    metrics.py::summarize() zaten trade_count ve max_drawdown'ı
+    hesaplıyordu ama bunlar hiç kullanılmıyordu. Bu, GA'nın 1-2 şanslı
+    işlemden çıkan yüksek ama kırılgan sonuçları "en iyi" parametre seti
+    olarak seçmesine karşı hiçbir koruma sağlamıyordu (overfitting
+    riski). Artık: (1) az işlem sayısı güven çarpanıyla cezalandırılıyor,
+    (2) büyük maksimum düşüş getiriden düşülüyor.
+    """
+    avg_ret = metrics.get("avg_return")
+    n_trades = metrics.get("trade_count", 0)
+    max_dd = metrics.get("max_drawdown")
+
+    if pd.isna(avg_ret) or n_trades == 0:
+        return None
+
+    reliability = min(1.0, n_trades / MIN_RELIABLE_TRADES)
+    drawdown_penalty = 0.3 * abs(max_dd) if pd.notna(max_dd) and max_dd < 0 else 0.0
+
+    return (avg_ret - drawdown_penalty) * reliability
+
+
 def _fitness_on_precomputed_features(
     features_by_ticker: dict[str, pd.DataFrame], benchmark_features: pd.DataFrame | None,
     params: dict, window_start: pd.Timestamp, window_end: pd.Timestamp,
@@ -141,7 +176,7 @@ def _fitness_on_precomputed_features(
         for date in window_dates:
             try:
                 from src.agents.supervisor import analyze_ticker
-                result = analyze_ticker(ticker, features, date, weights, agents, benchmark_features)
+                result = analyze_ticker(ticker, features, date, weights, agents, benchmark_features, params)
                 final_signal = result["final_signal"]
                 # AL sinyali, ikinci göz doğrulamasından geçmezse fitness
                 # hesabında BEKLE (işlem yapılmamış) olarak sayılır — bu
@@ -162,8 +197,9 @@ def _fitness_on_precomputed_features(
         sim = simulate_signals(signal_series, features["Close"].reindex(signal_series.index),
                                  horizon=EVALUATION_HORIZON_DAYS)
         metrics = summarize(sim)
-        if pd.notna(metrics["avg_return"]):
-            all_scores.append(metrics["avg_return"])
+        score = _robust_fitness_score(metrics)
+        if score is not None:
+            all_scores.append(score)
 
     if not all_scores:
         return -1.0
