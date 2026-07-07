@@ -18,11 +18,11 @@
         "ticker": "AEFES.IS",
         "as_of_date": "2026-07-07",
         "signal": "BEKLE",
-        "signal_value": 0.2724695515025782,
-        "confidence": 0.4030869393782227,
+        "signal_value": 0.2724695515025787,
+        "confidence": 0.4030869393782234,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=11.6).",
-        "weight": 0.2402,
-        "adx": 11.634607392744925
+        "weight": 0.2399,
+        "adx": 11.634607392744975
       },
       {
         "agent": "rsi_agent",
@@ -32,7 +32,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (48.9), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 48.914418272880546
       },
       {
@@ -43,7 +43,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.18168030874159097
       },
       {
@@ -54,7 +54,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.1x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.0667336359752424
       },
       {
@@ -65,7 +65,7 @@
         "signal_value": 0.15,
         "confidence": 0.4,
         "reasoning": "BB sıkışması var ama henüz kırılım yok — izlemede kalsın.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.016666666666666666,
         "breakout": false
       }
@@ -96,7 +96,7 @@
         "signal_value": 0.27166952883356577,
         "confidence": 0.40208691104195715,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=11.6).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 11.558605239188745
       },
       {
@@ -107,7 +107,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (49.4), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 49.4475969566665
       },
       {
@@ -118,7 +118,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.04734700602499946
       },
       {
@@ -129,7 +129,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.9x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.9375306169984496
       },
       {
@@ -140,7 +140,7 @@
         "signal_value": 0.15,
         "confidence": 0.4,
         "reasoning": "BB sıkışması var ama henüz kırılım yok — izlemede kalsın.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.06666666666666667,
         "breakout": false
       }
@@ -153,7 +153,7 @@
     "ticker": "AKBNK.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": 0.028,
+    "final_score": 0.0279,
     "has_conflict": true,
     "conflict_multiplier": 0.75,
     "regime_multiplier": 1.047,
@@ -171,7 +171,7 @@
         "signal_value": 0.8,
         "confidence": 0.4310915540931852,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=21.6).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 21.554577704659263
       },
       {
@@ -182,7 +182,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (44.9).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 44.92162530453214
       },
       {
@@ -193,7 +193,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -1.2722601230142097
       },
       {
@@ -204,7 +204,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.8x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.8386718326571486
       },
       {
@@ -215,7 +215,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.38333333333333336,
         "breakout": false
       }
@@ -228,7 +228,7 @@
     "ticker": "AKSA.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": 0.0588,
+    "final_score": 0.0589,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -246,7 +246,7 @@
         "signal_value": 0.3476857614678899,
         "confidence": 0.49710720183486234,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=18.8).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 18.780147339449538
       },
       {
@@ -257,7 +257,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (55.8), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 55.75081396866847
       },
       {
@@ -268,7 +268,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.039365288935160614
       },
       {
@@ -279,7 +279,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.7x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.7175102339478581
       },
       {
@@ -290,7 +290,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.75,
         "breakout": false
       }
@@ -303,7 +303,7 @@
     "ticker": "AKSEN.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "AL",
-    "final_score": 0.2954,
+    "final_score": 0.2952,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -321,7 +321,7 @@
         "signal_value": 0.3093994189673973,
         "confidence": 0.4492492737092466,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=15.1).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 15.14294480190274
       },
       {
@@ -332,7 +332,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (67.5).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 67.52461305516104
       },
       {
@@ -343,7 +343,7 @@
         "signal_value": 0.75,
         "confidence": 0.7,
         "reasoning": "MACD sinyal çizgisini yukarı kesti (bullish cross).",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 0.6875453531554474
       },
       {
@@ -354,7 +354,7 @@
         "signal_value": 0.7,
         "confidence": 0.6463799639964238,
         "reasoning": "Yüksek hacimle (2.5x) yeşil mum — kurumsal ilgi teyidi.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 2.5208818595860527
       },
       {
@@ -365,7 +365,7 @@
         "signal_value": 0.6,
         "confidence": 0.6,
         "reasoning": "Direnç kırılımı, kaliteli yeşil mumla teyitli.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.8,
         "breakout": true
       }
@@ -382,7 +382,7 @@
     "ticker": "ALARK.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": 0.0148,
+    "final_score": 0.0147,
     "has_conflict": true,
     "conflict_multiplier": 0.8404150154619987,
     "regime_multiplier": 1.047,
@@ -400,7 +400,7 @@
         "signal_value": 0.34792492269000647,
         "confidence": 0.49740615336250804,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=18.8).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 18.802867655550614
       },
       {
@@ -411,7 +411,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (47.1), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 47.092281840857744
       },
       {
@@ -422,7 +422,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.5863455810636653
       },
       {
@@ -433,7 +433,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.7x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.6624552237654856
       },
       {
@@ -444,7 +444,7 @@
         "signal_value": 0.15,
         "confidence": 0.4,
         "reasoning": "BB sıkışması var ama henüz kırılım yok — izlemede kalsın.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.1,
         "breakout": false
       }
@@ -457,7 +457,7 @@
     "ticker": "ALTNY.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": 0.0327,
+    "final_score": 0.0329,
     "has_conflict": true,
     "conflict_multiplier": 0.8500459761565018,
     "regime_multiplier": 1.047,
@@ -475,7 +475,7 @@
         "signal_value": 0.349770119217491,
         "confidence": 0.49971264902186374,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=19.0).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 18.97816132566164
       },
       {
@@ -486,7 +486,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (54.2), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 54.21492770281283
       },
       {
@@ -497,7 +497,7 @@
         "signal_value": 0.15,
         "confidence": 0.35,
         "reasoning": "MACD pozitif ama momentum zayıflıyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 0.27347762552291327
       },
       {
@@ -508,7 +508,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.5x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.4691528866302856
       },
       {
@@ -519,7 +519,7 @@
         "signal_value": -0.4,
         "confidence": 0.45,
         "reasoning": "Güçlü kırmızı mum (kaliteli düşüş gövdesi).",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.5333333333333333,
         "breakout": false
       }
@@ -532,7 +532,7 @@
     "ticker": "ANSGR.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": 0.0306,
+    "final_score": 0.0305,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -547,11 +547,11 @@
         "ticker": "ANSGR.IS",
         "as_of_date": "2026-07-07",
         "signal": "BEKLE",
-        "signal_value": 0.3226684546046708,
+        "signal_value": 0.32266845460467086,
         "confidence": 0.4658355682558385,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=16.4).",
-        "weight": 0.2402,
-        "adx": 16.403503187443725
+        "weight": 0.2399,
+        "adx": 16.40350318744373
       },
       {
         "agent": "rsi_agent",
@@ -561,7 +561,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (40.1).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 40.13965730565164
       },
       {
@@ -572,7 +572,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.18196328193756361
       },
       {
@@ -583,7 +583,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.6x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.6063116548172169
       },
       {
@@ -594,7 +594,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.3333333333333333,
         "breakout": false
       }
@@ -607,7 +607,7 @@
     "ticker": "ARCLK.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": -0.0785,
+    "final_score": -0.0786,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -625,7 +625,7 @@
         "signal_value": -0.2458221690706997,
         "confidence": 0.39442955876093294,
         "reasoning": "MA50<MA200, zayıf düşüş eğilimi (ADX=18.5).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 18.470808082288627
       },
       {
@@ -636,7 +636,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (36.9).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 36.887408531273316
       },
       {
@@ -647,7 +647,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.1130333480471939
       },
       {
@@ -658,7 +658,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.6x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.632590225955997
       },
       {
@@ -669,7 +669,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.3,
         "breakout": false
       }
@@ -682,7 +682,7 @@
     "ticker": "ASELS.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": -0.0126,
+    "final_score": -0.0124,
     "has_conflict": true,
     "conflict_multiplier": 0.816355095673032,
     "regime_multiplier": 1.047,
@@ -700,7 +700,7 @@
         "signal_value": 0.31822452163483983,
         "confidence": 0.46028065204354973,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=16.0).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 15.98132955530978
       },
       {
@@ -711,7 +711,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (50.3), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 50.27729285777328
       },
       {
@@ -722,7 +722,7 @@
         "signal_value": 0.15,
         "confidence": 0.35,
         "reasoning": "MACD pozitif ama momentum zayıflıyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 3.6470782555959214
       },
       {
@@ -733,7 +733,7 @@
         "signal_value": -0.6,
         "confidence": 0.5414378589690663,
         "reasoning": "Yüksek hacimle (2.1x) kırmızı mum — satış baskısı.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 2.1116076499793586
       },
       {
@@ -744,7 +744,7 @@
         "signal_value": -0.4,
         "confidence": 0.45,
         "reasoning": "Güçlü kırmızı mum (kaliteli düşüş gövdesi).",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.43333333333333335,
         "breakout": false
       }
@@ -757,7 +757,7 @@
     "ticker": "ASTOR.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": 0.0962,
+    "final_score": 0.0963,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -775,7 +775,7 @@
         "signal_value": 0.32071784831903105,
         "confidence": 0.46339731039878884,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=16.2).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 16.21819559030795
       },
       {
@@ -786,7 +786,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (60.3).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 60.305827294516924
       },
       {
@@ -797,7 +797,7 @@
         "signal_value": 0.45,
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 5.802264646017468
       },
       {
@@ -808,7 +808,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.2x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.236420003544984
       },
       {
@@ -819,7 +819,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.35,
         "breakout": false
       }
@@ -832,7 +832,7 @@
     "ticker": "BALSU.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "SAT",
-    "final_score": -0.2229,
+    "final_score": -0.2228,
     "has_conflict": true,
     "conflict_multiplier": 0.81,
     "regime_multiplier": 1.047,
@@ -850,7 +850,7 @@
         "signal_value": -0.7,
         "confidence": 0.7432443481565661,
         "reasoning": "MA50<MA200 ve güçlü düşüş trendi (ADX=37.2).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 37.16221740782831
       },
       {
@@ -861,7 +861,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (46.9), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 46.851937646779334
       },
       {
@@ -872,7 +872,7 @@
         "signal_value": -0.75,
         "confidence": 0.7,
         "reasoning": "MACD sinyal çizgisini aşağı kesti (bearish cross).",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.20696539968633787
       },
       {
@@ -883,7 +883,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.9x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.9054827433824294
       },
       {
@@ -894,7 +894,7 @@
         "signal_value": -0.4,
         "confidence": 0.45,
         "reasoning": "Güçlü kırmızı mum (kaliteli düşüş gövdesi).",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.8833333333333333,
         "breakout": false
       }
@@ -922,11 +922,11 @@
         "ticker": "BIMAS.IS",
         "as_of_date": "2026-07-07",
         "signal": "BEKLE",
-        "signal_value": 0.31171212080943433,
-        "confidence": 0.4521401510117929,
+        "signal_value": 0.311712120809933,
+        "confidence": 0.4521401510124162,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=15.4).",
-        "weight": 0.2402,
-        "adx": 15.362651476896259
+        "weight": 0.2399,
+        "adx": 15.362651476943633
       },
       {
         "agent": "rsi_agent",
@@ -936,7 +936,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (50.8), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 50.81293509208351
       },
       {
@@ -947,8 +947,8 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
-        "histogram": -0.9781240688212192
+        "weight": 0.2301,
+        "histogram": -0.9781240688210988
       },
       {
         "agent": "volume_agent",
@@ -958,7 +958,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.2x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.1857566959131625
       },
       {
@@ -969,7 +969,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.4,
         "breakout": false
       }
@@ -1000,7 +1000,7 @@
         "signal_value": 0.3187774435244567,
         "confidence": 0.46097180440557084,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=16.0).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 16.033857134823386
       },
       {
@@ -1011,7 +1011,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (43.1).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 43.10053313192539
       },
       {
@@ -1022,7 +1022,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -7.396099965241128
       },
       {
@@ -1033,7 +1033,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.6x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.6377095021625304
       },
       {
@@ -1044,7 +1044,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.5,
         "breakout": false
       }
@@ -1075,7 +1075,7 @@
         "signal_value": -0.19652263023508848,
         "confidence": 0.3286968403134513,
         "reasoning": "MA50<MA200, zayıf düşüş eğilimi (ADX=12.2).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 12.226199829777874
       },
       {
@@ -1086,7 +1086,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (39.8).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 39.820721453836335
       },
       {
@@ -1097,7 +1097,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -1.359114929505992
       },
       {
@@ -1108,7 +1108,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.6x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.6260246892052487
       },
       {
@@ -1119,7 +1119,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.45,
         "breakout": false
       }
@@ -1150,7 +1150,7 @@
         "signal_value": 0.8,
         "confidence": 0.4471330602144791,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=22.4).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 22.356653010723956
       },
       {
@@ -1161,7 +1161,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (51.3), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 51.318666244741884
       },
       {
@@ -1172,7 +1172,7 @@
         "signal_value": 0.15,
         "confidence": 0.35,
         "reasoning": "MACD pozitif ama momentum zayıflıyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 0.1220366780214937
       },
       {
@@ -1183,7 +1183,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.9x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.9388741064973729
       },
       {
@@ -1194,7 +1194,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.48333333333333334,
         "breakout": false
       }
@@ -1207,7 +1207,7 @@
     "ticker": "BTCIM.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": -0.0186,
+    "final_score": -0.0187,
     "has_conflict": true,
     "conflict_multiplier": 0.856404343862818,
     "regime_multiplier": 1.047,
@@ -1225,7 +1225,7 @@
         "signal_value": 0.26797828068590973,
         "confidence": 0.39747285085738715,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=11.2).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 11.207936665161423
       },
       {
@@ -1236,7 +1236,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (33.7).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 33.728488242293636
       },
       {
@@ -1247,7 +1247,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.0364159506663478
       },
       {
@@ -1258,7 +1258,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.8x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.758503179717329
       },
       {
@@ -1269,7 +1269,7 @@
         "signal_value": 0.15,
         "confidence": 0.4,
         "reasoning": "BB sıkışması var ama henüz kırılım yok — izlemede kalsın.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.1,
         "breakout": false
       }
@@ -1282,7 +1282,7 @@
     "ticker": "CANTE.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": -0.1125,
+    "final_score": -0.1124,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -1300,7 +1300,7 @@
         "signal_value": -0.7,
         "confidence": 0.598090387860307,
         "reasoning": "MA50<MA200 ve güçlü düşüş trendi (ADX=29.9).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 29.90451939301535
       },
       {
@@ -1311,7 +1311,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (22.0).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 21.96774047109446
       },
       {
@@ -1322,7 +1322,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.011021240507687394
       },
       {
@@ -1333,7 +1333,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.7x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.6705277339330881
       },
       {
@@ -1344,7 +1344,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.7666666666666667,
         "breakout": false
       }
@@ -1357,7 +1357,7 @@
     "ticker": "CCOLA.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": 0.0873,
+    "final_score": 0.0874,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -1372,11 +1372,11 @@
         "ticker": "CCOLA.IS",
         "as_of_date": "2026-07-07",
         "signal": "BEKLE",
-        "signal_value": 0.2768419558057904,
-        "confidence": 0.408552444757238,
+        "signal_value": 0.2768419558057905,
+        "confidence": 0.4085524447572382,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=12.0).",
-        "weight": 0.2402,
-        "adx": 12.049985801550088
+        "weight": 0.2399,
+        "adx": 12.0499858015501
       },
       {
         "agent": "rsi_agent",
@@ -1386,7 +1386,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (60.9).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 60.85130982314025
       },
       {
@@ -1397,7 +1397,7 @@
         "signal_value": 0.45,
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 0.742246346576519
       },
       {
@@ -1408,7 +1408,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.1x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.0958916512648211
       },
       {
@@ -1419,7 +1419,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.45,
         "breakout": false
       }
@@ -1432,7 +1432,7 @@
     "ticker": "CIMSA.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "AL",
-    "final_score": 0.1656,
+    "final_score": 0.1658,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -1447,11 +1447,11 @@
         "ticker": "CIMSA.IS",
         "as_of_date": "2026-07-07",
         "signal": "BEKLE",
-        "signal_value": 0.3075297267318946,
-        "confidence": 0.44691215841486825,
+        "signal_value": 0.30752972673189394,
+        "confidence": 0.4469121584148674,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=15.0).",
-        "weight": 0.2402,
-        "adx": 14.965324039529987
+        "weight": 0.2399,
+        "adx": 14.965324039529925
       },
       {
         "agent": "rsi_agent",
@@ -1461,7 +1461,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (44.9).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 44.86999401254719
       },
       {
@@ -1472,7 +1472,7 @@
         "signal_value": 0.75,
         "confidence": 0.7,
         "reasoning": "MACD sinyal çizgisini yukarı kesti (bullish cross).",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 0.06923241124953838
       },
       {
@@ -1483,7 +1483,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.5x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.4715001297048695
       },
       {
@@ -1494,7 +1494,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.26666666666666666,
         "breakout": false
       }
@@ -1511,7 +1511,7 @@
     "ticker": "CVKMD.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": 0.0226,
+    "final_score": 0.0225,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -1529,7 +1529,7 @@
         "signal_value": 0.2837532391613709,
         "confidence": 0.4171915489517136,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=12.7).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 12.706557720330238
       },
       {
@@ -1540,7 +1540,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (42.6).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 42.55849392118793
       },
       {
@@ -1551,7 +1551,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.30114283738969216
       },
       {
@@ -1562,7 +1562,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.6x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.6462835722472471
       },
       {
@@ -1573,7 +1573,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.16666666666666666,
         "breakout": false
       }
@@ -1604,7 +1604,7 @@
         "signal_value": 0.8,
         "confidence": 0.5422525874956757,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=27.1).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 27.112629374783786
       },
       {
@@ -1615,7 +1615,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (58.3), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 58.31624045188803
       },
       {
@@ -1626,7 +1626,7 @@
         "signal_value": 0.45,
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 0.2988744327326409
       },
       {
@@ -1637,7 +1637,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.3x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.3163580062363949
       },
       {
@@ -1648,7 +1648,7 @@
         "signal_value": 0.15,
         "confidence": 0.4,
         "reasoning": "BB sıkışması var ama henüz kırılım yok — izlemede kalsın.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.11666666666666667,
         "breakout": false
       }
@@ -1665,7 +1665,7 @@
     "ticker": "DAPGM.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": -0.0246,
+    "final_score": -0.0245,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -1683,7 +1683,7 @@
         "signal_value": -0.20374702855221188,
         "confidence": 0.33832937140294916,
         "reasoning": "MA50<MA200, zayıf düşüş eğilimi (ADX=13.1).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 13.141290283280172
       },
       {
@@ -1694,7 +1694,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (34.8).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 34.8050663248663
       },
       {
@@ -1705,7 +1705,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.15558615042917912
       },
       {
@@ -1716,7 +1716,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.2x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.19846900571183396
       },
       {
@@ -1727,7 +1727,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.5,
         "breakout": false
       }
@@ -1740,7 +1740,7 @@
     "ticker": "DOAS.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": 0.0273,
+    "final_score": 0.0272,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -1755,11 +1755,11 @@
         "ticker": "DOAS.IS",
         "as_of_date": "2026-07-07",
         "signal": "BEKLE",
-        "signal_value": 0.307163177988318,
-        "confidence": 0.4464539724853975,
+        "signal_value": 0.3071631779883196,
+        "confidence": 0.4464539724853994,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=14.9).",
-        "weight": 0.2402,
-        "adx": 14.930501908890209
+        "weight": 0.2399,
+        "adx": 14.930501908890358
       },
       {
         "agent": "rsi_agent",
@@ -1769,7 +1769,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (44.1).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 44.07022660508361
       },
       {
@@ -1780,7 +1780,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -1.1314286516434386
       },
       {
@@ -1791,7 +1791,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.3x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.304698839252122
       },
       {
@@ -1802,7 +1802,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.9,
         "breakout": false
       }
@@ -1815,7 +1815,7 @@
     "ticker": "DOHOL.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": 0.1128,
+    "final_score": 0.1127,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -1833,7 +1833,7 @@
         "signal_value": 0.8,
         "confidence": 0.6203050074527524,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=31.0).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 31.01525037263762
       },
       {
@@ -1844,7 +1844,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (39.1).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 39.14495373197523
       },
       {
@@ -1855,7 +1855,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.03377786172258457
       },
       {
@@ -1866,7 +1866,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.7x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.7197755967168138
       },
       {
@@ -1877,7 +1877,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.6833333333333333,
         "breakout": false
       }
@@ -1890,7 +1890,7 @@
     "ticker": "DSTKF.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "AL",
-    "final_score": 0.2771,
+    "final_score": 0.2766,
     "has_conflict": true,
     "conflict_multiplier": 0.7588652016637376,
     "regime_multiplier": 1.047,
@@ -1908,7 +1908,7 @@
         "signal_value": 0.8,
         "confidence": 1.0,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=51.4).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 51.37336104411741
       },
       {
@@ -1919,7 +1919,7 @@
         "signal_value": -0.40567399168131213,
         "confidence": 0.4845391933450497,
         "reasoning": "RSI aşırı alım bölgesinde (79.5), yeni pozisyon riskli.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 79.49504756742823
       },
       {
@@ -1930,7 +1930,7 @@
         "signal_value": 0.45,
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 29.91532964525169
       },
       {
@@ -1941,7 +1941,7 @@
         "signal_value": 0.7,
         "confidence": 0.8225181984258694,
         "reasoning": "Yüksek hacimle (3.2x) yeşil mum — kurumsal ilgi teyidi.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 3.2078209738608905
       },
       {
@@ -1952,7 +1952,7 @@
         "signal_value": 0.6,
         "confidence": 0.6,
         "reasoning": "Direnç kırılımı, kaliteli yeşil mumla teyitli.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.6,
         "breakout": true
       }
@@ -1969,7 +1969,7 @@
     "ticker": "ECILC.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": -0.0929,
+    "final_score": -0.0928,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -1987,7 +1987,7 @@
         "signal_value": -0.7,
         "confidence": 0.5139446721640105,
         "reasoning": "MA50<MA200 ve güçlü düşüş trendi (ADX=25.7).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 25.697233608200527
       },
       {
@@ -1998,7 +1998,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (39.8).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 39.76030552108465
       },
       {
@@ -2009,7 +2009,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.22225585613318177
       },
       {
@@ -2020,7 +2020,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.9x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.9357457822941239
       },
       {
@@ -2031,7 +2031,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.65,
         "breakout": false
       }
@@ -2044,7 +2044,7 @@
     "ticker": "EFOR.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "SAT",
-    "final_score": -0.1282,
+    "final_score": -0.1281,
     "has_conflict": true,
     "conflict_multiplier": 0.8200000000000001,
     "regime_multiplier": 1.047,
@@ -2062,7 +2062,7 @@
         "signal_value": -0.7,
         "confidence": 0.6549242942327589,
         "reasoning": "MA50<MA200 ve güçlü düşüş trendi (ADX=32.7).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 32.74621471163795
       },
       {
@@ -2073,7 +2073,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (51.1), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 51.140175268142634
       },
       {
@@ -2084,7 +2084,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.30812763870170445
       },
       {
@@ -2095,7 +2095,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.1x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.1407579477017915
       },
       {
@@ -2106,7 +2106,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.3333333333333333,
         "breakout": false
       }
@@ -2119,7 +2119,7 @@
     "ticker": "EKGYO.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": -0.0841,
+    "final_score": -0.084,
     "has_conflict": true,
     "conflict_multiplier": 0.8200000000000001,
     "regime_multiplier": 1.047,
@@ -2137,7 +2137,7 @@
         "signal_value": -0.7,
         "confidence": 0.40325564514090395,
         "reasoning": "MA50<MA200 ve güçlü düşüş trendi (ADX=20.2).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 20.162782257045198
       },
       {
@@ -2148,7 +2148,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (53.8), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 53.83253877173489
       },
       {
@@ -2159,7 +2159,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.08022034908180342
       },
       {
@@ -2170,7 +2170,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.1x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.0645802477946276
       },
       {
@@ -2181,7 +2181,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.5,
         "breakout": false
       }
@@ -2194,7 +2194,7 @@
     "ticker": "ENERY.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "SAT",
-    "final_score": -0.2213,
+    "final_score": -0.2211,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -2212,7 +2212,7 @@
         "signal_value": -0.7,
         "confidence": 0.745524247876399,
         "reasoning": "MA50<MA200 ve güçlü düşüş trendi (ADX=37.3).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 37.276212393819954
       },
       {
@@ -2223,7 +2223,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (44.3).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 44.267724635430135
       },
       {
@@ -2234,7 +2234,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.13759267553837873
       },
       {
@@ -2245,7 +2245,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.8x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.8031304316095882
       },
       {
@@ -2256,7 +2256,7 @@
         "signal_value": -0.4,
         "confidence": 0.45,
         "reasoning": "Güçlü kırmızı mum (kaliteli düşüş gövdesi).",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.9333333333333333,
         "breakout": false
       }
@@ -2285,10 +2285,10 @@
         "as_of_date": "2026-07-07",
         "signal": "AL",
         "signal_value": 0.8,
-        "confidence": 0.48473289067974534,
+        "confidence": 0.4847328906797456,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=24.2).",
-        "weight": 0.2402,
-        "adx": 24.236644533987267
+        "weight": 0.2399,
+        "adx": 24.23664453398728
       },
       {
         "agent": "rsi_agent",
@@ -2298,7 +2298,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (45.5), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 45.51004189580817
       },
       {
@@ -2309,7 +2309,7 @@
         "signal_value": 0.45,
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 0.2936316753122332
       },
       {
@@ -2320,7 +2320,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.1x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.0581243501574553
       },
       {
@@ -2331,7 +2331,7 @@
         "signal_value": 0.15,
         "confidence": 0.4,
         "reasoning": "BB sıkışması var ama henüz kırılım yok — izlemede kalsın.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.11666666666666667,
         "breakout": false
       }
@@ -2348,7 +2348,7 @@
     "ticker": "ENKAI.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "AL",
-    "final_score": 0.1545,
+    "final_score": 0.1543,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -2364,10 +2364,10 @@
         "as_of_date": "2026-07-07",
         "signal": "AL",
         "signal_value": 0.8,
-        "confidence": 0.6771184458578611,
+        "confidence": 0.6771184458764752,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=33.9).",
-        "weight": 0.2402,
-        "adx": 33.855922292893055
+        "weight": 0.2399,
+        "adx": 33.85592229382376
       },
       {
         "agent": "rsi_agent",
@@ -2377,8 +2377,8 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (43.2).",
-        "weight": 0.213,
-        "rsi": 43.22036752633342
+        "weight": 0.2139,
+        "rsi": 43.22036752633347
       },
       {
         "agent": "macd_agent",
@@ -2388,8 +2388,8 @@
         "signal_value": 0.15,
         "confidence": 0.35,
         "reasoning": "MACD pozitif ama momentum zayıflıyor.",
-        "weight": 0.2297,
-        "histogram": 0.41371052978484446
+        "weight": 0.2301,
+        "histogram": 0.41371052978465617
       },
       {
         "agent": "volume_agent",
@@ -2399,7 +2399,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.8x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.8046563535687163
       },
       {
@@ -2410,7 +2410,7 @@
         "signal_value": 0.15,
         "confidence": 0.4,
         "reasoning": "BB sıkışması var ama henüz kırılım yok — izlemede kalsın.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.016666666666666666,
         "breakout": false
       }
@@ -2445,7 +2445,7 @@
         "signal_value": 0.8,
         "confidence": 0.48789307968354756,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=24.4).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 24.394653984177378
       },
       {
@@ -2456,7 +2456,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (58.4), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 58.40457491971808
       },
       {
@@ -2467,7 +2467,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.05524049927995567
       },
       {
@@ -2478,7 +2478,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.2x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.248353717491838
       },
       {
@@ -2489,7 +2489,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.16666666666666666,
         "breakout": false
       }
@@ -2502,7 +2502,7 @@
     "ticker": "EUPWR.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "AL",
-    "final_score": 0.1306,
+    "final_score": 0.1305,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -2520,7 +2520,7 @@
         "signal_value": 0.8,
         "confidence": 0.5964102715394458,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=29.8).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 29.82051357697229
       },
       {
@@ -2531,7 +2531,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (55.1), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 55.05320780745721
       },
       {
@@ -2542,7 +2542,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -1.2003564351201779
       },
       {
@@ -2553,7 +2553,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.4x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.39534853235222955
       },
       {
@@ -2564,7 +2564,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.23333333333333334,
         "breakout": false
       }
@@ -2599,7 +2599,7 @@
         "signal_value": -0.21911700626553748,
         "confidence": 0.35882267502071663,
         "reasoning": "MA50<MA200, zayıf düşüş eğilimi (ADX=15.1).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 15.08815412696808
       },
       {
@@ -2610,7 +2610,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (32.7).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 32.654704058301576
       },
       {
@@ -2621,7 +2621,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.0004284065441860774
       },
       {
@@ -2632,7 +2632,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.7x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.6561195917198221
       },
       {
@@ -2643,7 +2643,7 @@
         "signal_value": 0.15,
         "confidence": 0.4,
         "reasoning": "BB sıkışması var ama henüz kırılım yok — izlemede kalsın.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.06666666666666667,
         "breakout": false
       }
@@ -2656,7 +2656,7 @@
     "ticker": "FENER.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": 0.0342,
+    "final_score": 0.0344,
     "has_conflict": true,
     "conflict_multiplier": 0.71,
     "regime_multiplier": 1.047,
@@ -2674,7 +2674,7 @@
         "signal_value": -0.7,
         "confidence": 0.47536183169907914,
         "reasoning": "MA50<MA200 ve güçlü düşüş trendi (ADX=23.8).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 23.768091584953957
       },
       {
@@ -2685,7 +2685,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (40.7).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 40.65594359312153
       },
       {
@@ -2696,7 +2696,7 @@
         "signal_value": 0.75,
         "confidence": 0.7,
         "reasoning": "MACD sinyal çizgisini yukarı kesti (bullish cross).",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 0.009958398192963847
       },
       {
@@ -2707,7 +2707,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.7x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.7298168382201292
       },
       {
@@ -2718,7 +2718,7 @@
         "signal_value": 0.15,
         "confidence": 0.4,
         "reasoning": "BB sıkışması var ama henüz kırılım yok — izlemede kalsın.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.05,
         "breakout": false
       }
@@ -2731,7 +2731,7 @@
     "ticker": "FROTO.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "SAT",
-    "final_score": -0.1234,
+    "final_score": -0.1233,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -2747,10 +2747,10 @@
         "as_of_date": "2026-07-07",
         "signal": "SAT",
         "signal_value": -0.7,
-        "confidence": 0.6869515604324856,
+        "confidence": 0.6869515604209862,
         "reasoning": "MA50<MA200 ve güçlü düşüş trendi (ADX=34.3).",
-        "weight": 0.2402,
-        "adx": 34.34757802162428
+        "weight": 0.2399,
+        "adx": 34.34757802104931
       },
       {
         "agent": "rsi_agent",
@@ -2760,8 +2760,8 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (36.1).",
-        "weight": 0.213,
-        "rsi": 36.06413070263212
+        "weight": 0.2139,
+        "rsi": 36.06413070262756
       },
       {
         "agent": "macd_agent",
@@ -2771,8 +2771,8 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
-        "histogram": -0.5395326661525166
+        "weight": 0.2301,
+        "histogram": -0.5395326661601727
       },
       {
         "agent": "volume_agent",
@@ -2782,7 +2782,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.0x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.9870143698522116
       },
       {
@@ -2793,7 +2793,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.5333333333333333,
         "breakout": false
       }
@@ -2824,7 +2824,7 @@
         "signal_value": -0.7,
         "confidence": 0.38194567944301994,
         "reasoning": "MA50<MA200 ve güçlü düşüş trendi (ADX=19.1).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 19.097283972150997
       },
       {
@@ -2835,7 +2835,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (46.0), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 45.9511341218564
       },
       {
@@ -2846,7 +2846,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -1.454096413208739
       },
       {
@@ -2857,7 +2857,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.9x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.8924354201257378
       },
       {
@@ -2868,7 +2868,7 @@
         "signal_value": 0.15,
         "confidence": 0.4,
         "reasoning": "BB sıkışması var ama henüz kırılım yok — izlemede kalsın.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.15,
         "breakout": false
       }
@@ -2896,11 +2896,11 @@
         "ticker": "GENIL.IS",
         "as_of_date": "2026-07-07",
         "signal": "BEKLE",
-        "signal_value": -0.21830909003568455,
-        "confidence": 0.3577454533809128,
+        "signal_value": -0.21830909003568547,
+        "confidence": 0.35774545338091396,
         "reasoning": "MA50<MA200, zayıf düşüş eğilimi (ADX=15.0).",
-        "weight": 0.2402,
-        "adx": 14.985818071186712
+        "weight": 0.2399,
+        "adx": 14.985818071186825
       },
       {
         "agent": "rsi_agent",
@@ -2910,7 +2910,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (47.3), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 47.252502465162344
       },
       {
@@ -2921,7 +2921,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.04824020410180205
       },
       {
@@ -2932,7 +2932,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.4x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.445206951370889
       },
       {
@@ -2943,7 +2943,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.43333333333333335,
         "breakout": false
       }
@@ -2956,7 +2956,7 @@
     "ticker": "GESAN.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "AL",
-    "final_score": 0.2244,
+    "final_score": 0.2246,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -2974,7 +2974,7 @@
         "signal_value": 0.8,
         "confidence": 0.3990922855671719,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=20.0).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 19.954614278358594
       },
       {
@@ -2985,7 +2985,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (58.4), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 58.442144506852465
       },
       {
@@ -2996,7 +2996,7 @@
         "signal_value": 0.75,
         "confidence": 0.7,
         "reasoning": "MACD sinyal çizgisini yukarı kesti (bullish cross).",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 0.21492986887306564
       },
       {
@@ -3007,7 +3007,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.2x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.18106230836242923
       },
       {
@@ -3018,7 +3018,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.45,
         "breakout": false
       }
@@ -3053,7 +3053,7 @@
         "signal_value": -0.7,
         "confidence": 0.38004687449372815,
         "reasoning": "MA50<MA200 ve güçlü düşüş trendi (ADX=19.0).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 19.00234372468641
       },
       {
@@ -3064,7 +3064,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (35.5).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 35.47159461107731
       },
       {
@@ -3075,7 +3075,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -1.1226472094201974
       },
       {
@@ -3086,7 +3086,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.7x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.7139960450215379
       },
       {
@@ -3097,7 +3097,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.3,
         "breakout": false
       }
@@ -3112,7 +3112,7 @@
     "final_signal": "BEKLE",
     "final_score": 0.0113,
     "has_conflict": true,
-    "conflict_multiplier": 0.924390727666421,
+    "conflict_multiplier": 0.9243907277669036,
     "regime_multiplier": 1.047,
     "regime_note": "XU100 yükseliş trendinde.",
     "close": 304.75,
@@ -3125,11 +3125,11 @@
         "ticker": "GRSEL.IS",
         "as_of_date": "2026-07-07",
         "signal": "BEKLE",
-        "signal_value": -0.17804636166789475,
-        "confidence": 0.304061815557193,
+        "signal_value": -0.1780463611654822,
+        "confidence": 0.3040618148873096,
         "reasoning": "MA50<MA200, zayıf düşüş eğilimi (ADX=9.9).",
-        "weight": 0.2402,
-        "adx": 9.885872477933336
+        "weight": 0.2399,
+        "adx": 9.885872414294411
       },
       {
         "agent": "rsi_agent",
@@ -3139,8 +3139,8 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (45.4), net momentum yok.",
-        "weight": 0.213,
-        "rsi": 45.40540880883539
+        "weight": 0.2139,
+        "rsi": 45.405408407639015
       },
       {
         "agent": "macd_agent",
@@ -3150,8 +3150,8 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
-        "histogram": -0.44800302993137864
+        "weight": 0.2301,
+        "histogram": -0.4480029376118275
       },
       {
         "agent": "volume_agent",
@@ -3161,7 +3161,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.9x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.9243374191134001
       },
       {
@@ -3172,7 +3172,7 @@
         "signal_value": 0.15,
         "confidence": 0.4,
         "reasoning": "BB sıkışması var ama henüz kırılım yok — izlemede kalsın.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.11666666666666667,
         "breakout": false
       }
@@ -3203,7 +3203,7 @@
         "signal_value": -0.2098231638771227,
         "confidence": 0.34643088516949694,
         "reasoning": "MA50<MA200, zayıf düşüş eğilimi (ADX=13.9).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 13.910934091102204
       },
       {
@@ -3214,7 +3214,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (51.9), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 51.850443677361646
       },
       {
@@ -3225,7 +3225,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -1.523087631936142
       },
       {
@@ -3236,7 +3236,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.6x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.6109914932226234
       },
       {
@@ -3247,7 +3247,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.3,
         "breakout": false
       }
@@ -3260,7 +3260,7 @@
     "ticker": "GSRAY.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": -0.0129,
+    "final_score": -0.013,
     "has_conflict": true,
     "conflict_multiplier": 0.9295615143139652,
     "regime_multiplier": 1.047,
@@ -3278,7 +3278,7 @@
         "signal_value": -0.20219242843017415,
         "confidence": 0.3362565712402322,
         "reasoning": "MA50<MA200, zayıf düşüş eğilimi (ADX=12.9).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 12.944374267822061
       },
       {
@@ -3289,7 +3289,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (27.6).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 27.619822345479278
       },
       {
@@ -3300,7 +3300,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.0012386731217195537
       },
       {
@@ -3311,7 +3311,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.3x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.2584542894090951
       },
       {
@@ -3322,7 +3322,7 @@
         "signal_value": 0.15,
         "confidence": 0.4,
         "reasoning": "BB sıkışması var ama henüz kırılım yok — izlemede kalsın.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.08333333333333333,
         "breakout": false
       }
@@ -3335,7 +3335,7 @@
     "ticker": "GUBRF.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": 0.0805,
+    "final_score": 0.0803,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -3353,7 +3353,7 @@
         "signal_value": 0.8,
         "confidence": 0.45942265888562855,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=23.0).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 22.97113294428143
       },
       {
@@ -3364,7 +3364,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (40.8).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 40.78523467050536
       },
       {
@@ -3375,7 +3375,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.01085321207549228
       },
       {
@@ -3386,7 +3386,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.7x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.7387567447589265
       },
       {
@@ -3397,7 +3397,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.5,
         "breakout": false
       }
@@ -3428,7 +3428,7 @@
         "signal_value": 0.3076296376481936,
         "confidence": 0.44703704706024205,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=15.0).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 14.974815576578397
       },
       {
@@ -3439,7 +3439,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (45.4), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 45.43562917042394
       },
       {
@@ -3450,7 +3450,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.509555188589567
       },
       {
@@ -3461,7 +3461,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.9x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.8870340444570985
       },
       {
@@ -3472,7 +3472,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.5,
         "breakout": false
       }
@@ -3485,7 +3485,7 @@
     "ticker": "HEKTS.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": 0.0982,
+    "final_score": 0.098,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -3503,7 +3503,7 @@
         "signal_value": 0.8,
         "confidence": 0.5238807468748337,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=26.2).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 26.19403734374168
       },
       {
@@ -3514,7 +3514,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (31.4).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 31.418719051940727
       },
       {
@@ -3525,7 +3525,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.07992532152330889
       },
       {
@@ -3536,7 +3536,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.6x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.6326877546895462
       },
       {
@@ -3547,7 +3547,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.7333333333333333,
         "breakout": false
       }
@@ -3575,11 +3575,11 @@
         "ticker": "ISCTR.IS",
         "as_of_date": "2026-07-07",
         "signal": "BEKLE",
-        "signal_value": 0.30854994952749104,
-        "confidence": 0.4481874369093638,
+        "signal_value": 0.3085499495274912,
+        "confidence": 0.448187436909364,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=15.1).",
-        "weight": 0.2402,
-        "adx": 15.062245205111648
+        "weight": 0.2399,
+        "adx": 15.062245205111664
       },
       {
         "agent": "rsi_agent",
@@ -3589,7 +3589,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (48.4), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 48.44590933435406
       },
       {
@@ -3600,7 +3600,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.15322199909985385
       },
       {
@@ -3611,7 +3611,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.9x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.8810788537887754
       },
       {
@@ -3622,7 +3622,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.25,
         "breakout": false
       }
@@ -3635,7 +3635,7 @@
     "ticker": "ISMEN.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": 0.0358,
+    "final_score": 0.036,
     "has_conflict": true,
     "conflict_multiplier": 0.71,
     "regime_multiplier": 1.047,
@@ -3651,10 +3651,10 @@
         "as_of_date": "2026-07-07",
         "signal": "SAT",
         "signal_value": -0.7,
-        "confidence": 0.5169590177601837,
+        "confidence": 0.5169590177601829,
         "reasoning": "MA50<MA200 ve güçlü düşüş trendi (ADX=25.8).",
-        "weight": 0.2402,
-        "adx": 25.847950888009187
+        "weight": 0.2399,
+        "adx": 25.847950888009148
       },
       {
         "agent": "rsi_agent",
@@ -3664,7 +3664,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (37.7).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 37.67756890246533
       },
       {
@@ -3675,7 +3675,7 @@
         "signal_value": 0.75,
         "confidence": 0.7,
         "reasoning": "MACD sinyal çizgisini yukarı kesti (bullish cross).",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 0.001875035826410576
       },
       {
@@ -3686,7 +3686,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.0x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.9641156002654362
       },
       {
@@ -3697,7 +3697,7 @@
         "signal_value": 0.15,
         "confidence": 0.4,
         "reasoning": "BB sıkışması var ama henüz kırılım yok — izlemede kalsın.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.13333333333333333,
         "breakout": false
       }
@@ -3710,7 +3710,7 @@
     "ticker": "IZENR.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": 0.0592,
+    "final_score": 0.0591,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -3728,7 +3728,7 @@
         "signal_value": 0.33674001796661535,
         "confidence": 0.4834250224582692,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=17.7).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 17.740301706828458
       },
       {
@@ -3739,7 +3739,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (37.9).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 37.9012798912736
       },
       {
@@ -3750,7 +3750,7 @@
         "signal_value": 0.15,
         "confidence": 0.35,
         "reasoning": "MACD pozitif ama momentum zayıflıyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 0.026961998254226127
       },
       {
@@ -3761,7 +3761,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.1x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.0946107036774924
       },
       {
@@ -3772,7 +3772,7 @@
         "signal_value": 0.15,
         "confidence": 0.4,
         "reasoning": "BB sıkışması var ama henüz kırılım yok — izlemede kalsın.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.06666666666666667,
         "breakout": false
       }
@@ -3785,9 +3785,9 @@
     "ticker": "KCHOL.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": -0.0055,
+    "final_score": -0.0056,
     "has_conflict": true,
-    "conflict_multiplier": 0.8410112695955616,
+    "conflict_multiplier": 0.8410112695955617,
     "regime_multiplier": 1.047,
     "regime_note": "XU100 yükseliş trendinde.",
     "close": 189.2,
@@ -3800,11 +3800,11 @@
         "ticker": "KCHOL.IS",
         "as_of_date": "2026-07-07",
         "signal": "BEKLE",
-        "signal_value": 0.34494365202219185,
-        "confidence": 0.4936795650277398,
+        "signal_value": 0.34494365202219157,
+        "confidence": 0.4936795650277394,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=18.5).",
-        "weight": 0.2402,
-        "adx": 18.519646942108224
+        "weight": 0.2399,
+        "adx": 18.519646942108196
       },
       {
         "agent": "rsi_agent",
@@ -3814,7 +3814,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (43.7).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 43.713944104188585
       },
       {
@@ -3825,7 +3825,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.9885852085617328
       },
       {
@@ -3836,7 +3836,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.2x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.1627516473722346
       },
       {
@@ -3847,7 +3847,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.23333333333333334,
         "breakout": false
       }
@@ -3878,7 +3878,7 @@
         "signal_value": -0.17162467641902085,
         "confidence": 0.2954995685586945,
         "reasoning": "Trend belirsiz / yatay piyasa.",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 9.072459013075976
       },
       {
@@ -3889,7 +3889,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (41.9).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 41.92530609949195
       },
       {
@@ -3900,7 +3900,7 @@
         "signal_value": 0.15,
         "confidence": 0.35,
         "reasoning": "MACD pozitif ama momentum zayıflıyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 0.7127430799989618
       },
       {
@@ -3911,7 +3911,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.0x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.9680393144706838
       },
       {
@@ -3922,7 +3922,7 @@
         "signal_value": 0.15,
         "confidence": 0.4,
         "reasoning": "BB sıkışması var ama henüz kırılım yok — izlemede kalsın.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.016666666666666666,
         "breakout": false
       }
@@ -3935,7 +3935,7 @@
     "ticker": "KONTR.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": -0.0711,
+    "final_score": -0.0709,
     "has_conflict": true,
     "conflict_multiplier": 0.77,
     "regime_multiplier": 1.047,
@@ -3953,7 +3953,7 @@
         "signal_value": -0.7,
         "confidence": 0.8317299193239126,
         "reasoning": "MA50<MA200 ve güçlü düşüş trendi (ADX=41.6).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 41.58649596619563
       },
       {
@@ -3964,7 +3964,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (37.1).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 37.147428306479576
       },
       {
@@ -3975,7 +3975,7 @@
         "signal_value": 0.45,
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 0.13536280221235653
       },
       {
@@ -3986,7 +3986,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.2x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.18509472049099998
       },
       {
@@ -3997,7 +3997,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.9666666666666667,
         "breakout": false
       }
@@ -4028,7 +4028,7 @@
         "signal_value": 0.29665398827614503,
         "confidence": 0.43331748534518133,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=13.9).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 13.932128886233778
       },
       {
@@ -4039,7 +4039,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (37.7).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 37.71530538945049
       },
       {
@@ -4050,7 +4050,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.4195208572771887
       },
       {
@@ -4061,7 +4061,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.0x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.0381804000570736
       },
       {
@@ -4072,7 +4072,7 @@
         "signal_value": -0.4,
         "confidence": 0.45,
         "reasoning": "Güçlü kırmızı mum (kaliteli düşüş gövdesi).",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.2833333333333333,
         "breakout": false
       }
@@ -4085,7 +4085,7 @@
     "ticker": "KTLEV.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": 0.0695,
+    "final_score": 0.0692,
     "has_conflict": true,
     "conflict_multiplier": 0.75,
     "regime_multiplier": 1.047,
@@ -4101,10 +4101,10 @@
         "as_of_date": "2026-07-07",
         "signal": "AL",
         "signal_value": 0.8,
-        "confidence": 0.6777209798225995,
+        "confidence": 0.6777209699800986,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=33.9).",
-        "weight": 0.2402,
-        "adx": 33.886048991129975
+        "weight": 0.2399,
+        "adx": 33.88604849900493
       },
       {
         "agent": "rsi_agent",
@@ -4114,8 +4114,8 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (62.0).",
-        "weight": 0.213,
-        "rsi": 62.04814814445179
+        "weight": 0.2139,
+        "rsi": 62.04814817498312
       },
       {
         "agent": "macd_agent",
@@ -4125,8 +4125,8 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
-        "histogram": -2.132028998989613
+        "weight": 0.2301,
+        "histogram": -2.1320289946551956
       },
       {
         "agent": "volume_agent",
@@ -4136,7 +4136,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.7x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.6954975409442148
       },
       {
@@ -4147,7 +4147,7 @@
         "signal_value": 0.15,
         "confidence": 0.4,
         "reasoning": "BB sıkışması var ama henüz kırılım yok — izlemede kalsın.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.016666666666666666,
         "breakout": false
       }
@@ -4160,7 +4160,7 @@
     "ticker": "KUYAS.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": 0.076,
+    "final_score": 0.0761,
     "has_conflict": true,
     "conflict_multiplier": 0.76,
     "regime_multiplier": 1.047,
@@ -4178,7 +4178,7 @@
         "signal_value": 0.8,
         "confidence": 0.5244273337748437,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=26.2).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 26.221366688742187
       },
       {
@@ -4189,7 +4189,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (55.5), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 55.49583315742706
       },
       {
@@ -4200,7 +4200,7 @@
         "signal_value": 0.15,
         "confidence": 0.35,
         "reasoning": "MACD pozitif ama momentum zayıflıyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 1.7072019982911844
       },
       {
@@ -4211,7 +4211,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.8x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.7730264142374367
       },
       {
@@ -4222,7 +4222,7 @@
         "signal_value": -0.4,
         "confidence": 0.45,
         "reasoning": "Güçlü kırmızı mum (kaliteli düşüş gövdesi).",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.26666666666666666,
         "breakout": false
       }
@@ -4235,7 +4235,7 @@
     "ticker": "MAGEN.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "AL",
-    "final_score": 0.2414,
+    "final_score": 0.2412,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -4253,7 +4253,7 @@
         "signal_value": 0.8,
         "confidence": 0.9307191394036037,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=46.5).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 46.53595697018019
       },
       {
@@ -4264,7 +4264,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (37.9).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 37.93864229721767
       },
       {
@@ -4275,7 +4275,7 @@
         "signal_value": 0.45,
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 1.3597317065586125
       },
       {
@@ -4286,7 +4286,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.2x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.21598568186528308
       },
       {
@@ -4297,7 +4297,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.43333333333333335,
         "breakout": false
       }
@@ -4314,7 +4314,7 @@
     "ticker": "MAVI.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "AL",
-    "final_score": 0.1221,
+    "final_score": 0.122,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -4332,7 +4332,7 @@
         "signal_value": 0.8,
         "confidence": 0.5539823013723079,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=27.7).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 27.69911506861539
       },
       {
@@ -4343,7 +4343,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (46.2), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 46.21499143136047
       },
       {
@@ -4354,7 +4354,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.00959802997689918
       },
       {
@@ -4365,7 +4365,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.6x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.5607086938561762
       },
       {
@@ -4376,7 +4376,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.9166666666666666,
         "breakout": false
       }
@@ -4393,7 +4393,7 @@
     "ticker": "MGROS.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": 0.0367,
+    "final_score": 0.0366,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -4408,11 +4408,11 @@
         "ticker": "MGROS.IS",
         "as_of_date": "2026-07-07",
         "signal": "BEKLE",
-        "signal_value": 0.32880003661826657,
-        "confidence": 0.4735000457728332,
+        "signal_value": 0.32880003659189205,
+        "confidence": 0.4735000457398651,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=17.0).",
-        "weight": 0.2402,
-        "adx": 16.986003478735324
+        "weight": 0.2399,
+        "adx": 16.986003476229747
       },
       {
         "agent": "rsi_agent",
@@ -4422,8 +4422,8 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (41.6).",
-        "weight": 0.213,
-        "rsi": 41.61306081035237
+        "weight": 0.2139,
+        "rsi": 41.61306081035908
       },
       {
         "agent": "macd_agent",
@@ -4433,8 +4433,8 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
-        "histogram": -8.680488522188988
+        "weight": 0.2301,
+        "histogram": -8.680488522195034
       },
       {
         "agent": "volume_agent",
@@ -4444,7 +4444,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.2x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.1936548709216759
       },
       {
@@ -4455,7 +4455,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.6166666666666667,
         "breakout": false
       }
@@ -4486,7 +4486,7 @@
         "signal_value": 0.8,
         "confidence": 0.4800919693133322,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=24.0).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 24.00459846566661
       },
       {
@@ -4497,7 +4497,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (25.9).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 25.923581914507622
       },
       {
@@ -4508,7 +4508,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.9607378465404968
       },
       {
@@ -4519,7 +4519,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.5x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.5220764313034275
       },
       {
@@ -4530,7 +4530,7 @@
         "signal_value": -0.4,
         "confidence": 0.45,
         "reasoning": "Güçlü kırmızı mum (kaliteli düşüş gövdesi).",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 1.0,
         "breakout": false
       }
@@ -4543,7 +4543,7 @@
     "ticker": "MPARK.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": 0.0876,
+    "final_score": 0.0875,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -4561,7 +4561,7 @@
         "signal_value": 0.8,
         "confidence": 0.4478493947071429,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=22.4).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 22.392469735357146
       },
       {
@@ -4572,7 +4572,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (41.8).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 41.756628253366166
       },
       {
@@ -4583,7 +4583,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.9327971008768188
       },
       {
@@ -4594,7 +4594,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.7x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.7245822708707617
       },
       {
@@ -4605,7 +4605,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.18333333333333332,
         "breakout": false
       }
@@ -4618,7 +4618,7 @@
     "ticker": "OBAMS.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "SAT",
-    "final_score": -0.1487,
+    "final_score": -0.1483,
     "has_conflict": true,
     "conflict_multiplier": 0.7758044787174331,
     "regime_multiplier": 1.047,
@@ -4636,7 +4636,7 @@
         "signal_value": -0.7,
         "confidence": 0.8508261597044425,
         "reasoning": "MA50<MA200 ve güçlü düşüş trendi (ADX=42.5).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 42.541307985222126
       },
       {
@@ -4647,7 +4647,7 @@
         "signal_value": 0.4209776064128348,
         "confidence": 0.5139850709418898,
         "reasoning": "RSI aşırı satım bölgesinde (18.6), dönüş teyidi bekleniyor.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 18.601492905811014
       },
       {
@@ -4658,7 +4658,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.06848133314101346
       },
       {
@@ -4669,7 +4669,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.9x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.935569534055315
       },
       {
@@ -4680,7 +4680,7 @@
         "signal_value": -0.4,
         "confidence": 0.45,
         "reasoning": "Güçlü kırmızı mum (kaliteli düşüş gövdesi).",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.9666666666666667,
         "breakout": false
       }
@@ -4711,7 +4711,7 @@
         "signal_value": 0.8,
         "confidence": 0.3887172852551332,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=19.4).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 19.43586426275666
       },
       {
@@ -4722,7 +4722,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (50.5), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 50.49145039080425
       },
       {
@@ -4733,7 +4733,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.14822837826006346
       },
       {
@@ -4744,7 +4744,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.5x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.47360656041063764
       },
       {
@@ -4755,7 +4755,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.8166666666666667,
         "breakout": false
       }
@@ -4768,7 +4768,7 @@
     "ticker": "OTKAR.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": -0.0151,
+    "final_score": -0.0148,
     "has_conflict": true,
     "conflict_multiplier": 0.88,
     "regime_multiplier": 1.047,
@@ -4786,7 +4786,7 @@
         "signal_value": -0.19733438984735496,
         "confidence": 0.32977918646314,
         "reasoning": "MA50<MA200, zayıf düşüş eğilimi (ADX=12.3).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 12.329022713998295
       },
       {
@@ -4797,7 +4797,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (49.3), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 49.27057965690651
       },
       {
@@ -4808,7 +4808,7 @@
         "signal_value": 0.15,
         "confidence": 0.35,
         "reasoning": "MACD pozitif ama momentum zayıflıyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 2.5830942555459036
       },
       {
@@ -4819,7 +4819,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.5x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.48039478919402945
       },
       {
@@ -4830,7 +4830,7 @@
         "signal_value": -0.4,
         "confidence": 0.45,
         "reasoning": "Güçlü kırmızı mum (kaliteli düşüş gövdesi).",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.7833333333333333,
         "breakout": false
       }
@@ -4843,7 +4843,7 @@
     "ticker": "OYAKC.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": -0.019,
+    "final_score": -0.0188,
     "has_conflict": true,
     "conflict_multiplier": 0.77,
     "regime_multiplier": 1.047,
@@ -4861,7 +4861,7 @@
         "signal_value": -0.7,
         "confidence": 0.4744784681104673,
         "reasoning": "MA50<MA200 ve güçlü düşüş trendi (ADX=23.7).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 23.723923405523365
       },
       {
@@ -4872,7 +4872,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (44.2).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 44.24246115112791
       },
       {
@@ -4883,7 +4883,7 @@
         "signal_value": 0.45,
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 0.010985119546492395
       },
       {
@@ -4894,7 +4894,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.8x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.7962527042870801
       },
       {
@@ -4905,7 +4905,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.3,
         "breakout": false
       }
@@ -4918,7 +4918,7 @@
     "ticker": "PASEU.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": -0.1177,
+    "final_score": -0.1175,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -4936,7 +4936,7 @@
         "signal_value": -0.7,
         "confidence": 0.4233840651117892,
         "reasoning": "MA50<MA200 ve güçlü düşüş trendi (ADX=21.2).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 21.169203255589462
       },
       {
@@ -4947,7 +4947,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (36.4).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 36.367892425771814
       },
       {
@@ -4958,7 +4958,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -4.385390708571503
       },
       {
@@ -4969,7 +4969,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.8x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.7602256702018109
       },
       {
@@ -4980,7 +4980,7 @@
         "signal_value": -0.4,
         "confidence": 0.45,
         "reasoning": "Güçlü kırmızı mum (kaliteli düşüş gövdesi).",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 1.0,
         "breakout": false
       }
@@ -4993,7 +4993,7 @@
     "ticker": "PATEK.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": 0.0118,
+    "final_score": 0.0119,
     "has_conflict": true,
     "conflict_multiplier": 0.9122012091538965,
     "regime_multiplier": 1.047,
@@ -5011,7 +5011,7 @@
         "signal_value": -0.2389939542305175,
         "confidence": 0.3853252723073567,
         "reasoning": "MA50<MA200, zayıf düşüş eğilimi (ADX=17.6).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 17.605900869198884
       },
       {
@@ -5022,7 +5022,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (51.8), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 51.77246685165232
       },
       {
@@ -5033,7 +5033,7 @@
         "signal_value": 0.15,
         "confidence": 0.35,
         "reasoning": "MACD pozitif ama momentum zayıflıyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 0.16789187928208713
       },
       {
@@ -5044,7 +5044,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.4x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.388592063867284
       },
       {
@@ -5055,7 +5055,7 @@
         "signal_value": 0.15,
         "confidence": 0.4,
         "reasoning": "BB sıkışması var ama henüz kırılım yok — izlemede kalsın.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.05,
         "breakout": false
       }
@@ -5086,7 +5086,7 @@
         "signal_value": 0.3057328542798514,
         "confidence": 0.4446660678498142,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=14.8).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 14.79462115658588
       },
       {
@@ -5097,7 +5097,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (37.9).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 37.87014457994301
       },
       {
@@ -5108,7 +5108,7 @@
         "signal_value": 0.45,
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 0.08064039801219791
       },
       {
@@ -5119,7 +5119,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.9x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.9472307974532304
       },
       {
@@ -5130,7 +5130,7 @@
         "signal_value": 0.15,
         "confidence": 0.4,
         "reasoning": "BB sıkışması var ama henüz kırılım yok — izlemede kalsın.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.016666666666666666,
         "breakout": false
       }
@@ -5161,7 +5161,7 @@
         "signal_value": -0.21584506044352397,
         "confidence": 0.35446008059136536,
         "reasoning": "MA50<MA200, zayıf düşüş eğilimi (ADX=14.7).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 14.673707656179705
       },
       {
@@ -5172,7 +5172,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (45.4), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 45.37649226551773
       },
       {
@@ -5183,7 +5183,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.9312032753762192
       },
       {
@@ -5194,7 +5194,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.4x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.3893424652285389
       },
       {
@@ -5205,7 +5205,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.31666666666666665,
         "breakout": false
       }
@@ -5234,10 +5234,10 @@
         "as_of_date": "2026-07-07",
         "signal": "AL",
         "signal_value": 0.8,
-        "confidence": 0.5211192915406596,
+        "confidence": 0.5211192915115832,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=26.1).",
-        "weight": 0.2402,
-        "adx": 26.05596457703298
+        "weight": 0.2399,
+        "adx": 26.05596457557916
       },
       {
         "agent": "rsi_agent",
@@ -5247,8 +5247,8 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (51.3), net momentum yok.",
-        "weight": 0.213,
-        "rsi": 51.27059520029217
+        "weight": 0.2139,
+        "rsi": 51.270595200282095
       },
       {
         "agent": "macd_agent",
@@ -5258,8 +5258,8 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
-        "histogram": -0.04903245705390044
+        "weight": 0.2301,
+        "histogram": -0.04903245705328185
       },
       {
         "agent": "volume_agent",
@@ -5269,7 +5269,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.8x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.7847076381836312
       },
       {
@@ -5280,7 +5280,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.3,
         "breakout": false
       }
@@ -5293,7 +5293,7 @@
     "ticker": "QUAGR.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": -0.063,
+    "final_score": -0.0631,
     "has_conflict": true,
     "conflict_multiplier": 0.88,
     "regime_multiplier": 1.047,
@@ -5311,7 +5311,7 @@
         "signal_value": -0.23852650822283983,
         "confidence": 0.3847020109637865,
         "reasoning": "MA50<MA200, zayıf düşüş eğilimi (ADX=17.5).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 17.54669104155971
       },
       {
@@ -5322,7 +5322,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (36.8).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 36.775391067272906
       },
       {
@@ -5333,7 +5333,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.0541251207199137
       },
       {
@@ -5344,7 +5344,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.5x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.502674976691084
       },
       {
@@ -5355,7 +5355,7 @@
         "signal_value": 0.15,
         "confidence": 0.4,
         "reasoning": "BB sıkışması var ama henüz kırılım yok — izlemede kalsın.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.08333333333333333,
         "breakout": false
       }
@@ -5386,7 +5386,7 @@
         "signal_value": 0.8,
         "confidence": 0.5959419997841254,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=29.8).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 29.797099989206274
       },
       {
@@ -5397,7 +5397,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (51.2), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 51.18015183927589
       },
       {
@@ -5408,7 +5408,7 @@
         "signal_value": 0.45,
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 9.763731140777384
       },
       {
@@ -5419,7 +5419,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.5x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.4962419753015847
       },
       {
@@ -5430,7 +5430,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.31666666666666665,
         "breakout": false
       }
@@ -5465,7 +5465,7 @@
         "signal_value": -0.2281842951509604,
         "confidence": 0.37091239353461386,
         "reasoning": "MA50<MA200, zayıf düşüş eğilimi (ADX=16.2).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 16.236677385788315
       },
       {
@@ -5476,7 +5476,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (42.4).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 42.415997717932335
       },
       {
@@ -5487,7 +5487,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.018072707252674125
       },
       {
@@ -5498,7 +5498,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.2x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.241428908024993
       },
       {
@@ -5509,7 +5509,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.8666666666666667,
         "breakout": false
       }
@@ -5522,7 +5522,7 @@
     "ticker": "SAHOL.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": -0.0196,
+    "final_score": -0.0197,
     "has_conflict": true,
     "conflict_multiplier": 0.8473951143853184,
     "regime_multiplier": 1.047,
@@ -5540,7 +5540,7 @@
         "signal_value": 0.3130244280734079,
         "confidence": 0.4537805350917599,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=15.5).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 15.487320666973753
       },
       {
@@ -5551,7 +5551,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (38.3).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 38.31221166529224
       },
       {
@@ -5562,7 +5562,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -1.2152753541991252
       },
       {
@@ -5573,7 +5573,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.3x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.2568856827501884
       },
       {
@@ -5584,7 +5584,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.26666666666666666,
         "breakout": false
       }
@@ -5597,7 +5597,7 @@
     "ticker": "SARKY.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": -0.0136,
+    "final_score": -0.0138,
     "has_conflict": true,
     "conflict_multiplier": 0.8553545169430612,
     "regime_multiplier": 1.047,
@@ -5612,11 +5612,11 @@
         "ticker": "SARKY.IS",
         "as_of_date": "2026-07-07",
         "signal": "BEKLE",
-        "signal_value": 0.27322741528469396,
-        "confidence": 0.4040342691058675,
+        "signal_value": 0.27322741528469374,
+        "confidence": 0.40403426910586715,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=11.7).",
-        "weight": 0.2402,
-        "adx": 11.706604452045926
+        "weight": 0.2399,
+        "adx": 11.706604452045905
       },
       {
         "agent": "rsi_agent",
@@ -5626,7 +5626,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (41.2).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 41.24735512378972
       },
       {
@@ -5637,7 +5637,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.07927076787792786
       },
       {
@@ -5648,7 +5648,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.7x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.6746568463002515
       },
       {
@@ -5659,7 +5659,7 @@
         "signal_value": 0.15,
         "confidence": 0.4,
         "reasoning": "BB sıkışması var ama henüz kırılım yok — izlemede kalsın.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.03333333333333333,
         "breakout": false
       }
@@ -5690,7 +5690,7 @@
         "signal_value": -0.7,
         "confidence": 0.46247120807619424,
         "reasoning": "MA50<MA200 ve güçlü düşüş trendi (ADX=23.1).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 23.123560403809712
       },
       {
@@ -5701,7 +5701,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (28.3).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 28.31414791029968
       },
       {
@@ -5712,7 +5712,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.03185687272584825
       },
       {
@@ -5723,7 +5723,7 @@
         "signal_value": -0.6,
         "confidence": 1.0,
         "reasoning": "Yüksek hacimle (8.6x) kırmızı mum — satış baskısı.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 8.553293992584843
       },
       {
@@ -5734,7 +5734,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.4,
         "breakout": false
       }
@@ -5747,9 +5747,9 @@
     "ticker": "SISE.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": -0.0225,
+    "final_score": -0.0226,
     "has_conflict": true,
-    "conflict_multiplier": 0.8505434083650938,
+    "conflict_multiplier": 0.8505434083650923,
     "regime_multiplier": 1.047,
     "regime_note": "XU100 yükseliş trendinde.",
     "close": 43.16,
@@ -5762,11 +5762,11 @@
         "ticker": "SISE.IS",
         "as_of_date": "2026-07-07",
         "signal": "BEKLE",
-        "signal_value": 0.2972829581745307,
-        "confidence": 0.4341036977181634,
+        "signal_value": 0.29728295817453837,
+        "confidence": 0.4341036977181729,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=14.0).",
-        "weight": 0.2402,
-        "adx": 13.991881026580419
+        "weight": 0.2399,
+        "adx": 13.991881026581144
       },
       {
         "agent": "rsi_agent",
@@ -5776,7 +5776,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (38.7).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 38.6840002507071
       },
       {
@@ -5787,7 +5787,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.2705217551948782
       },
       {
@@ -5798,7 +5798,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.1x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.1495403266660518
       },
       {
@@ -5809,7 +5809,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.3,
         "breakout": false
       }
@@ -5822,7 +5822,7 @@
     "ticker": "SKBNK.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "AL",
-    "final_score": 0.1257,
+    "final_score": 0.1255,
     "has_conflict": true,
     "conflict_multiplier": 0.7608948718362235,
     "regime_multiplier": 1.047,
@@ -5838,10 +5838,10 @@
         "as_of_date": "2026-07-07",
         "signal": "AL",
         "signal_value": 0.8,
-        "confidence": 0.7375121261013117,
+        "confidence": 0.7375121261013213,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=36.9).",
-        "weight": 0.2402,
-        "adx": 36.87560630506558
+        "weight": 0.2399,
+        "adx": 36.875606305066064
       },
       {
         "agent": "rsi_agent",
@@ -5851,7 +5851,7 @@
         "signal_value": -0.3955256408188823,
         "confidence": 0.4764205126551059,
         "reasoning": "RSI aşırı alım bölgesinde (79.0), yeni pozisyon riskli.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 78.96733332258188
       },
       {
@@ -5862,7 +5862,7 @@
         "signal_value": 0.45,
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 0.4139884333017889
       },
       {
@@ -5873,7 +5873,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.8x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.8033402131464529
       },
       {
@@ -5884,7 +5884,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 1.0,
         "breakout": false
       }
@@ -5919,7 +5919,7 @@
         "signal_value": -0.7,
         "confidence": 0.44314591407617276,
         "reasoning": "MA50<MA200 ve güçlü düşüş trendi (ADX=22.2).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 22.15729570380864
       },
       {
@@ -5930,7 +5930,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (35.7).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 35.67522439704041
       },
       {
@@ -5941,7 +5941,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.26189035048166476
       },
       {
@@ -5952,7 +5952,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.8x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.7722728021072414
       },
       {
@@ -5963,7 +5963,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.45,
         "breakout": false
       }
@@ -5994,7 +5994,7 @@
         "signal_value": 0.8,
         "confidence": 0.5069959563749828,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=25.3).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 25.349797818749142
       },
       {
@@ -6005,7 +6005,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (35.8).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 35.75536433556405
       },
       {
@@ -6016,7 +6016,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.32050916718050715
       },
       {
@@ -6027,7 +6027,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.9x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.9160072906808518
       },
       {
@@ -6038,7 +6038,7 @@
         "signal_value": -0.4,
         "confidence": 0.45,
         "reasoning": "Güçlü kırmızı mum (kaliteli düşüş gövdesi).",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.8833333333333333,
         "breakout": false
       }
@@ -6051,7 +6051,7 @@
     "ticker": "TAVHL.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": -0.0936,
+    "final_score": -0.0937,
     "has_conflict": true,
     "conflict_multiplier": 0.83,
     "regime_multiplier": 1.047,
@@ -6069,7 +6069,7 @@
         "signal_value": -0.7,
         "confidence": 0.4194652000828894,
         "reasoning": "MA50<MA200 ve güçlü düşüş trendi (ADX=21.0).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 20.97326000414447
       },
       {
@@ -6080,7 +6080,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (42.8).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 42.77584428494511
       },
       {
@@ -6091,7 +6091,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -3.1110885948544245
       },
       {
@@ -6102,7 +6102,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.9x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.9031601581228554
       },
       {
@@ -6113,7 +6113,7 @@
         "signal_value": 0.15,
         "confidence": 0.4,
         "reasoning": "BB sıkışması var ama henüz kırılım yok — izlemede kalsın.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.15,
         "breakout": false
       }
@@ -6141,11 +6141,11 @@
         "ticker": "TCELL.IS",
         "as_of_date": "2026-07-07",
         "signal": "BEKLE",
-        "signal_value": 0.2808313195940053,
-        "confidence": 0.4135391494925066,
+        "signal_value": 0.2808313195939907,
+        "confidence": 0.4135391494924884,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=12.4).",
-        "weight": 0.2402,
-        "adx": 12.428975361430503
+        "weight": 0.2399,
+        "adx": 12.428975361429119
       },
       {
         "agent": "rsi_agent",
@@ -6155,8 +6155,8 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (46.3), net momentum yok.",
-        "weight": 0.213,
-        "rsi": 46.3277583092865
+        "weight": 0.2139,
+        "rsi": 46.32775830928651
       },
       {
         "agent": "macd_agent",
@@ -6166,8 +6166,8 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
-        "histogram": -0.5621747262818888
+        "weight": 0.2301,
+        "histogram": -0.5621747262818877
       },
       {
         "agent": "volume_agent",
@@ -6177,7 +6177,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.0x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.037022701892553
       },
       {
@@ -6188,7 +6188,7 @@
         "signal_value": 0.15,
         "confidence": 0.4,
         "reasoning": "BB sıkışması var ama henüz kırılım yok — izlemede kalsın.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.11666666666666667,
         "breakout": false
       }
@@ -6201,7 +6201,7 @@
     "ticker": "THYAO.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": 0.1129,
+    "final_score": 0.1127,
     "has_conflict": true,
     "conflict_multiplier": 0.7677984986203583,
     "regime_multiplier": 1.047,
@@ -6217,10 +6217,10 @@
         "as_of_date": "2026-07-07",
         "signal": "AL",
         "signal_value": 0.8,
-        "confidence": 0.6179386922921353,
+        "confidence": 0.6179386922921298,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=30.9).",
-        "weight": 0.2402,
-        "adx": 30.896934614606764
+        "weight": 0.2399,
+        "adx": 30.896934614606494
       },
       {
         "agent": "rsi_agent",
@@ -6230,7 +6230,7 @@
         "signal_value": -0.3610075068982081,
         "confidence": 0.44880600551856653,
         "reasoning": "RSI aşırı alım bölgesinde (77.2), yeni pozisyon riskli.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 77.17239035870682
       },
       {
@@ -6241,7 +6241,7 @@
         "signal_value": 0.45,
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 2.483961661746516
       },
       {
@@ -6252,7 +6252,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.2x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.1996100486285008
       },
       {
@@ -6263,7 +6263,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.65,
         "breakout": false
       }
@@ -6276,7 +6276,7 @@
     "ticker": "TKFEN.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": -0.0687,
+    "final_score": -0.069,
     "has_conflict": true,
     "conflict_multiplier": 0.7937887387966468,
     "regime_multiplier": 1.047,
@@ -6294,7 +6294,7 @@
         "signal_value": 0.2810563060167661,
         "confidence": 0.41382038252095765,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=12.5).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 12.450349071592782
       },
       {
@@ -6305,7 +6305,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (44.6).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 44.60604227900481
       },
       {
@@ -6316,7 +6316,7 @@
         "signal_value": -0.75,
         "confidence": 0.7,
         "reasoning": "MACD sinyal çizgisini aşağı kesti (bearish cross).",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.3213749101797143
       },
       {
@@ -6327,7 +6327,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.7x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.6742272328337771
       },
       {
@@ -6338,7 +6338,7 @@
         "signal_value": 0.15,
         "confidence": 0.4,
         "reasoning": "BB sıkışması var ama henüz kırılım yok — izlemede kalsın.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.016666666666666666,
         "breakout": false
       }
@@ -6351,7 +6351,7 @@
     "ticker": "TOASO.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": -0.0203,
+    "final_score": -0.0204,
     "has_conflict": true,
     "conflict_multiplier": 0.8480917653468116,
     "regime_multiplier": 1.047,
@@ -6366,11 +6366,11 @@
         "ticker": "TOASO.IS",
         "as_of_date": "2026-07-07",
         "signal": "BEKLE",
-        "signal_value": 0.30954117326594155,
-        "confidence": 0.44942646658242696,
+        "signal_value": 0.3095411732659421,
+        "confidence": 0.4494264665824277,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=15.2).",
-        "weight": 0.2402,
-        "adx": 15.156411460264449
+        "weight": 0.2399,
+        "adx": 15.156411460264502
       },
       {
         "agent": "rsi_agent",
@@ -6380,7 +6380,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (39.8).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 39.801377944292724
       },
       {
@@ -6391,7 +6391,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -5.8572644641096225
       },
       {
@@ -6402,7 +6402,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.8x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.8493675102079578
       },
       {
@@ -6413,7 +6413,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.8333333333333334,
         "breakout": false
       }
@@ -6444,7 +6444,7 @@
         "signal_value": 0.3409555063906524,
         "confidence": 0.48869438298831547,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=18.1).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 18.140773107111976
       },
       {
@@ -6455,7 +6455,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (65.5).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 65.54836184206621
       },
       {
@@ -6466,7 +6466,7 @@
         "signal_value": 0.45,
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 0.5009964305956118
       },
       {
@@ -6477,7 +6477,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.1x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.0535320370437529
       },
       {
@@ -6488,7 +6488,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.7166666666666667,
         "breakout": false
       }
@@ -6519,7 +6519,7 @@
         "signal_value": -0.2369807201507114,
         "confidence": 0.3826409602009485,
         "reasoning": "MA50<MA200, zayıf düşüş eğilimi (ADX=17.4).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 17.35089121909011
       },
       {
@@ -6530,7 +6530,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (64.1).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 64.14658742345404
       },
       {
@@ -6541,7 +6541,7 @@
         "signal_value": 0.45,
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 1.6017293546357099
       },
       {
@@ -6552,7 +6552,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.5x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.5465305052261855
       },
       {
@@ -6563,7 +6563,7 @@
         "signal_value": 0.2,
         "confidence": 0.35,
         "reasoning": "Direnç kırıldı ama mum kalitesi zayıf (uzun fitil), teyit zayıf.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.8333333333333334,
         "breakout": true
       }
@@ -6576,7 +6576,7 @@
     "ticker": "TRMET.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": 0.052,
+    "final_score": 0.0521,
     "has_conflict": true,
     "conflict_multiplier": 0.8697507492994364,
     "regime_multiplier": 1.047,
@@ -6594,7 +6594,7 @@
         "signal_value": -0.20124625350281786,
         "confidence": 0.3349950046704238,
         "reasoning": "MA50<MA200, zayıf düşüş eğilimi (ADX=12.8).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 12.824525443690261
       },
       {
@@ -6605,7 +6605,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (59.6), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 59.602742852863955
       },
       {
@@ -6616,7 +6616,7 @@
         "signal_value": 0.45,
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 1.9556636259714177
       },
       {
@@ -6627,7 +6627,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.0x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.9918225459716628
       },
       {
@@ -6638,7 +6638,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.16666666666666666,
         "breakout": false
       }
@@ -6669,7 +6669,7 @@
         "signal_value": -0.21825342464974407,
         "confidence": 0.35767123286632546,
         "reasoning": "MA50<MA200, zayıf düşüş eğilimi (ADX=15.0).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 14.978767122300916
       },
       {
@@ -6680,7 +6680,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (47.7), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 47.69750255346301
       },
       {
@@ -6691,7 +6691,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.07119523839736469
       },
       {
@@ -6702,7 +6702,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.6x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.6263663337454168
       },
       {
@@ -6713,7 +6713,7 @@
         "signal_value": 0.15,
         "confidence": 0.4,
         "reasoning": "BB sıkışması var ama henüz kırılım yok — izlemede kalsın.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.016666666666666666,
         "breakout": false
       }
@@ -6744,7 +6744,7 @@
         "signal_value": 0.2591446417616047,
         "confidence": 0.3864308022020058,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=10.4).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 10.368740967352442
       },
       {
@@ -6755,7 +6755,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (38.8).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 38.84902671186166
       },
       {
@@ -6766,7 +6766,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.41526640918430624
       },
       {
@@ -6777,7 +6777,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.1x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.1459906236494422
       },
       {
@@ -6788,7 +6788,7 @@
         "signal_value": -0.4,
         "confidence": 0.45,
         "reasoning": "Güçlü kırmızı mum (kaliteli düşüş gövdesi).",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.25,
         "breakout": false
       }
@@ -6801,7 +6801,7 @@
     "ticker": "TUKAS.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "SAT",
-    "final_score": -0.1706,
+    "final_score": -0.1704,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -6819,7 +6819,7 @@
         "signal_value": -0.7,
         "confidence": 0.457077251283426,
         "reasoning": "MA50<MA200 ve güçlü düşüş trendi (ADX=22.9).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 22.8538625641713
       },
       {
@@ -6830,7 +6830,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (28.4).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 28.381976672388618
       },
       {
@@ -6841,7 +6841,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.010237980838738114
       },
       {
@@ -6852,7 +6852,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.9x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.9028570783566772
       },
       {
@@ -6863,7 +6863,7 @@
         "signal_value": -0.4,
         "confidence": 0.45,
         "reasoning": "Güçlü kırmızı mum (kaliteli düşüş gövdesi).",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.38333333333333336,
         "breakout": false
       }
@@ -6876,7 +6876,7 @@
     "ticker": "TUPRS.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "AL",
-    "final_score": 0.2253,
+    "final_score": 0.2249,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -6892,10 +6892,10 @@
         "as_of_date": "2026-07-07",
         "signal": "AL",
         "signal_value": 0.8,
-        "confidence": 0.5165711917144363,
+        "confidence": 0.5165711917144914,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=25.8).",
-        "weight": 0.2402,
-        "adx": 25.828559585721816
+        "weight": 0.2399,
+        "adx": 25.82855958572457
       },
       {
         "agent": "rsi_agent",
@@ -6905,7 +6905,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (72.2).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 72.20896280637139
       },
       {
@@ -6916,7 +6916,7 @@
         "signal_value": 0.45,
         "confidence": 0.5,
         "reasoning": "MACD pozitif ve histogram güçleniyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": 6.848003551997561
       },
       {
@@ -6927,7 +6927,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.3x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.2579552715656426
       },
       {
@@ -6938,7 +6938,7 @@
         "signal_value": 0.6,
         "confidence": 0.6,
         "reasoning": "Direnç kırılımı, kaliteli yeşil mumla teyitli.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.9333333333333333,
         "breakout": true
       }
@@ -6955,7 +6955,7 @@
     "ticker": "TUREX.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": -0.0012,
+    "final_score": -0.0011,
     "has_conflict": true,
     "conflict_multiplier": 0.8561192601697095,
     "regime_multiplier": 1.047,
@@ -6973,7 +6973,7 @@
         "signal_value": 0.31940369915145234,
         "confidence": 0.46175462393931543,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=16.1).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 16.09335141938797
       },
       {
@@ -6984,7 +6984,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (25.0).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 24.979664395401826
       },
       {
@@ -6995,7 +6995,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.06367407246541551
       },
       {
@@ -7006,7 +7006,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.6x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.5640528622227884
       },
       {
@@ -7017,7 +7017,7 @@
         "signal_value": -0.4,
         "confidence": 0.45,
         "reasoning": "Güçlü kırmızı mum (kaliteli düşüş gövdesi).",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.5166666666666667,
         "breakout": false
       }
@@ -7030,7 +7030,7 @@
     "ticker": "TURSG.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": 0.1124,
+    "final_score": 0.1122,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -7048,7 +7048,7 @@
         "signal_value": 0.8,
         "confidence": 0.5707220742097876,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=28.5).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 28.536103710489378
       },
       {
@@ -7059,7 +7059,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (36.1).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 36.05126382854688
       },
       {
@@ -7070,7 +7070,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.03593756388689989
       },
       {
@@ -7081,7 +7081,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.9x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.8735978895194667
       },
       {
@@ -7092,7 +7092,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.4666666666666667,
         "breakout": false
       }
@@ -7105,7 +7105,7 @@
     "ticker": "ULKER.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "AL",
-    "final_score": 0.1987,
+    "final_score": 0.1985,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -7123,7 +7123,7 @@
         "signal_value": 0.8,
         "confidence": 1.0,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=59.4).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 59.39793000094295
       },
       {
@@ -7134,7 +7134,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (32.4).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 32.3990818885256
       },
       {
@@ -7145,7 +7145,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.48057174243775114
       },
       {
@@ -7156,7 +7156,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (0.8x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.7635664040055137
       },
       {
@@ -7167,7 +7167,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.8666666666666667,
         "breakout": false
       }
@@ -7202,7 +7202,7 @@
         "signal_value": 0.29222505590943654,
         "confidence": 0.4277813198867957,
         "reasoning": "MA50>MA200 ama trend zayıf (ADX=13.5).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 13.51138031139647
       },
       {
@@ -7213,7 +7213,7 @@
         "signal_value": 0.2,
         "confidence": 0.4,
         "reasoning": "RSI nötr bölgede (47.1), net momentum yok.",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 47.064890233847834
       },
       {
@@ -7224,7 +7224,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.2964663259513777
       },
       {
@@ -7235,7 +7235,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.0x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.9913209818069676
       },
       {
@@ -7246,7 +7246,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.3333333333333333,
         "breakout": false
       }
@@ -7259,7 +7259,7 @@
     "ticker": "VESTL.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "SAT",
-    "final_score": -0.2151,
+    "final_score": -0.2152,
     "has_conflict": false,
     "conflict_multiplier": 1.0,
     "regime_multiplier": 1.047,
@@ -7277,7 +7277,7 @@
         "signal_value": -0.7,
         "confidence": 0.5047854000697171,
         "reasoning": "MA50<MA200 ve güçlü düşüş trendi (ADX=25.2).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 25.239270003485853
       },
       {
@@ -7288,7 +7288,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (44.2).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 44.179075973650896
       },
       {
@@ -7299,7 +7299,7 @@
         "signal_value": -0.75,
         "confidence": 0.7,
         "reasoning": "MACD sinyal çizgisini aşağı kesti (bearish cross).",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.019979842189955133
       },
       {
@@ -7310,7 +7310,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.6x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.6442619013305303
       },
       {
@@ -7321,7 +7321,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.7333333333333333,
         "breakout": false
       }
@@ -7334,7 +7334,7 @@
     "ticker": "YKBNK.IS",
     "as_of_date": "2026-07-07",
     "final_signal": "BEKLE",
-    "final_score": 0.0245,
+    "final_score": 0.0244,
     "has_conflict": true,
     "conflict_multiplier": 0.75,
     "regime_multiplier": 1.047,
@@ -7352,7 +7352,7 @@
         "signal_value": 0.8,
         "confidence": 0.4079541508335394,
         "reasoning": "MA50>MA200 ve güçlü trend (ADX=20.4).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 20.397707541676972
       },
       {
@@ -7363,7 +7363,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (41.6).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 41.60753199145857
       },
       {
@@ -7374,7 +7374,7 @@
         "signal_value": -0.45,
         "confidence": 0.5,
         "reasoning": "MACD negatif ve histogram zayıflamaya devam ediyor.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.9286724296861009
       },
       {
@@ -7385,7 +7385,7 @@
         "signal_value": 0.1,
         "confidence": 0.3,
         "reasoning": "Normal hacim seviyesi (1.1x).",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 1.1405000125292821
       },
       {
@@ -7396,7 +7396,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.6166666666666667,
         "breakout": false
       }
@@ -7427,7 +7427,7 @@
         "signal_value": -0.18036739927480538,
         "confidence": 0.30715653236640716,
         "reasoning": "MA50<MA200, zayıf düşüş eğilimi (ADX=10.2).",
-        "weight": 0.2402,
+        "weight": 0.2399,
         "adx": 10.17987057480868
       },
       {
@@ -7438,7 +7438,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "RSI nötr (37.9).",
-        "weight": 0.213,
+        "weight": 0.2139,
         "rsi": 37.94595119419871
       },
       {
@@ -7449,7 +7449,7 @@
         "signal_value": -0.1,
         "confidence": 0.3,
         "reasoning": "MACD negatif ama toparlanma sinyali var.",
-        "weight": 0.2297,
+        "weight": 0.2301,
         "histogram": -0.019043348731694817
       },
       {
@@ -7460,7 +7460,7 @@
         "signal_value": 0.0,
         "confidence": 0.3,
         "reasoning": "Düşük hacim (0.3x) — ilgi zayıf, sinyal güvenilir değil.",
-        "weight": 0.1514,
+        "weight": 0.1513,
         "rel_volume": 0.3090003596220019
       },
       {
@@ -7471,7 +7471,7 @@
         "signal_value": 0.0,
         "confidence": 0.25,
         "reasoning": "Belirgin bir formasyon sinyali yok.",
-        "weight": 0.1657,
+        "weight": 0.1648,
         "bb_squeeze_pct": 0.4666666666666667,
         "breakout": false
       }
