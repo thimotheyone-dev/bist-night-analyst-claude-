@@ -1,7 +1,7 @@
 {
-  "trend_agent": 0.2396,
-  "rsi_agent": 0.2163,
-  "macd_agent": 0.2303,
-  "volume_agent": 0.1516,
-  "pattern_agent": 0.1623
+  "trend_agent": 0.2397,
+  "rsi_agent": 0.2172,
+  "macd_agent": 0.2298,
+  "volume_agent": 0.1519,
+  "pattern_agent": 0.1613
 }
