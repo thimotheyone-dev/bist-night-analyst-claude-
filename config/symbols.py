@@ -8,7 +8,7 @@ eklenir. BIST100 endeksi rejim filtresi için ayrıca tutulur.
 from __future__ import annotations
 
 # Ham BIST ticker kodları (suffix'siz)
-WATCHLIST: list[str] = ["AEFES", "AGHOL", "AKBNK", "AKSA", "AKSEN", "ALARK", "ALTNY", "ANSGR", "ARCLK", "ASELS", "ASTOR", "BALSU", "BIMAS", "BRSAN", "BRYAT", "BSOKE", "BTCIM", "CANTE", "CCOLA", "CIMSA", "CVKMD", "CWENE", "DAPGM", "DOAS", "DOHOL", "DSTKF", "ECILC", "EFOR", "EKGYO", "ENERY", "ENJSA", "ENKAI", "EREGL", "EUPWR", "EUREN", "FENER", "FROTO", "GARAN", "GENIL", "GESAN", "GLRMK", "GRSEL", "GRTHO", "GSRAY", "GUBRF", "HALKB", "HEKTS", "ISCTR", "ISMEN", "ISMEN", "IZENR", "KCHOL", "KLRHO", "KONTR", "KRDMD", "KTLEV", "KUYAS", "MAGEN", "MAVI", "MGROS", "MIATK", "MPARK", "OBAMS", "ODAS", "OTKAR", "OYAKC", "PAHOL", "PASEU", "PATEK", "PETKM", "PGSUS", "PSGYO", "QUAGR", "RALYH", "REEDR", "SAHOL", "SARKY", "SASA", "SISE", "SKBNK", "SOKM", "TABGD", "TAVHL", "TCELL", "THYAO", "TKFEN", "TOASO", "TRALT", "TRENJ", "TRMET", "TSKB", "TTKOM", "TUKAS", "TUPRS", "TUREX", "TURSG", "ULKER", "VAKBN", "VESTL", "YKBNK", "ZOREN"]
+WATCHLIST: list[str] = ["THYAO", "ASELS", "YKBNK", "TUPRS", "DSTKF", "AKBNK", "ISCTR", "SAHOL", "KCHOL", "TRALT", "KRDMD", "TCELL", "SISE", "EKGYO", "GARAN", "PGSUS", "MGROS", "FROTO", "BIMAS", "ASTOR", "EREGL", "CWENE", "TTKOM", "VAKBN", "PETKM", "AEFES", "GLRMK", "KTLEV", "HALKB", "AKSEN"]
 
 # Piyasa rejim filtresi için referans endeks
 BENCHMARK_SYMBOL: str = "XU100"
