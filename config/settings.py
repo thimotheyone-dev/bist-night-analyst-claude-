@@ -91,6 +91,14 @@ DEFAULT_AGENT_WEIGHTS = {
     "pattern_agent": 0.20,
 }
 
+# ── Backtest / işlem maliyeti ──────────────────────────────────────────
+# Ortalama gidiş-dönüş işlem maliyeti (komisyon + BSMV + spread yaklaşık).
+# Aracı kurumunuza göre değişir; GA ve backtest bu maliyeti düşerek NET
+# getiriye göre optimize eder -- brüt (maliyetsiz) getiriye göre kalibre
+# etmek gerçek karlılığı sistematik olarak abartabilir. Kendi aracı
+# kurumunuzun oranına göre bu değeri güncelleyebilirsiniz.
+DEFAULT_TRANSACTION_COST = 0.003  # %0.3 gidiş-dönüş (yaklaşık)
+
 # ── Feedback / öğrenme ────────────────────────────────────────────────────
 # Bir sinyalin "sonucu" kaç gün sonra değerlendirilir (1 haftalık swing
 # trading ufkuna uygun).
@@ -101,27 +109,33 @@ WEIGHT_LEARNING_RATE = 0.05
 
 # Genetik algoritma periyodu (kaç günde bir parametre optimizasyonu çalışır)
 GENETIC_OPTIMIZATION_INTERVAL_DAYS = 7
-# NOT (performans kalibrasyonu): Bu değerler, GA'nın her (birey × jenerasyon
-# × pencere) kombinasyonu için TÜM hisseleri tarih tarih yeniden analiz
-# etmesi nedeniyle doğrudan toplam süreyi belirliyor. Eski varsayılanlar
-# (pop=24, jenerasyon=15, pencere=4, tüm 50 hisse) GitHub Actions'ın 60
-# dakikalık limitini fazlasıyla aşıyordu (~13+ saat). Ölçülen gerçek
-# performansa göre (bkz. src/agents/base_agent.py::get_data_as_of
-# optimizasyonu) kalibre edildi: bu ayarlarla tahmini süre ~15-20 dakika
-# (60 dakikalık limitte ~3x güvenlik payı bırakır).
-GENETIC_POPULATION_SIZE = 15
-GENETIC_GENERATIONS = 10
+# NOT (performans kalibrasyonu, 4. revizyon): Örneklem sayısı (ticker_sample)
+# jenerasyon döngüsü BAŞLAMADAN ÖNCE bir kez seçilip o haftanın TÜM
+# bireyleri/jenerasyonları için SABİT kalıyor (bkz. optimize_parameters).
+# Bu yüzden küçük bir örneklem sadece gürültülü bir ölçüm değil, o haftaya
+# özgü SABİT bir yanlılık demek -- popülasyon/jenerasyonu kısıp örneklemi
+# küçük tutmak, GA'nın o yanlılığı daha hassas ezberlemesine (overfitting)
+# yol açabilir. Bu yüzden örneklem BÜYÜK tutulup (50), popülasyon/
+# jenerasyon TAM değerine (20/14) geri döndürüldü -- 90 dakikalık zaman
+# aşımı keyfi bir güvenlik sınırıydı, gerçek bir kaynak kısıtı değildi;
+# bu iş haftada bir kez çalıştığı için limit 150 dakikaya çıkarıldı
+# (bkz. .github/workflows/nightly_analysis.yml). Tahmini gerçek süre
+# ~97 dakika (~1.54x güvenlik payı, aylık CI bütçesinin sadece ~%21'i).
+GENETIC_POPULATION_SIZE = 20
+GENETIC_GENERATIONS = 14
 GENETIC_WALKFORWARD_WINDOWS = 3
 # GA, parametreleri TÜM watchlist yerine rastgele seçilmiş bu kadar
 # hisse üzerinde değerlendirir (performans amaçlı) — bulunan parametreler
 # yine de gece taramasında TÜM hisselere uygulanır, sadece GA'nın kendi
 # iç değerlendirme maliyeti azalır. Her haftalık çalıştırmada farklı bir
 # alt küme seçilir, böylece uzun vadede tüm watchlist örneklenmiş olur.
-GENETIC_TICKER_SAMPLE_SIZE = 20  # walk-forward train/test pencere sayısı
+# 100 hisselik BIST100 evreninin yarısını her hafta örnekler.
+GENETIC_TICKER_SAMPLE_SIZE = 50
 
 # ── Dosya yolları ─────────────────────────────────────────────────────────
 WEIGHTS_FILE = MODELS_DIR / "agent_weights.json"
 PARAMS_FILE = MODELS_DIR / "agent_params.json"
+PARAMS_HISTORY_FILE = PROCESSED_DATA_DIR / "params_history.csv"
 PREDICTIONS_LOG_FILE = PROCESSED_DATA_DIR / "predictions_log.csv"
 LATEST_SIGNALS_FILE = PROCESSED_DATA_DIR / "latest_signals.csv"
 LATEST_SIGNALS_DETAIL_FILE = PROCESSED_DATA_DIR / "latest_signals_detail.json"
