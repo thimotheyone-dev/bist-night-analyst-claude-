@@ -177,6 +177,16 @@ def analyze_ticker(
     last_row = safe_features.iloc[-1] if not safe_features.empty else pd.Series(dtype=float)
     stop_target = _compute_stop_target(last_row, final_signal, params)
 
+    # Likidite (20 günlük ort. TL cinsinden işlem hacmi) — ConfirmationAgent
+    # ile AYNI formül, ama artık TÜM hisseler için (sadece AL sinyali
+    # verenler için değil) hesaplanıp rapora ekleniyor. Bu, Streamlit'te
+    # "en likit N hisseyi göster" görüntüleme filtresinin veri kaynağı.
+    if len(safe_features) >= 20:
+        liquidity_series = (safe_features["Close"] * safe_features["Volume"]).rolling(20, min_periods=20).mean()
+        avg_liquidity = liquidity_series.iloc[-1]
+    else:
+        avg_liquidity = float("nan")
+
     return {
         "ticker": ticker,
         "as_of_date": str(as_of_ts.date()),
@@ -187,6 +197,7 @@ def analyze_ticker(
         "regime_multiplier": regime_mult,
         "regime_note": regime_note,
         "close": round(float(last_row.get("Close", float("nan"))), 2) if not last_row.empty else None,
+        "avg_liquidity_try": round(float(avg_liquidity), 0) if pd.notna(avg_liquidity) else None,
         **stop_target,
         "agent_signals": [a.to_dict() for a in agent_outputs],
     }
