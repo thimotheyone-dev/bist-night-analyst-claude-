@@ -100,7 +100,7 @@ jobs:
   weekly-optimization:
     if: github.event.schedule == '0 6 * * 6' || github.event.inputs.run_optimization == 'true'
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 150
     steps:
       - uses: actions/checkout@v6
 
