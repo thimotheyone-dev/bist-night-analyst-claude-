@@ -69,6 +69,7 @@ def results_to_dataframe(results: list[dict]) -> pd.DataFrame:
             "Sinyal": r.get("final_signal"),
             "Skor": r.get("final_score"),
             "Kapanış": r.get("close"),
+            "Likidite (TL)": r.get("avg_liquidity_try"),
             "Stop": r.get("stop"),
             "Hedef": r.get("target"),
             "R:R": r.get("risk_reward"),
