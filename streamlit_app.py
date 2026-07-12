@@ -66,11 +66,41 @@ def load_signal_details() -> dict:
     return load_full_results(settings.LATEST_SIGNALS_DETAIL_FILE)
 
 
+@st.cache_data(ttl=900)
+def load_params_history() -> pd.DataFrame:
+    if settings.PARAMS_HISTORY_FILE.exists():
+        return pd.read_csv(settings.PARAMS_HISTORY_FILE, parse_dates=["date"])
+    return pd.DataFrame()
+
+
 signals_df = load_latest_signals()
 weight_history_df = load_weight_history()
 predictions_df = load_predictions()
 current_weights = load_weights()
 detail_by_ticker = load_signal_details()
+params_history_df = load_params_history()
+
+
+# ── Değerlendirme durumu (kaç sinyal sonuçlandı?) ──────────────────────
+# Bu bölüm bilinçli olarak en üstte: "kaç AL sinyali sonuçlandı, kaçı
+# hâlâ bekliyor" sorusunun cevabını aramadan, sayfayı açar açmaz görmek
+# için. Az sayıda sonuçlanmış sinyalle performans yorumu yapmanın
+# istatistiksel olarak güvenilir olmadığını hatırlatır.
+if not predictions_df.empty:
+    tradeable = predictions_df[predictions_df["signal"].isin(["AL", "SAT"])]
+    unique_predictions = tradeable.drop_duplicates(subset=["as_of_date", "ticker"])
+    n_total = len(unique_predictions)
+    n_evaluated = int(unique_predictions["evaluated"].astype(bool).sum())
+    n_pending = n_total - n_evaluated
+
+    st.info(
+        f"📋 **Değerlendirme Durumu:** Şimdiye kadar {n_total} AL/SAT sinyali üretildi — "
+        f"{n_evaluated} tanesi sonuçlandı (5 gün geçti), {n_pending} tanesi hâlâ bekliyor. "
+        + ("Bu sayı çok düşükken performans hakkında kesin yorum yapmak güvenilir değildir; "
+           "istatistiksel olarak anlamlı bir değerlendirme için genellikle en az birkaç "
+           "düzine sonuçlanmış sinyal beklenir." if n_evaluated < 15 else ""),
+        icon="📋",
+    )
 
 
 # ── Üst özet ────────────────────────────────────────────────────────────
@@ -92,8 +122,27 @@ else:
     col4.metric("Son Tarama", last_date)
 
     st.subheader("Güncel Tarama Sonuçları")
-    signal_filter = st.multiselect("Sinyale göre filtrele", ["AL", "SAT", "BEKLE"], default=["AL", "SAT"])
+    filter_col1, filter_col2 = st.columns(2)
+    with filter_col1:
+        signal_filter = st.multiselect("Sinyale göre filtrele", ["AL", "SAT", "BEKLE"], default=["AL", "SAT"])
+    with filter_col2:
+        liquidity_options = {"Tümünü göster": None, "En likit 10": 10, "En likit 25": 25, "En likit 50": 50}
+        liquidity_choice = st.selectbox(
+            "Likidite filtresi (sadece görüntüleme — watchlist değişmez)",
+            list(liquidity_options.keys()),
+        )
+        top_n = liquidity_options[liquidity_choice]
+
     filtered = signals_df[signals_df["Sinyal"].isin(signal_filter)] if signal_filter else signals_df
+
+    if top_n is not None and "Likidite (TL)" in filtered.columns:
+        filtered = filtered.sort_values("Likidite (TL)", ascending=False).head(top_n)
+        st.caption(
+            f"Bugünün en likit {top_n} hissesi gösteriliyor (20 günlük ort. TL "
+            "hacme göre). Bu sadece bir görüntüleme filtresidir; taranan "
+            "watchlist etkilenmez."
+        )
+
     st.dataframe(filtered, use_container_width=True, hide_index=True)
 
     st.subheader("Hisse Bazında Agent Detayı")
@@ -171,6 +220,40 @@ else:
     weight_cols = st.columns(len(current_weights))
     for col, (agent, w) in zip(weight_cols, current_weights.items()):
         col.metric(agent.replace("_agent", "").upper(), f"{w:.2%}")
+
+
+# ── Genetik optimizasyon geçmişi ────────────────────────────────────────
+st.subheader("🧬 Haftalık Genetik Optimizasyon Geçmişi")
+st.caption(
+    "Her hafta bulunan parametrelerin train (içeride) ve out-of-sample "
+    "(hiç görülmemiş veride) performansı. Out-of-sample çizgisi zamanla "
+    "yükseliyorsa optimizasyon gerçekten işe yarıyor demektir; rastgele "
+    "yukarı-aşağı sıçrıyorsa mevcut strateji setinin güçlü bir kenarı "
+    "olmayabilir — bu durumda parametre ayarından çok stratejinin "
+    "kendisini gözden geçirmek gerekebilir."
+)
+
+if params_history_df.empty:
+    st.info(
+        "Henüz GA geçmişi yok — ilk haftalık optimizasyon çalıştıktan sonra "
+        "burada birikmeye başlayacak."
+    )
+else:
+    fig_ga = go.Figure()
+    fig_ga.add_trace(go.Scatter(
+        x=params_history_df["date"], y=params_history_df["train_fitness"],
+        mode="lines+markers", name="Train Fitness",
+    ))
+    fig_ga.add_trace(go.Scatter(
+        x=params_history_df["date"], y=params_history_df["out_of_sample_performance"],
+        mode="lines+markers", name="Out-of-Sample Performans",
+    ))
+    fig_ga.add_hline(y=0, line_dash="dot", line_color="gray")
+    fig_ga.update_layout(template="plotly_dark", height=350, yaxis_title="Fitness Skoru", xaxis_title="Tarih")
+    st.plotly_chart(fig_ga, use_container_width=True)
+
+    with st.expander("Haftalık bulunan parametrelerin tamamını görüntüle"):
+        st.dataframe(params_history_df.sort_values("date", ascending=False), use_container_width=True, hide_index=True)
 
 
 # ── Geçmiş tahmin doğruluğu ─────────────────────────────────────────────
