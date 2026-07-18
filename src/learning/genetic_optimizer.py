@@ -20,7 +20,7 @@ import pandas as pd
 from config.settings import (
     DEFAULT_PARAMS, EVALUATION_HORIZON_DAYS, GENETIC_GENERATIONS,
     GENETIC_POPULATION_SIZE, GENETIC_TICKER_SAMPLE_SIZE,
-    GENETIC_WALKFORWARD_WINDOWS, PARAMS_FILE,
+    GENETIC_WALKFORWARD_WINDOWS, PARAMS_FILE, PARAMS_HISTORY_FILE,
 )
 from src.agents.confirmation_agent import ConfirmationAgent
 from src.agents.supervisor import analyze_watchlist, build_agents
@@ -302,4 +302,30 @@ def optimize_parameters(
     with open(PARAMS_FILE, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
 
+    _append_params_history(result)
+
     return result
+
+
+def _append_params_history(result: dict) -> None:
+    """Her haftalık GA çalıştırmasının train_fitness/out_of_sample_performance
+    değerlerini ve bulunan parametreleri params_history.csv'ye ekler.
+
+    NOT (düzeltilen hata): PARAMS_HISTORY_FILE sabiti settings.py'de tanımlıydı
+    ve streamlit_app.py bu dosyayı OKUYUP grafiğe çiziyordu, ama bu fonksiyon
+    hiç yazılmamıştı — yani "GA Kalibrasyon Geçmişi" grafiği hiçbir zaman
+    dolamıyordu, agent_params.json her hafta üzerine yazılırken geçmiş veri
+    hiç birikmiyordu. Bu, GA'nın gerçekten zamanla iyileşip iyileşmediğini
+    izlemenin TEK yoludur; bu fonksiyon olmadan o soru asla cevaplanamaz."""
+    row = {
+        "date": pd.Timestamp.today().normalize(),
+        "train_fitness": result.get("train_fitness"),
+        "out_of_sample_performance": result.get("out_of_sample_performance"),
+        **{f"param_{k}": v for k, v in result.get("params", {}).items()},
+    }
+    if PARAMS_HISTORY_FILE.exists():
+        hist = pd.read_csv(PARAMS_HISTORY_FILE, parse_dates=["date"])
+        hist = pd.concat([hist, pd.DataFrame([row])], ignore_index=True)
+    else:
+        hist = pd.DataFrame([row])
+    hist.to_csv(PARAMS_HISTORY_FILE, index=False)
