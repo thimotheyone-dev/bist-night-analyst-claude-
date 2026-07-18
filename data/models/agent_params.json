@@ -1,10 +1,10 @@
 {
   "params": {
-    "rsi_period": 10,
-    "rsi_oversold": 34,
-    "rsi_overbought": 66,
+    "rsi_period": 20,
+    "rsi_oversold": 30,
+    "rsi_overbought": 77,
     "macd_fast": 8,
-    "macd_slow": 24,
+    "macd_slow": 25,
     "macd_signal": 9,
     "ma_short": 50,
     "ma_long": 200,
@@ -12,18 +12,18 @@
     "adx_trend_threshold": 30,
     "atr_period": 14,
     "bb_period": 20,
-    "bb_std": 2.39,
+    "bb_std": 2.41,
     "rel_volume_period": 20,
-    "rel_volume_threshold": 2.1,
-    "min_liquidity_try": 5200404.66,
-    "min_risk_reward": 2.04,
-    "extreme_rsi_veto": 77,
-    "atr_stop_multiplier": 2.39,
-    "atr_target_multiplier_base": 2.34,
-    "atr_target_trend_bonus": 1.33,
-    "conflict_penalty": 0.6
+    "rel_volume_threshold": 2.42,
+    "min_liquidity_try": 2851781.71,
+    "min_risk_reward": 2.09,
+    "extreme_rsi_veto": 91,
+    "atr_stop_multiplier": 2.44,
+    "atr_target_multiplier_base": 1.76,
+    "atr_target_trend_bonus": 2.19,
+    "conflict_penalty": 0.53
   },
-  "train_fitness": 0.010000364207551706,
-  "out_of_sample_performance": -0.018508229077772085,
-  "optimized_at": "2026-07-12"
+  "train_fitness": 0.009528456119162641,
+  "out_of_sample_performance": -0.005937243961352658,
+  "optimized_at": "2026-07-18"
 }
