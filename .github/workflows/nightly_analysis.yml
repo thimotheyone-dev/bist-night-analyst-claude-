@@ -120,7 +120,7 @@ jobs:
         run: |
           git config user.name "bist-night-analyst-bot"
           git config user.email "actions@github.com"
-          git add data/models
+          git add data/models data/processed
           if git diff --staged --quiet; then
             echo "Değişiklik yok, commit atlanıyor."
             exit 0
