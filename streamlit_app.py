@@ -161,7 +161,7 @@ else:
             "watchlist etkilenmez."
         )
 
-    st.dataframe(filtered, use_container_width=True, hide_index=True)
+    st.dataframe(filtered, width="stretch", hide_index=True)
 
     st.subheader("Hisse Bazında Agent Detayı")
     selected_ticker = st.selectbox("Hisse seçin", sorted(signals_df["Hisse"].unique()))
@@ -188,7 +188,7 @@ else:
         if detail.get("regime_note"):
             st.caption(detail["regime_note"])
 
-        st.dataframe(agent_breakdown_dataframe(detail), use_container_width=True, hide_index=True)
+        st.dataframe(agent_breakdown_dataframe(detail), width="stretch", hide_index=True)
 
         if detail.get("final_signal") == "AL":
             st.divider()
@@ -232,7 +232,7 @@ else:
         fig.add_trace(go.Scatter(x=weight_history_df["date"], y=weight_history_df[col],
                                   mode="lines+markers", name=col))
     fig.update_layout(template="plotly_dark", height=400, yaxis_title="Ağırlık", xaxis_title="Tarih")
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 
     st.write("**Güncel Ağırlıklar:**")
     weight_cols = st.columns(len(current_weights))
@@ -268,10 +268,10 @@ else:
     ))
     fig_ga.add_hline(y=0, line_dash="dot", line_color="gray")
     fig_ga.update_layout(template="plotly_dark", height=350, yaxis_title="Fitness Skoru", xaxis_title="Tarih")
-    st.plotly_chart(fig_ga, use_container_width=True)
+    st.plotly_chart(fig_ga, width="stretch")
 
     with st.expander("Haftalık bulunan parametrelerin tamamını görüntüle"):
-        st.dataframe(params_history_df.sort_values("date", ascending=False), use_container_width=True, hide_index=True)
+        st.dataframe(params_history_df.sort_values("date", ascending=False), width="stretch", hide_index=True)
 
 
 # ── Geçmiş tahmin doğruluğu ─────────────────────────────────────────────
@@ -302,10 +302,10 @@ else:
             template="plotly_dark", height=350, yaxis_title="Doğruluk Oranı",
             yaxis_tickformat=".0%", xaxis_title="Agent",
         )
-        st.plotly_chart(fig2, use_container_width=True)
+        st.plotly_chart(fig2, width="stretch")
 
         with st.expander("Ham tahmin geçmişini görüntüle"):
-            st.dataframe(evaluated.sort_values("as_of_date", ascending=False), use_container_width=True)
+            st.dataframe(evaluated.sort_values("as_of_date", ascending=False), width="stretch")
 
 
 # ── Manuel test taraması (opsiyonel, geliştirme amaçlı) ────────────────
@@ -339,7 +339,7 @@ with st.expander("🔧 Manuel Tarama Çalıştır (test amaçlı, gece otomasyon
                 results = analyze_watchlist(features, as_of, current_weights, {}, benchmark_features)
 
                 from src.reporter.report_generator import results_to_dataframe
-                st.dataframe(results_to_dataframe(results), use_container_width=True, hide_index=True)
+                st.dataframe(results_to_dataframe(results), width="stretch", hide_index=True)
 
 st.divider()
 st.caption(
