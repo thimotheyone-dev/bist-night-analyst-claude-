@@ -17,7 +17,7 @@ from dataclasses import dataclass
 
 import pandas as pd
 
-from config.settings import EVALUATION_HORIZON_DAYS
+from config.settings import DEFAULT_TRANSACTION_COST, EVALUATION_HORIZON_DAYS
 
 
 @dataclass
@@ -71,20 +71,32 @@ def compute_forward_returns(close: pd.Series, horizon: int = None) -> pd.Series:
 
 def simulate_signals(
     signals: pd.Series, close: pd.Series, horizon: int = None,
+    transaction_cost: float = None,
 ) -> pd.DataFrame:
     """Verilen sinyal serisi (-1/0/1 veya AL/SAT/BEKLE) için forward-return
     bazlı basit simülasyon. signals[t] zaten t gününe kadarki veriyle
     üretilmiş olmalı (çağıran taraf bunu garanti eder); bu fonksiyon sadece
     sonucu ölçer, sinyal üretmez.
+
+    NOT (düzeltilen hata): config/settings.py'de DEFAULT_TRANSACTION_COST
+    tanımlıydı ve yorumunda "GA ve backtest bu maliyeti düşerek NET
+    getiriye göre optimize eder" yazıyordu, ama bu fonksiyon o değeri hiç
+    kullanmıyordu — GA fiilen BRÜT (maliyetsiz) getiriye göre optimize
+    ediyordu, bu da gerçek karlılığı sistematik olarak abartma riski
+    taşıyordu. transaction_cost, sadece pozisyon açılan (position != 0)
+    satırlara, gidiş-dönüş tek seferlik maliyet olarak uygulanır.
     """
     horizon = horizon or EVALUATION_HORIZON_DAYS
+    transaction_cost = transaction_cost if transaction_cost is not None else DEFAULT_TRANSACTION_COST
     fwd_returns = compute_forward_returns(close, horizon)
 
     df = pd.DataFrame({"signal": signals, "close": close, "forward_return": fwd_returns})
     df["position"] = df["signal"].map(
         lambda s: 1 if s in ("AL", 1) else (-1 if s in ("SAT", -1) else 0)
     )
-    df["strategy_return"] = df["position"] * df["forward_return"]
+    df["strategy_return"] = (
+        df["position"] * df["forward_return"] - df["position"].abs() * transaction_cost
+    )
 
     # Sonucu henüz bilinmeyen (forward_return NaN olan, yani son `horizon`
     # gün) satırlar değerlendirmeye katılmaz.
