@@ -38,7 +38,8 @@ def load_predictions_log() -> pd.DataFrame:
         ])
     return pd.DataFrame(columns=[
         "as_of_date", "ticker", "agent", "signal", "signal_value", "confidence",
-        "weight", "result_available_date", "actual_return", "was_correct", "evaluated",
+        "weight", "final_signal", "result_available_date", "actual_return",
+        "was_correct", "evaluated",
     ])
 
 
