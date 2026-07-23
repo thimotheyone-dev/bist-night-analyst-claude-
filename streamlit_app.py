@@ -86,8 +86,19 @@ params_history_df = load_params_history()
 # hâlâ bekliyor" sorusunun cevabını aramadan, sayfayı açar açmaz görmek
 # için. Az sayıda sonuçlanmış sinyalle performans yorumu yapmanın
 # istatistiksel olarak güvenilir olmadığını hatırlatır.
-if not predictions_df.empty:
-    tradeable = predictions_df[predictions_df["signal"].isin(["AL", "SAT"])]
+#
+# NOT (düzeltilen hata): Bu sayaç eskiden predictions_df["signal"] (HER
+# AGENT'IN kendi bireysel oyu) üzerinden sayıyordu. predictions_log.csv
+# her (tarih, hisse) için 5 satır tutar (bir agent başına bir satır);
+# "signal" sütunu o AGENT'ın kendi görüşüdür, sistemin nihai kararı
+# DEĞİLDİR. Sonuç: 5 agent'tan sadece biri bile AL/SAT dese (ki eşikler
+# sıkı olduğu için sistem genelde BEKLE derken bile bu sıkça olur) o gün
+# "sinyal üretildi" sayılıyordu -- gerçek veride bu, gerçek sistem
+# sinyallerinin ~3.4 katı şişirilmiş bir sayı üretiyordu. Artık
+# "final_signal" (supervisor'ın o gün o hisse için verdiği NİHAİ karar)
+# kullanılıyor.
+if not predictions_df.empty and "final_signal" in predictions_df.columns:
+    tradeable = predictions_df[predictions_df["final_signal"].isin(["AL", "SAT"])]
     unique_predictions = tradeable.drop_duplicates(subset=["as_of_date", "ticker"])
     n_total = len(unique_predictions)
     n_evaluated = int(unique_predictions["evaluated"].astype(bool).sum())
@@ -95,10 +106,17 @@ if not predictions_df.empty:
 
     st.info(
         f"📋 **Değerlendirme Durumu:** Şimdiye kadar {n_total} AL/SAT sinyali üretildi — "
-        f"{n_evaluated} tanesi sonuçlandı (5 gün geçti), {n_pending} tanesi hâlâ bekliyor. "
+        f"{n_evaluated} tanesi sonuçlandı (5 işlem günü geçti), {n_pending} tanesi hâlâ bekliyor. "
         + ("Bu sayı çok düşükken performans hakkında kesin yorum yapmak güvenilir değildir; "
            "istatistiksel olarak anlamlı bir değerlendirme için genellikle en az birkaç "
            "düzine sonuçlanmış sinyal beklenir." if n_evaluated < 15 else ""),
+        icon="📋",
+    )
+elif not predictions_df.empty:
+    st.info(
+        "📋 Bu gece taramaları, sistemin nihai kararını (final_signal) henüz "
+        "kaydetmeyen bir sürümle yapılmış — bu sayı bir sonraki taramadan "
+        "itibaren doğru şekilde birikmeye başlayacak.",
         icon="📋",
     )
 
