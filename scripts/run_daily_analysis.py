@@ -95,13 +95,27 @@ def main() -> None:
 
     # 6. Tahminleri log'a ekle (sonucu henüz bilinmiyor)
     new_rows = []
-    result_date = as_of_date + pd.Timedelta(days=EVALUATION_HORIZON_DAYS)
+    # NOT (düzeltilen hata): Eskiden `pd.Timedelta(days=EVALUATION_HORIZON_DAYS)`
+    # kullanılıyordu -- bu TAKVİM günü ekliyordu. Ama backtest/GA'daki
+    # compute_forward_returns() `close.shift(-horizon)` ile İŞLEM günü
+    # (satır) kaydırıyor. Sonuç: haftanın gününe göre "5 gün" canlıda
+    # gerçekte 3-4 işlem gününe denk geliyordu (hafta sonu araya girince),
+    # GA'nın optimize ettiği ufuktan KISA bir sürede değerlendirme
+    # yapılıyordu -- iki taraf aynı şeyi ölçmüyordu. BDay ile düzeltildi.
+    result_date = as_of_date + pd.tseries.offsets.BDay(EVALUATION_HORIZON_DAYS)
     for r in results:
         for sig in r.get("agent_signals", []):
             new_rows.append({
                 "as_of_date": as_of_date, "ticker": r["ticker"], "agent": sig["agent"],
                 "signal": sig["signal"], "signal_value": sig["signal_value"],
                 "confidence": sig["confidence"], "weight": sig["weight"],
+                # NOT (düzeltilen hata): final_signal eskiden hiç kaydedilmiyordu
+                # -- Streamlit'teki "Değerlendirme Durumu" sayacı bu yüzden
+                # yanlışlıkla "herhangi bir agent AL/SAT dedi mi"yi
+                # "sistem AL/SAT önerdi mi" sanıyordu (gerçek veride ~3.4x
+                # şişirilmiş bir sayı üretiyordu). Artık supervisor'ın o
+                # gün o hisse için verdiği NİHAİ karar her satıra eklenir.
+                "final_signal": r.get("final_signal"),
                 "result_available_date": result_date,
                 "actual_return": None, "was_correct": None, "evaluated": False,
             })
